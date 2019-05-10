@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Developing Non-functional Requirements</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="developing_nonfunctional_rqmts">
+<meta name="uma.presentationName" content="Developing Non-functional Requirements">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mwebBC7639C15C9A369B8025666B004DDA0D"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mwebBC7639C15C9A369B8025666B004DDA0D"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Developing Non-functional Requirements</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The technique presented in this paper explains how to identify and define a set of complete well-stated, testable non-functional requirements that are traceable to stakeholder concerns. This is achieved by way of breaking high-level initial “statements of concern” down to more granular single focused NFRs. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/identify_non_functional_requirements_F0B78C0C.html" guid="_JC8JwKc1EdyaUuyek1jM3w">Identify Non-Functional Requirements</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/nonfunctional_requirements_67C22734.html" guid="mwebA79F29E86DD9BD38852568850050F6EA">Non-Functional Requirements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The objective of this paper is to provide guidance on a general technique to identify, elicit and specify
+    non-functional requirements (NFRs); this paper also provides guidance on how to establish completeness and traceability
+    of NFRs, for a target system.
+</p>
+<p>
+    Whilst most existing NFR taxonomies, including the ISO/IEC 9126, enumerate NFRs as quality attributes, this technique
+    is broader and more general to accommodate system constraints such as legal and compliance aspects. This is achieved by
+    relating NFR “themes” (from a reusable NFR “theme” library) to stakeholder concerns and then identifying NFRs within
+    these “NFR themes”. This technique draws on the concepts of “Views” and “Viewpoints” (from IEEE 1471-2000 Software
+    System Architecture standard) and relates them to “NFRs” and ‘NFR themes” respectively.
+</p>
+<p>
+    Since stakeholders are identified from various domains: for example end users, developers, maintenance and operations
+    teams, hence identifying “NFR themes” corresponding to stakeholder concerns enable broad range of NFRs to be
+    identified. In other words, the non-functional requirements capture concerns of the stakeholders, which generally cover
+    a broad range of themes, ranging from how easy the system is to maintain once installed (NFRs for system operations),
+    to how quickly the individual transactions within the system can be executed (NFRs for system performance).
+</p>
+<p>
+    Thus this technique acts like an overarching framework or a meta-model to accommodate future NFR taxonomies. The model
+    also includes guidance to establish traceability, completeness of NFRs, specification of NFRs and their test methods.
+</p>
+<p>
+    This paper will help project teams, architects; business analysts identify stakeholder concerns, NFR themes and capture
+    them as a set of quality, meaningful and consistent non-functional requirements.
+</p>
+<p>
+    <a href="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/./resources/developing_nfrs.doc" target="_blank">developing_nfrs.doc</a>
+</p>
+<p>
+    <a href="./../../../core.tech.common.extend-ibm_lic/guidances/guidelines/./resources/developing_nfrs.odt" target="_blank">developing_nfrs.odt</a>
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">gerberd@us.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Wed Aug 13 14:04:06 IST 2014</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">February 2012 - renamed from "Defining Non-functional Requirements" and replaced the bulk of the content with an updated guideline</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Architecture Overview Diagram for Team Solution Design</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="arch_overview_diagram_tsd">
+<meta name="uma.presentationName" content="Architecture Overview Diagram for Team Solution Design">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_vF8XQJFyEdyld-yWhq9_Lg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_vF8XQJFyEdyld-yWhq9_Lg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Architecture Overview Diagram for Team Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This example illustrates a sample architecture overview diagram.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architecture_overview_7BDD690F.html" guid="mweb3072ED040425425485256882005791A4">Architecture Overview</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/develop_architecture_overview_FE6ACDFE.html" guid="_lRGV8JMbEdyld-yWhq9_Lg">Develop Architecture Overview</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/sketch_initial_architecture_overview_328C4497.html" guid="_kvw4QAwfEeSQgZ4v5FkZyw">Sketch Initial Architecture Overview</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The following sample diagram is taken from the ESS e-business reference architecture V2.0. This&nbsp; architecture can
+    be viewed as a four-tier model. The following illustrates a few example responsibilities of the high level components
+    or nodes within these tiers. This information may be limited initially. Additional detail can be developed later,
+    especially as the component and operational models are developed.
+</p>
+<br />
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <strong>Clients</strong>
+    </p>
+    <p>
+        The purpose of this client node is to provide access to the e-business application through a network.&nbsp; This
+        could be through a standard web browser such as Netscape Navigator or Microsoft Internet Explorer or a wireless
+        device.
+    </p>
+    <p>
+        <strong>Web Server</strong>
+    </p>
+    <p>
+        The Web Server Node provides a web server to process and serve informational content that is primarily of a static
+        nature.&nbsp; These static (and pseudo static) pages will be served using the HTTP protocol.
+    </p>
+    <p>
+        <strong>Integration&nbsp; Hub</strong>
+    </p>
+    <p>
+        The purpose of the Integration Hub Node is to provide a 'front end' or single access point to systems running on
+        the back-end application nodes.&nbsp;
+    </p>
+</blockquote>
+<p>
+    The purpose of the architecture overview diagram is to disclose the basic ideas of the application architecture. It is
+    most important to capture those aspects of the architecture that can support a high level walkthrough of the
+    architecture and how it supports the application requirements and constraints. For example, the integration hub and web
+    application server nodes are key ideas that must be illustrated.
+</p>
+<p>
+    It is not as important at this stage to know for sure what specific protocols, technology or products will be used,
+    although the client may be interested in your preliminary candidates. The exception to that is to capture customer
+    preferences and constraints such as "MQ must be used to connect to the legacy system" or "I am very interested in using
+    MQSI for routing and transformation". All of the lower levels of detail will be filled in as this diagram is used as
+    input to create the component and operational models.
+</p>
+<p>
+    There is no single correct way to draw this diagram. Use a reference architecture as a starting point as in this
+    example. Be sure the diagram captures the basic ideas and can support a discussion of "how it will work" and what
+    alternatives could exist for various aspects of the architecture.
+</p>
+<p>
+    This view emphasizes users, delivery channels and major functional components. Another view might emphasize geographic
+    issues.
+</p>
+<p>
+    <img height="365" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/ArchOvw1.jpg" width="600" />
+</p>
+<p>
+    This diagram&nbsp;emphasizes a services view.
+</p>
+<p>
+    <img height="343" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/ArchOvw2.jpg" width="600" /><br />
+</p>
+<p>
+    The following diagram represents an enterprise view of the architecture and illustrates the value of multiple views in
+    the architecture overview.
+</p>
+<p>
+    <img height="346" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/ArchOvw3.jpg" width="600" /><br align="center" />
+    <br />
+</p>
+<p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+     &nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

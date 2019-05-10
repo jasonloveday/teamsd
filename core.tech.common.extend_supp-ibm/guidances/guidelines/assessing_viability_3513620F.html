@@ -1,0 +1,3090 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Assessing Viability</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="assessing_viability">
+<meta name="uma.presentationName" content="Assessing Viability">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_LyOiADfNEdymsuYCy6TX9w"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_LyOiADfNEdymsuYCy6TX9w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Assessing Viability</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The objective of this guideline is to assist in assessing the viability of implementing an IT system. This is documented in the Viability Assessment artifact.<p/>(See attached file at end of Main Description for the full version of this guideline including assessment criteria.)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/viability_assessment_5EE7A3B5.html" guid="mweb25893FBE05A65D6E852568850063E2A4">Viability Assessment</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Viability is typically re-assessed multiple times, as more information becomes available and as the system design is
+    developed into more detail.&#160; The purpose of the guideline is to provide additional help on the steps of assessing
+    the viability of a solution design.&#160; The questions are intended to supplement those found in the Viability
+    Assessment checklist.&#160; It provides a set of review questions that can help ascertain the completeness of the
+    solution design and point out common risk areas.&#160; It is used as part of the overall process of performing a
+    viability assessment.&#160; The guideline is organized in terms of five assessment steps conducted at various points in
+    time during a project lifecycle:&#160;
+</p>
+<ul>
+    <li>
+        Assessment of the viability of satisfying qualities and constraints (non-functional requirements)
+    </li>
+    <li>
+        Assessment of a conceptual-level architecture models
+    </li>
+    <li>
+        Assessment of a logical architecture models
+    </li>
+    <li>
+        Assessment of a physical architecture models
+    </li>
+    <li>
+        Conducting the risk assessment<br />
+        The steps within each section may be performed in parallel, or in any sequence.<br />
+    </li>
+</ul>
+<h3>
+    Assessment of Qualities and Constraints
+</h3>
+<p>
+    The goal of this step is to understand if the architecture is based upon a solid foundation of requirements.&#160; The
+    reviewer is looking for a current, well-articulated and approved set of non-functional requirements (i.e. qualities and
+    constraints) to guide architecture development.&#160; A good set of architectural requirements will share the following
+    characteristics:
+</p>
+<ul>
+    <li>
+        They are free from implementation detail
+    </li>
+    <li>
+        They focus upon essential elements of the system
+    </li>
+    <li>
+        They are consistent with one another
+    </li>
+    <li>
+        They are achievable in the context of the "state of the art" budget and schedule
+    </li>
+    <li>
+        They are well formed - concise, unambiguous and verifiable
+    </li>
+    <li>
+        &#160;They are traceable to the business goals
+    </li>
+</ul>
+<p>
+    Architecture development depends upon well-formed requirements.&#160; A vague statement such as "The system will meet
+    the businesses performance objectives" needs to be decomposed into verifiable statements concerning specific
+    transactions, users groups and targeted response times.&#160;&#160; The guiding principle is that things must be
+    defined to whatever level of detail is necessary to control the critical aspects of the system.<br />
+</p>
+<h4>
+    Compatibility, Conversion, Migration
+</h4>
+<p>
+    If this system replaces an existing system has the architecture accounted for any compatibility, conversion, or
+    migration issues?&#160; Some areas of concern include:
+</p>
+<ul>
+    <li>
+        Data from an existing system that must be carried forward (and possibly converted in format) for the new system.
+    </li>
+    <li>
+        Existing user interfaces (screen formats, commands, etc) that must be supported in the new system.
+    </li>
+    <li>
+        An existing application programming interface (API) that must be maintained.
+    </li>
+    <li>
+        Migration from the existing system to the new one that must not disrupt end user service.
+    </li>
+    <li>
+        The new system must be capable of operating in parallel with the old system during the migration period.
+    </li>
+    <li>
+        There must be a capability to fall back to the old system, if needed, during the first two weeks of operation.
+    </li>
+    <li>
+        Old archive data may need to be processes by new system transactions.
+    </li>
+    <li>
+        The objective of this question is to identify things that may influence the design of the new system.&#160;<br />
+        <br />
+    </li>
+</ul>
+<h4>
+    Target Dates
+</h4>
+<p>
+    Are any specific target dates specified or implied?&#160; The goal is to understand the architecture's ability to
+    support major project milestones.&#160; Areas of concern include:
+</p>
+<ul>
+    <li>
+        Will key architectural decisions be made in time to support the project's schedule?
+    </li>
+    <li>
+        Will standards, reference architecture and models be complete in time to support development teams?
+    </li>
+    <li>
+        Will product selections for architecture components be made in time to support the project's schedule?&#160; Is
+        enough time allocated to support acquisition, installation and training needs?
+    </li>
+    <li>
+        Can the system's infrastructure be turned over to the client before the "go live" date?
+    </li>
+    <li>
+        Will the client's operational support of the system be adequate by the "go live" date?<br />
+    </li>
+</ul>
+<p>
+    Try to assess the business impact of missing these targets.&#160; If any advantage could be gained by improving on the
+    dates, try to assess it.
+</p>
+<h4>
+    Sequence for Implementation
+</h4>
+<p>
+    Is a sequence for implementation suggested or implied?&#160; Possible alternatives include:
+</p>
+<ul>
+    <li>
+        Geographically - by area
+    </li>
+    <li>
+        Functionally - by application
+    </li>
+    <li>
+        Organizationally.&#160; For example, an office system may be made available to managers first, then to
+        professionals and then to the rest of the organization
+    </li>
+    <li>
+        Some combination of the above
+    </li>
+</ul>
+<p>
+    Sequences of implementation concerns the architect should validate are:
+</p>
+<ul>
+    <li>
+        Do purchasing and implementation plans support the sequencing approach?
+    </li>
+    <li>
+        Will there be a mixture of new and old technologies that need to be supported for an interim period?
+    </li>
+    <li>
+        Are special features needed in the software/hardware to support the implementation approach?&#160; For example, if
+        an organizational approach is used, will capabilities be needed to "shut off" solution features until they become
+        generally available?<br />
+    </li>
+</ul>
+<h4>
+    Times When Implementation Is Difficult
+</h4>
+<p>
+    When will it be difficult to implement a new system?&#160; Workload peaks and other factors in the existing systems
+    might prevent implementation at certain times.&#160; Will the probability of success be diminished because
+    implementation is scheduled to coincide with:
+</p>
+<ul>
+    <li>
+        Larger processing volumes: weekly, monthly or yearly peaks
+    </li>
+    <li>
+        Regular maintenance cycles for hardware or software - impacts both systems availability and staff
+    </li>
+    <li>
+        Peak holiday periods
+    </li>
+    <li>
+        Planned one-off disruptions due to hardware upgrades or introduction of new systems
+    </li>
+    <li>
+        Planned reorganizations
+    </li>
+    <li>
+        Facilities changes<br />
+    </li>
+</ul>
+<h4>
+    Application Development Environment (ADE) Considerations
+</h4>
+<p>
+    Identify issues regarding the project's ability to support the application development requirements.
+</p>
+<ul>
+    <li>
+        Has the development environment been defined and built?
+    </li>
+    <li>
+        Are the developers trained in using the tools?
+    </li>
+    <li>
+        Are automated tools available for design, test scripting, regression testing, incident tracking and debugging?
+    </li>
+    <li>
+        What type of interfaces and access devices will the system use?&#160; Can we support development in these
+        platforms?
+    </li>
+    <li>
+        &#160;Are special media types required, for example, use of graphics, image, voice or video, in addition to
+        text?&#160; Have we accounted for these needs in the tools chosen?
+    </li>
+    <li>
+        Are automated tools available for version control?
+    </li>
+    <li>
+        Can the development environment support the targeted number of developers in terms of capacity and available
+        licenses?
+    </li>
+    <li>
+        How will production and ongoing maintenance activities impact production?
+    </li>
+    <li>
+        Will the development system need to be stress-tested for capacity and performance analysis?
+    </li>
+    <li>
+        Does the ADE have to support several national languages?<br />
+    </li>
+</ul>
+<h4>
+    <br />
+    Development Technology Considerations
+</h4>
+<p>
+    Is the project introducing new development technologies that may have implementation, acceptance or "learning curve"
+    issues?&#160; Look for specific requirements or givens that will be new or unusual for this client.&#160; These might
+    include:
+</p>
+<ul>
+    <li>
+        Is this the first time the client or project team will attempt to adopt new development technologies? For example:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;Communication with external organizations such as clients or suppliers
+            </li>
+            <li>
+                &#160;First use of Internet or object technologies
+            </li>
+            <li>
+                &#160;First use of cryptography
+            </li>
+            <li>
+                &#160;First use of development platform (e.g., MVS shop implementing first SP2-based application
+            </li>
+        </ul>
+    </li>
+    <li>
+        Changes in scale (for example, a large network with centralized processing in a client with only departmental
+        systems installed)<br />
+    </li>
+</ul>
+<h4>
+    Development Environment Constraints
+</h4>
+<p>
+    Do the requirements specify or limit how the system should be developed and tested?&#160; Examine the requirements and
+    current IT infrastructure and standards for any information that will govern how the applications will be
+    developed.&#160; For example, determine whether:
+</p>
+<ul>
+    <li>
+        Any application packages have been specified
+    </li>
+    <li>
+        Specific programming languages or application generators must be used
+    </li>
+    <li>
+        Specific development methods or tools must be used
+    </li>
+    <li>
+        The client already has existing application development skills, methods or techniques that you might be able to
+        exploit
+    </li>
+    <li>
+        The client has any policies regarding making or buying new system
+    </li>
+    <li>
+        The client uses specific testing or certification requirements for proving products or techniques
+    </li>
+    <li>
+        The client has a policy, or an inclination, to use third parties for development of their systems.
+    </li>
+</ul>
+<h4>
+    <br />
+    Benchmark Requirements?
+</h4>
+<p>
+    Will the new system have to be benchmarked?&#160; There still may be clients requesting that the capacity of major
+    processing equipment be verified by benchmarks.&#160; Others may request performance guarantees.
+</p>
+<p>
+    Benchmarks are very complex, resource consuming activities.&#160; Thus, it is important to discuss with the client at
+    this point whether the policy calls for full-volume benchmarks, or whether measurements of sample new applications,
+    followed by modeling or plain projection, might suffice.
+</p>
+<p>
+    It is important to note that these types of benchmarks will most likely be dependent on the newly developed (or
+    acquired) application code, thus making the system design's completion dependent on the progress of application
+    development.
+</p>
+<h4>
+    <br />
+    Technology Change Management Issues
+</h4>
+<p>
+    What will be new about this system for the users?&#160; For each category of user, including administration, operators,
+    and end users, identify:
+</p>
+<ul>
+    <li>
+        Are new technologies being introduced that may have training or acceptance issues (e.g., Web Browsers, hand held
+        devices)?
+    </li>
+    <li>
+        Does the organization have experience supporting the technologies being introduced?
+    </li>
+    <li>
+        Will there be significant skill gaps that need to be addressed?
+    </li>
+    <li>
+        Will integration with outsourcing organizations need to be managed?
+    </li>
+</ul>
+<h4>
+    <br />
+    Supplier Support Structure
+</h4>
+<p>
+    Understand the planned supplier support structure.&#160; In most situations, there are some readily identifiable
+    suppliers or third parties supporting the client's IT systems.&#160; The new system might need some elements of support
+    that are not currently provided by them.&#160; Identify issues that may be due to:
+</p>
+<ul>
+    <li>
+        Suppliers' technical skills, strengths and weaknesses
+    </li>
+    <li>
+        Engineering manpower and geographic coverage
+    </li>
+    <li>
+        Second level support for above
+    </li>
+    <li>
+        Commitment to supporting this project from the above groups and executives.
+    </li>
+    <li>
+        Support across national boundaries
+    </li>
+</ul>
+<h4>
+    <br />
+    Understand Implementation Dependencies
+</h4>
+<p>
+    On what will successful implementation of the system depend?&#160; Are there any events, systems, people, etc., which
+    constitute dependencies for this system?&#160; For example:
+</p>
+<ul>
+    <li>
+        Other systems or facilities that must be implemented or modified before this one
+    </li>
+    <li>
+        Availability of key client and supplier personnel
+    </li>
+    <li>
+        Availability of new products or services
+    </li>
+    <li>
+        Financing being made available
+    </li>
+    <li>
+        Key processes not under direct client control.
+    </li>
+    <li>
+        The delivery of software in the form of a packaged application solution especially a release with new or bespoke
+        function.
+    </li>
+</ul>
+<p>
+    Create a rough-cut critical route analysis of the dependencies upon architecture activities and deliverables.
+</p>
+<h4>
+    <br />
+    Cost Constraints
+</h4>
+<p>
+    What cost constraints are placed on this system?&#160; Document any explicit cost limits stated in the
+    requirements.&#160; Consider especially, costs associated with:
+</p>
+<ul>
+    <li>
+        Development and testing
+    </li>
+    <li>
+        System management
+    </li>
+    <li>
+        Initial hardware and software
+    </li>
+    <li>
+        Running and maintenance
+    </li>
+</ul>
+<p>
+    <br />
+    If cost limits have been stated, are they reasonable?&#160; From the initial transaction and sizing data, perform a
+    very gross sizing of this system.&#160; Perform a rough costing exercise, and compare the result with the expected
+    benefits.
+</p>
+<h4>
+    <br />
+    Expected Benefits
+</h4>
+<p>
+    What are the expected benefits for this system?&#160; Is there a Return on Investment assumption?&#160; It is useful to
+    understand what types and size of benefits the client is expecting from this system.&#160; This will provide you a
+    better perspective on the relative importance of certain processes and capabilities, as you make design choices.&#160;
+</p>
+<h4>
+    <br />
+    Reasonable Transaction Volumes and Service Requirements?
+</h4>
+<p>
+    Does a baseline of volumetric and service level information exist which can be used to develop the architecture?&#160;
+    Important volumetric information needed to support architecture development include:
+</p>
+<ul>
+    <li>
+        Transaction rates
+    </li>
+    <li>
+        Number of concurrent users
+    </li>
+    <li>
+        User and transaction distribution by geographic locations
+    </li>
+    <li>
+        Processing peaks
+    </li>
+    <li>
+        Service hours
+    </li>
+    <li>
+        Out of service allowance
+    </li>
+    <li>
+        Response times (best case, worst case, average expectation)
+    </li>
+</ul>
+<p>
+    <br />
+    Are the transaction volumes and service requirements reasonable?&#160; Can they be supported by the targeted
+    technology?&#160; Do you believe that the end users would, or could, generate transactions at the&#160;rate
+    specified?&#160; As a start, divide the number of transactions per day, or hour, by the number of users and see if it
+    seems reasonable.
+</p>
+<h5>
+    <br />
+    Reasonable Data Volumes?
+</h5>
+<p>
+    Are the data volumes reasonable?&#160; Can they be held on currently available systems, or, if the requirements lead
+    you to believe a workstation or departmental system will be part of the design, can the data reasonably be held
+    there?&#160; Ensure that important data volumetric are being captured to support the architecture development.
+</p>
+<ul>
+    <li>
+        Data volumes to be converted to new system
+    </li>
+    <li>
+        Data volume by projected table or subject area
+    </li>
+    <li>
+        Growth rates
+    </li>
+    <li>
+        Update rates
+    </li>
+    <li>
+        Recovery turn around
+    </li>
+    <li>
+        &#160;Data distribution by geographic location
+    </li>
+    <li>
+        Data transmission volumes over network connections
+    </li>
+    <li>
+        Archival and retention requirements
+    </li>
+</ul>
+<h5>
+    <br />
+    Client Risk Willingness
+</h5>
+<p>
+    All requirements have to be weighed with regards to the client's willingness to accept risks.
+</p>
+<ul>
+    <li>
+        Will the customer tolerate budget, technical or schedule risk to achieve project benefits?
+    </li>
+    <li>
+        Is the client culture conservative or decision-making?
+    </li>
+    <li>
+        &#160;Is the client willing to commit to new technology and products?
+    </li>
+</ul>
+<h4>
+    Unusual or Challenging?
+</h4>
+<p>
+    <br />
+    What is unusual or challenging about this system?&#160; Try to identify characteristics of the system that might make
+    it difficult to implement and therefore will raise the risk that the system will fail to meet its objectives.&#160; Use
+    this as a means to summarize the findings for the risk areas examined so far.&#160; Examine the following areas for
+    potential problems.&#160;<br />
+    &#160;
+</p>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr bgcolor="#CCCCCC">
+            <td valign="top" width="190">
+                <p>
+                    <strong>Review Area</strong>
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    <strong>Risk Factors</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Size and scale
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    Large numbers (many thousands) of transaction, data volumes or components will be difficult for the
+                    targeted technology to support.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    New or untried products, services or technologies
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    Completely new and unproven hardware, software, or techniques, or not used before in this environment.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Unusual application requirements
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    For example, multimedia or distributed data applications on which the system design and application
+                    design both have a high impact. Application designs will be challenging and require expert engineering.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Complexity
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    Multiple sub-architectures, or many suppliers' components, or an unusually complex system structure.
+                    These will make it more difficult to design and implement.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    External interfaces
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    Interfaces to other systems, including those outside the enterprise that may not exist or may need
+                    changes. Also, connections across national boundaries where infrastructure or regulation will impede
+                    implementation.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Availability and security
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    Exceptionally challenging availability or security requirements, such as "the system must never fail."
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Unreasonable Expectations
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    Client is over optimistic about the benefits to be derived from the technical solution. May be
+                    infatuated with technology to the determination of business objectives.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Inexperienced End Users
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    The public and users who have little or no previous IT experiences. These could be mobile users.
+                    Possible acceptance issues which pose risk to implementation and end user satisfaction.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Implementation time scales
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    Short and inflexible target dates. If, for example, 10,000 users need to be trained in three months,
+                    then this represents a challenge to most enterprises.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Development Readiness
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    New or untried development tools or targeted platforms. Lack of defined development processes. Risk due
+                    to instability of development environment, or lack of readiness.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Development Skills
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    Skills of development team do not match the requirements of the proposed technical solution.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Development challenges
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    Increased complexity or risk of failure due to the size of the application or the newness of the
+                    technology.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    Budget Limitations
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    The system must be delivered at a fixed cost or be subject to cancellation in the event of particular
+                    budget conditions.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="190">
+                <p>
+                    National Language Support
+                </p>
+            </td>
+            <td valign="top" width="432">
+                <p>
+                    NLS factors are challenging
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<h4>
+    Completeness of Requirements
+</h4>
+<p>
+    Assess the completeness of the requirements.&#160; Are there major areas of requirements that have not been defined,
+    but should have been by this point in the project?&#160; Identify which requirements are missing, and how and when
+    these missing requirements might be obtained.&#160; For instance:
+</p>
+<ul>
+    <li>
+        &#160;Initiate a subproject to gather them
+    </li>
+    <li>
+        Gather them as part of the application development process
+    </li>
+    <li>
+        Have a business transformation team (business reengineering) provide them.
+    </li>
+    <li>
+        Develop a prototyping to provide them.
+    </li>
+</ul>
+<p>
+    <br />
+    Comment upon the stability (are they likely to change) of the requirements.&#160; Activities such as a business
+    transformation exercise or a prototyping project are inherently ‘volatile' because they explore new ways-and-means of
+    doing business and tasks.&#160; This means that they may change a requirement (say a set of business processes or the
+    order that they are executed) while the architecture and design effort is proceeding.
+</p>
+<p>
+    All of this apparent uncertainty of requirements is increasingly common in modern system developments. To summarize,
+    consider the following about the requirements:
+</p>
+<ul>
+    <li>
+        Complete?
+    </li>
+    <li>
+        Will be complete?&#160; (From where will the information come?)
+    </li>
+    <li>
+        Stable?&#160; (What is likely to change?)
+    </li>
+    <li>
+        Are your assumptions reasonable?
+    </li>
+    <li>
+        Are they verifiable?
+    </li>
+</ul>
+<h3>
+    Assessment of Conceptual-level Architecture Models
+</h3>
+<h4>
+    Architecture Context
+</h4>
+<p>
+    Verify that the architecture support the client's and project's goals and directions:
+</p>
+<ul>
+    <li>
+        Does the client have a strategic IT Architecture that needs to be followed?
+    </li>
+    <li>
+        Does the Architecture support the client's principles and standards?
+    </li>
+    <li>
+        Does the Architecture support project goals and contractual requirements (e.g., are performance guarantees
+        stipulated)
+    </li>
+    <li>
+        What assumptions were made about the activities, work products and funding of the Architecture group in the
+        contract?&#160; Are these reasonable considering the technical problems to be solved?
+    </li>
+    <li>
+        How does the project scope define the boundaries of the Architecture?
+    </li>
+</ul>
+<h4>
+    <br />
+    Architecture Overview
+</h4>
+<p>
+    Review the conceptual architecture as documented in the Architecture Overview artifact.&#160; Address the following
+    items or questions:
+</p>
+<ul>
+    <li>
+        Are some conceptual nodes going to be more challenging than others are?&#160; Which ones and why?
+    </li>
+    <li>
+        Order of development and implementation of conceptual nodes?
+    </li>
+    <li>
+        Have all connection types been identified?
+    </li>
+    <li>
+        At a high level, do we understand the dynamic behavior of the system and inter-node communications?
+    </li>
+    <li>
+        Are the major software components identified?
+    </li>
+    <li>
+        Have system interfaces, both internal and external been identified?
+    </li>
+    <li>
+        Are the user groups and remote locations identified?
+    </li>
+    <li>
+        Have the architects prematurely made technology or product decision before understanding the requirements fully?
+    </li>
+    <li>
+        Are the major architectural decisions that have to be made been identified?
+    </li>
+    <li>
+        Have reusable assets such as Reference Architectures been considered?
+    </li>
+    <li>
+        Is there a plan for the project's architectural activities?&#160; Does the plan support:&#160;
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;The scope of the stated conceptual architecture?
+            </li>
+            <li>
+                &#160;The architecture decisions that have to be made
+            </li>
+            <li>
+                &#160;Work products that have to be produced?
+            </li>
+            <li>
+                &#160;Any contractual obligations (deliverables, service level attainment)?
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4>
+    <br />
+    Migration and Integration Issues
+</h4>
+<p>
+    Are there any major migration and integration issues with this architecture or design as it now stands?
+</p>
+<ul>
+    <li>
+        From an existing system that it might be replacing?
+    </li>
+    <li>
+        From an existing system that it might be enhancing?&#160; Take special care when trying to interface network or
+        pervasive computing system components to systems that were never designed to embrace them.
+    </li>
+    <li>
+        Does it fit in with existing systems?&#160; If no, can these be changed to fit in with it?
+    </li>
+    <li>
+        Considerations for data conversion or creation.
+    </li>
+    <li>
+        If the system must handle requirements for a Version 1 and a Version 2 of the system, will the system be capable of
+        being migrated from Version 1 to Version 2?
+    </li>
+    <li>
+        Access to archive data, especially if protected cryptographically.<br />
+        Few systems are ever installed into a "green field" so its important to identify other systems or environments
+        affected by the deployment of this system.&#160; Ask the question "Is migration to this new system possible and
+        reasonable?"&#160;
+    </li>
+</ul>
+<h4>
+    <br />
+    System Testing Strategy
+</h4>
+<p>
+    Identify how this system will be tested.&#160; Complex systems must be tested in parts, and then the parts integrated
+    and the complete system tested.<br />
+    Show whether the testing of this system will need special attention in later phases.&#160; For example, if multiple
+    workstation conceptual nodes are to be installed, you will need to test functions of the workstation, its connections,
+    performance and system management (including software and data distribution).&#160; When identifying such tests, bear
+    in mind operational and scheduling constraints and stress testing conceptual nodes.
+</p>
+<h4>
+    <br />
+    Special Design Skill Requirements
+</h4>
+<p>
+    Consider especially what special skills are needed to continue the design process.&#160; These might be:
+</p>
+<ul>
+    <li>
+        Knowledge of unfamiliar or special hardware or software
+    </li>
+    <li>
+        Knowledge of an application package
+    </li>
+    <li>
+        Special industry knowledge
+    </li>
+    <li>
+        An exceptionally large design tea
+    </li>
+    <li>
+        A multinational, dispersed, design team
+    </li>
+    <li>
+        Network computing skills
+    </li>
+    <li>
+        Exceptional security requirements
+    </li>
+    <li>
+        Object technology
+    </li>
+    <li>
+        System Management expertise
+    </li>
+    <li>
+        e-business
+    </li>
+</ul>
+<h4>
+    <br />
+    Training for Users and Operators
+</h4>
+<p>
+    What type of training or retraining is required for users and operators of this system?&#160; At this stage you
+    probably don't know exactly what the users and operators of the system are going to do.&#160; But you may have some
+    strong indications from the requirements what the skill levels of the operators are, for example:
+</p>
+<ul>
+    <li>
+        Bank clerks
+    </li>
+    <li>
+        Supermarket checkout operators
+    </li>
+    <li>
+        Shop floor workers
+    </li>
+    <li>
+        Secretaries
+    </li>
+    <li>
+        Graduate engineers.
+    </li>
+    <li>
+        Mobile users
+    </li>
+    <li>
+        The IT organization
+    </li>
+</ul>
+<p>
+    <br />
+    It is useless to expect operators to work the system if they cannot be trained within a reasonable time and at a
+    reasonable cost.&#160; If they cannot, the system design is not reasonable and needs to be altered.
+</p>
+<h5>
+    <br />
+    Cost Violations?
+</h5>
+<p>
+    Are there likely to be any obvious cost violations from this design?&#160; For example:
+</p>
+<ul>
+    <li>
+        User workstation costs far exceed suggested costs per unit in requirements.
+    </li>
+    <li>
+        Estimated costs of one host computer exceed cost maximum shown in requirements.
+    </li>
+</ul>
+<p>
+    <br />
+    Note:&#160; It will not be possible to determine system cost since all the components will not be decided yet.&#160;
+    But major exceptions from the assumptions made in the contract should be identified as soon as possible and stated as
+    issues or project change requests.
+</p>
+<h4>
+    <br />
+    Benefits Still Achievable?
+</h4>
+<p>
+    Consider whether any of the benefits you identified previously might now be unachievable as a result of any design
+    decisions you have made.&#160; If so, document these, and ensure that a strategy is in place to address the
+    issues.&#160; Escalate to project management if needed.
+</p>
+<h4>
+    <br />
+    Design Competitiveness
+</h4>
+<p>
+    Check that the solution design is competitive.&#160; The design may not be the only choice open to the client.&#160;
+    There may be other choices offered by groups within the client's organization, or by external bodies.&#160; These may
+    not even be based on a computing solution; they may be business-based such as selling part of the enterprise instead of
+    upgrading its computing systems.
+</p>
+<h4>
+    <br />
+    New and Unusual Characteristics
+</h4>
+<p>
+    Assess what might be unusual about this system and its design.&#160; Is there anything that would require special
+    attention such as extra project management or risk analysis effort?&#160; Considerations include:
+</p>
+<ul>
+    <li>
+        Many new and untried component types
+    </li>
+    <li>
+        Many thousands of components
+    </li>
+    <li>
+        Many thousands of end-user operators
+    </li>
+    <li>
+        International scope, especially NLS and communications considerations
+    </li>
+    <li>
+        This system design will cause other connected systems to require a significant change/upgrade
+    </li>
+    <li>
+        This system must never fail
+    </li>
+    <li>
+        &#160;The public at large are its users
+    </li>
+    <li>
+        The end users are highly mobile
+    </li>
+    <li>
+        Do you know of any other systems similar to this?
+    </li>
+    <li>
+        Are there any special safety considerations for the system users or the system components as you can now see them?
+    </li>
+</ul>
+<h4>
+    <br />
+    Feasibility
+</h4>
+<ul>
+    <li>
+        Is it possible to design, implement, and run this system?&#160; Some systems are just too huge or complex to ever
+        work properly.&#160; Is this one of those?
+    </li>
+    <li>
+        &#160;Is undue risk being introduced through the use of unproven technology?
+    </li>
+    <li>
+        &#160;Do you need to recommend that a prototype of this application be built to ensure that:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;The system flows are possible?
+            </li>
+            <li>
+                &#160;The system can be programmed?
+            </li>
+            <li>
+                &#160;The design matches end-user skills and expectations
+            </li>
+            <li>
+                &#160;Products work as advertised?
+            </li>
+            <li>
+                &#160;The system operators can operate the system?
+            </li>
+        </ul>
+    </li>
+    <li>
+        Is the overall complexity of this system so great that those who come into contact with it can never comprehend
+        it?&#160; Once again absolute answers are difficult to formulate, but if you suspect the answer to this question is
+        "Yes," develop a plan of action.&#160; Possible mitigation approaches may include:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;Implementing incrementally
+            </li>
+            <li>
+                &#160;Finding a package
+            </li>
+            <li>
+                &#160;Removing functionality from scope
+            </li>
+            <li>
+                &#160;Negotiating reductions in service levels, performance objectives or availability
+            </li>
+            <li>
+                &#160;Simplifying the design
+            </li>
+            <li>
+                &#160;Removing the "leading edge" aspects in favor of more proven solutions
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3>
+    Assessment of Logical Architecture Models<br />
+</h3>
+<h4>
+    Support Functions
+</h4>
+<p>
+    Specify the new support functions identified by the system design.
+</p>
+<p>
+    At this point of the process a number of "application-like" functions have been identified which in reality serve no
+    business function, but rather support the operability of the system.&#160; For example:
+</p>
+<ul>
+    <li>
+        Database (DB) design changes and accesses to support mass processing
+    </li>
+    <li>
+        Logical DB recovery
+    </li>
+    <li>
+        Detection of failure, either at the system or application component level.&#160; This latter is especially
+        important in widely distributed applications such as LAN-connected workstation systems.
+    </li>
+    <li>
+        Support of mobile users<br />
+        Common services to multiple applications also should be identified:
+    </li>
+    <li>
+        Operating functions such as start up and shut down
+    </li>
+    <li>
+        Single logon to all applications
+    </li>
+    <li>
+        Backup, archiving and restore of data
+    </li>
+    <li>
+        Data staging services to import / export data:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;Event control and work flow of business processes
+            </li>
+        </ul>
+    </li>
+    <li>
+        Mandatory flow control
+    </li>
+    <li>
+        Asynchronous events handling
+    </li>
+    <li>
+        Application level exception processing:
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;Monitor functions
+            </li>
+        </ul>
+    </li>
+    <li>
+        Logical error handling
+    </li>
+    <li>
+        Persistence
+    </li>
+    <li>
+        Hooks to monitor availability and performance
+    </li>
+</ul>
+<p>
+    At this point you should verify that sufficient information has been collected at the functional logical level in order
+    to:
+</p>
+<p>
+    1.&#160;Proceed with the detailed design regarding the use of these facilities<br />
+    2.&#160;Ensure that these features are incorporated in the component model<br />
+    3.&#160;Pass the specifications to Application Developers for inclusion into the development process
+</p>
+<p>
+    In arriving at the present architecture models and application models several assumptions may have been made regarding
+    the feasibility of certain software facilities and interactions.&#160; Some of these facilities and interactions will
+    be provided by system control software but others may have to be provided by application programming.&#160; For
+    example:
+</p>
+<ul>
+    <li>
+        Application cannot forward messages so it has to perform stand-in processing
+    </li>
+    <li>
+        Application can tolerate parts of a DB being "corrupt"
+    </li>
+    <li>
+        Check with the Application Development process team (program designers) that these functions can be provided.<br />
+    </li>
+</ul>
+<h5>
+    Prototype
+</h5>
+<p>
+    If the system, or part of it, looks particularly challenging, especially regarding end user operation and acceptance,
+    it may be necessary to build a "proof of concept" prototype.&#160; Proof of concept prototypes is also a good practice
+    to test and validate any unknowns about the design and/or development environment.&#160; For example, a proof of
+    concept prototype could be used to confirm / test that a message queuing between a workstation and the central host
+    will work, give the required performance, and maintain integrity when the cable is pulled.
+</p>
+<p>
+    Remember that if your application development (AD) environment is new, you may wish to prototype it.&#160; For example,
+    you may wish to set it up and try developing a small application, as proof-of-concept that the components of the AD
+    environment will actually fit together and perform at the required level.&#160; Be aware that prototypes need to be
+    carefully controlled and thought out.&#160; If not, they can soon consume enormous amounts of resource.&#160; It is
+    important to remember that a prototype is testing particular aspects of the system solution, and that it may be missing
+    other features necessary for the system to meet client expectations.&#160; Thus, avoid the danger of letting a
+    prototype become the real system to satisfy schedule constraints and end user demands.&#160; Realize also that the
+    prototype should be evaluated and how much effort it will take to do the prototyping.
+</p>
+<h4>
+    <br />
+    Development Resources
+</h4>
+<p>
+    Define the development resources required for the infrastructure of each node, for connections between functions, and
+    for testing.<br />
+    Note that the development environment may already have been defined.&#160; If so, determine if any of the newly defined
+    system function creates additional requirements.&#160; Add more detail on:
+</p>
+<ul>
+    <li>
+        Specific hardware functions to be supported
+    </li>
+    <li>
+        Data management/creation
+    </li>
+    <li>
+        Connections required for testing
+    </li>
+    <li>
+        Specific compilers/tools required
+    </li>
+    <li>
+        Number of developers required.
+    </li>
+</ul>
+<h4>
+    <br />
+    Implementation Dependencies
+</h4>
+<p>
+    On what will successful implementation of the system depend?&#160; Reconsider what has changed appeared or disappeared.
+</p>
+<h4>
+    Significant Changes?
+</h4>
+<p>
+    Assess the impact of these changes on the schedule for implementation of the system, rejecting any alternatives that
+    cannot be implemented within the schedule.&#160; For example,
+</p>
+<ul>
+    <li>
+        &#160;The first use of network or pervasive computing
+    </li>
+    <li>
+        The first use of PWS
+    </li>
+    <li>
+        The first use of mobile technologies or the Internet
+    </li>
+    <li>
+        Distributed systems
+    </li>
+    <li>
+        Changes of scale, such as increasing the numbers of users from hundreds to thousands
+    </li>
+    <li>
+        Providing a service to users outside the organization for the first time
+    </li>
+    <li>
+        Providing service to users/businesses in other countries.<br />
+        Remember that real people have to use this system.&#160; If your design is a radical change for the people or for
+        the organization, they simply might not be able to absorb the rate of change, and the system would not be used as
+        intended, or deliver the expected benefits.
+    </li>
+</ul>
+<h4>
+    <br />
+    Major Cost Headings
+</h4>
+<p>
+    Summarize the major cost headings.&#160; As the cost model coalesces, is it still in line with proposal
+    assumptions?&#160; Start to fill in the major items under headings including:
+</p>
+<ul>
+    <li>
+        &#160;Initial implementation
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;Hardware
+            </li>
+            <li>
+                &#160;Software such as package
+            </li>
+            <li>
+                Physical installation
+            </li>
+            <li>
+                &#160;Development and system test
+            </li>
+            <li>
+                &#160;Development of system management functions
+            </li>
+            <li>
+                &#160;Acceptance test/pilot running
+            </li>
+            <li>
+                &#160;Mass implementation
+            </li>
+        </ul>
+    </li>
+    <li>
+        Ongoing operation
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;Operating and support staff
+            </li>
+            <li>
+                System maintenance - application maintenance staff and facilities
+            </li>
+            <li>
+                &#160;Hardware and software maintenance
+            </li>
+            <li>
+                &#160;Communications
+            </li>
+            <li>
+                &#160;Software licenses
+            </li>
+            <li>
+                &#160;Environmental costs
+            </li>
+        </ul>
+    </li>
+    <li>
+        Expansion and growth
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;Hardware
+            </li>
+            <li>
+                &#160;Software rework/amendment
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    <br />
+    Although the data may not be fully available its useful to build a framework that can be completed in the later
+    phases.&#160; Raise issues where cost assumptions may be exceeded (see item below).
+</p>
+<h4>
+    Within the Budget?
+</h4>
+<p>
+    Is the system still within the budget?&#160; Has the workload increased or are the component and operational models
+    defined significantly complex to the point where the planned budget will not be large enough for typical product
+    solutions?&#160; For example, if the budget is based on an average cost of 5,000 dollars per user, can the function be
+    provided in user workstations (and/or host systems) that cost no more than 5,000 dollars per user?&#160; Bear in mind
+    that there may be trade-off between capital equipment costs and development or operating costs that also need to be
+    taken into account.
+</p>
+<h4>
+    <br />
+    Benefits Still Achievable?
+</h4>
+<p>
+    Are the benefits still achievable?&#160; Do not spend long on this question, but consider whether any of the benefits
+    previously reviewed might now be unachievable as a result of any design decisions made.&#160; If so, document these,
+    and ensure that the sponsor understands it.
+</p>
+<h4>
+    <br />
+    Acceptability of System
+</h4>
+<p>
+    Is the shape of the system acceptable to the client?&#160; Has it changed to the point where it no longer matches what
+    the client wishes to buy?&#160; Will they think it is too large and complex for the applications or services they want
+    to run?&#160; Will the system sponsor be able to "sell" the system to the intended users?&#160; Can the service levels
+    for the end users be met?&#160; Given the revised data and function placement strategy and infrastructure support
+    functions, can the service levels that the users require of the business processes be met?
+</p>
+<p>
+    <br />
+    Reasonable Design?
+</p>
+<p>
+    Check this system design for reasonableness.&#160; Examples of why this system might not be reasonable could include:
+</p>
+<ul>
+    <li>
+        Too complex
+    </li>
+    <li>
+        Too advanced
+    </li>
+    <li>
+        Too costly
+    </li>
+    <li>
+        Unmanageable
+    </li>
+    <li>
+        Unprogrammable
+    </li>
+    <li>
+        Unsupportable
+    </li>
+    <li>
+        Needs technology that is not available or could not be developed
+    </li>
+    <li>
+        Too challenging a time scale for implementation.
+    </li>
+</ul>
+<h4>
+    Character of the System
+</h4>
+<p>
+    Review the character of the system.&#160; Check that the targeted infrastructures still comply with the architecture:
+</p>
+<ul>
+    <li>
+        Has their character changed significantly?
+    </li>
+    <li>
+        Can the processing centers handle new workload?
+    </li>
+    <li>
+        Are new infrastructure components sufficiently sized?
+    </li>
+    <li>
+        Are the LANs and WANs defined in the system architecture well matched to the traffic they have to carry?
+    </li>
+</ul>
+<p>
+    <br />
+    If necessary identify the reasons why the system design and the architecture do not match.&#160; Have the requirements
+    really changed as the design was developed, or did the design not pay enough attention to the architecture?&#160; Plan
+    whether the architecture is to be changed or the system design is to be reworked.
+</p>
+<p>
+    <br />
+    Will any of these issues affect the availability of the new system?&#160; For example, if the new system is to run on
+    an existing processor, operating system image, or network configuration, are the availability characteristics of the
+    existing platform consistent with the requirements of the new system?&#160; Include environmental maintenance and
+    physical constraints such as ATM or printer hopper capacities in this evaluation.
+</p>
+<h3>
+    Assessment of Physical Architecture Models
+</h3>
+<h4>
+    Verify Disaster Recovery Design
+</h4>
+<p>
+    Verify the components of the disaster recovery and associated nodes and connections.&#160; Consider the components of
+    the disaster recovery node(s) and also any support components in the node(s) being protected by the disaster recovery
+    node(s).&#160; The disaster recovery site has to be kept in step with the normal business system, if it is to be able
+    to take over the processing in the event of a disaster.&#160; The requirements should have told you how up-to-date the
+    disaster recovery site must be.&#160; Perhaps it is sufficient to take backup tapes over to the disaster recovery site
+    at regular intervals.&#160; However, some designs may require more recent data.&#160; Perhaps there is a need for
+    functions to "collect" any changes to key data records or files, and then transmit these changes via some "sender"
+    function, to a "catcher" function in the disaster recovery site.&#160; Check the design for:
+</p>
+<ul>
+    <li>
+        The existence of collector, sender, and catcher software components
+    </li>
+    <li>
+        Adequate processing and storage capacity at the disaster recovery node (note that the disaster recovery node may
+        have its own regular workload)
+    </li>
+    <li>
+        The existence of satisfactory connections
+    </li>
+    <li>
+        The means for the switch-over of the network (if required)
+    </li>
+</ul>
+<h4>
+    <br />
+    New Support Functions?
+</h4>
+<p>
+    Review the list of new support functions, and check whether there have been any changes, additions or deletions.<br />
+    Identify which functions cannot be provided by the components selected (i.e. no reasonable match is available on the
+    market).&#160; Then decide whether:
+</p>
+<ul>
+    <li>
+        You have to return to the use case model, analysis models or design models to reassess the need for the specific
+        facility.&#160; It is likely that by slightly changing the design or easing up on the requirements the need for
+        this facility disappears.
+    </li>
+    <li>
+        You have halt the system design process and request a review with the executive sponsor.
+    </li>
+</ul>
+<h4>
+    <br />
+    Additional Development Facilities?
+</h4>
+<p>
+    Define any additional development facilities:
+</p>
+<ul>
+    <li>
+        What new tools will be used to develop and test the new system?
+    </li>
+    <li>
+        What new skills will be needed?
+    </li>
+    <li>
+        How will these be acquired - retraining existing staff or hiring new?
+    </li>
+    <li>
+        How long will it take to create the development environment?
+    </li>
+    <li>
+        How much of the development environment will need to be retained for ongoing system maintenance?
+    </li>
+    <li>
+        Have the development functions been assigned to nodes?&#160; Included in the sizing data?
+    </li>
+    <li>
+        Have the connections between the development and production environments been defined in the system specification?
+    </li>
+</ul>
+<h4>
+    <br />
+    Skills and Training
+</h4>
+<p>
+    Identify the skills and training that will be required for end users, operators, and support staff.
+</p>
+<p>
+    Now that specific components with which the system will be implemented have been determined, update the training
+    assessment that was created previously, and identify any new skills that will be required on the part of end users,
+    operators, and support staff.&#160; Based on this, identify the specific training that will be required for each group
+    (end users, operators, support staff) and potential sources of that training (in-house education staff, vendor-provided
+    training, etc).&#160; Do not forget any National Language Support considerations.&#160; Determine if benchmarking of
+    parts of this infrastructure is necessary.&#160; Some clients might call these proving or certification trials.&#160;
+    Benchmarks may have been called for by the client's acceptance process.&#160; A benchmark may also be needed if mapping
+    the largest node's workload onto the selected components created a borderline capacity projection.&#160; On the other
+    hand, even if the client's acceptance process normally calls for a benchmark, the projected loading level for the
+    selected components may be sufficiently low to convince the client that a benchmark is not actually needed.
+</p>
+<p>
+    <br />
+    If a benchmark is needed, that recommendation should be made now, in order to allow time for preparations and to guide
+    activity in the Infrastructure Components phase.
+</p>
+<h4>
+    <br />
+    Identify Possible Product Sources
+</h4>
+<p>
+    Identify possible sources for the products selected including client- and vendor-developed products.&#160; Do suppliers
+    and products have to support certain criteria and standards?&#160; What is more important to success, use of emerging
+    technologies for optimum solutions or proven concepts?&#160; Vendor selection should be based on two criteria:
+</p>
+<ul>
+    <li>
+        Technical aspects.
+    </li>
+    <li>
+        Non-technical aspects such as presence and support in the country, market acceptance, and the likelihood they will
+        be around in the future.<br />
+    </li>
+</ul>
+<p>
+    Remember that some clients might prefer the purchasing department to make the final choice of supplier for certain
+    types of component.
+</p>
+<p>
+    <br />
+    4.6&#160;Refine Cost Figures
+</p>
+<p>
+    <br />
+    Refine the costing.&#160; Check whether the system design already has exceeded its budget.&#160; Check whether the
+    design is still competitive.&#160; For a system with few different types of nodes, a quite accurate estimate can be
+    made.&#160; For a system with many nodes of different sizes, accurate costing will be possible only after the design is
+    complete.<br />
+    Add more detailed headings to the cost summary you started earlier.&#160; Remember to consider:<br />
+    •&#160;Maintenance<br />
+    •&#160;Development<br />
+    •&#160;Operations<br />
+    •&#160;Communications facilities<br />
+    •&#160;Personnel<br />
+    •&#160;Space, power, and other facilities<br />
+    •&#160;Supplies<br />
+    •&#160;Education.
+</p>
+<h4>
+    <br />
+    Additional Product Benefits
+</h4>
+<p>
+    Review the selected components for additional potential benefits to the client beyond those they explicitly stated in
+    the requirements.&#160; Plan how they are to be treated in evaluating the alternative designs.&#160; Can the benefits
+    be added to the system evaluation criteria?&#160; Can the benefits be used to assist the sponsor in selling the system
+    to others in the client organization?
+</p>
+<h4>
+    <br />
+    Benefits Still Achievable?
+</h4>
+<p>
+    Are the benefits still achievable?&#160; Do not spend long on this question, but consider whether any of the benefits
+    you previously reviewed might now be unachievable as a result of any design decisions that have been made.&#160; If so,
+    document and ensure that the sponsor understands it.<br />
+</p>
+<h4>
+    Ability to Deliver
+</h4>
+<p>
+    Review the system for reasonableness:
+</p>
+<ul>
+    <li>
+        Does the complexity of the system match the type of function it is designed to provide?
+    </li>
+    <li>
+        Does it match the skill and experience of its users?&#160; Of its operators?
+    </li>
+    <li>
+        Does it have too many (or non-complementary) architectures?
+    </li>
+    <li>
+        Does it have too many component types?
+    </li>
+    <li>
+        How effective is system-wide security?&#160; Do all the security components work together to provide protection?
+    </li>
+    <li>
+        Will the system meet its availability targets?
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                &#160;How many components have to be operational for the users to receive service?
+            </li>
+            <li>
+                &#160;How many staff will be involved in recovery from a failure?
+            </li>
+            <li>
+                &#160;How long will recovery take?
+            </li>
+            <li>
+                &#160;Are there enough components to ensure recovery?
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    <br />
+    Do the products and techniques on which the system is based match its expected life?&#160; An interim (tactical) system
+    with a short life can safely be built using old technology because it will soon be discarded.&#160; A system with a
+    long life expectancy (most systems) should be built on up-to-date technology and methods so it can be maintained and
+    expanded to support future requirements.
+</p>
+<h3>
+    <br />
+    Conducting the Risk Assessment
+</h3>
+<h4>
+    <br />
+    Risk Identification
+</h4>
+<p>
+    <br />
+    1.&#160;Start by hypothesizes on the possible risks using the results from the assessment steps.&#160; Test the
+    hypothesis.&#160; Find potential disconnects among the work products or within the architecture models.&#160; For
+    example, a disconnect would be a use case that is not reflected in the analysis model or an improper design
+    model.&#160; Once the disconnect is identified determine if it is the source of a risk or evidence of another hidden
+    problem. List the technical risks in the categories:
+</p>
+<ul>
+    <li>
+        High - will stop the project completely (critical)
+    </li>
+    <li>
+        Medium - might stop the project completely (potentially critical)
+    </li>
+    <li>
+        Low - a problem but not a critical one (nuisance)<br />
+    </li>
+</ul>
+<p>
+    By identifying a risk in any of the above categories you are signaling that you consider there is a reasonable
+    probability that the events that define the RISK might actually happen.&#160; You need to decide what ‘reasonable'
+    actually means in your context.&#160; Is it 10%, 30%, 50+%?&#160; You will need to take a consistent view so that you
+    don't cause confusion.
+</p>
+<p>
+    <br />
+    2.&#160;Look deeper into your identified risks as to how they might make the project and therefore the successful
+    delivery or running of your system, fail.
+</p>
+<ul>
+    <li>
+        &#160;It will not work at all
+    </li>
+    <li>
+        &#160;It will work with limited function, service, or benefits
+    </li>
+    <li>
+        &#160;It will work but will be delivered late
+    </li>
+    <li>
+        &#160;It will work but will cost too much to develop (often associated with late delivery as above), or operate
+    </li>
+    <li>
+        &#160;Some of the above may be acceptable and not represent a risk.
+    </li>
+</ul>
+<p>
+    <br />
+    3.&#160;Identify the high and critical risks and decide upon containment actions for them.&#160; This is an especially
+    appropriate action for a system design team to do.&#160; If the requirements are too difficult to understand do not
+    proceed with the design but do more work to clarify them.&#160; In particular identify those risks that need urgent
+    action.&#160; A risk may be graded as medium, but the need to deal with it may be much more urgent than a particular
+    high risk that will not stop the project for say a year.
+</p>
+<p>
+    4.&#160;Ensure that your issues list is updated with your new risk assessments, containment's, and urgency.
+</p>
+<p>
+    5.&#160;Communicate your risks and your plans.
+</p>
+<p>
+    6.&#160;Make sure your risks and their associated containment actions are communicated, where appropriate, to the next
+    phase of the design for that phase to work with them.&#160; If you do not have a risk containment plan for each risk
+    seek assistance.<br />
+</p>
+<h4>
+    Interview Guides
+</h4>
+<p>
+    The following guides provide key questions to assist in identifying risks.
+</p>
+<p>
+    <strong>Requirements</strong><br />
+    <br />
+    <br />
+</p>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="612" bgcolor="#CCCCCC">
+                <p>
+                    <strong>Interview Questions</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is there an official requirement statement and who approves it?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is the relationship between AD and users?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How are defined requirements verified in the design phase?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is the process to ensure a design element satisfies the requirement?
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    <strong>Technical Stability</strong>
+</p>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="612" bgcolor="#CCCCCC">
+                <p>
+                    <strong>Interview Questions</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What technology do you have installed today?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    When a failed component has to be replaced, does it require the complete network technology to be put
+                    out of commission?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Can you identify other projects that have successfully used similar technologies in the way defined by
+                    the component and operational models?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Are the interfaces described in the system context diagram using proven technologies?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is there a requirement for data synchronization? If yes, are there production references of a similar
+                    implementation?
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong>Technical Complexity</strong>
+</p><br />
+<br />
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="612" bgcolor="#CCCCCC">
+                <p>
+                    <strong>Interview Questions</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What types of application transactions are you running? (For example, functions shipping, remote
+                    procedure call, transaction routing, terminal applications)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    In your transaction manager environment, is load balancing required?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    In your transaction manager environment, what interface attachments are required? (For example, DB2,
+                    IMS, MQ Series)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is the request flow for applications in this environment? (For example, peer-to-peer, distributed,
+                    broadcast?)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is complex routing required?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Are there specific features required for this facility? (For example, guaranteed delivery, persistent
+                    data, time-outs, priorities)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    If messaging is used, what is the maximum message length for your application?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    If messaging is used, what is the maximum number of messages that can be stored on the queue at the
+                    same time (maximum queue depth)?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What object management framework is your using? (For example, COBRA, DCOM)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What languages does your ORB (Object Request Broker) need to support? (For example, Java, C++,
+                    Smalltalk, etc.)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is your philosophy for handling a mixed workload? (For example, each application on its own
+                    server, multiple applications on a bigger server)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What languages need to be supported in the future? Does the layer of business objects need to provide
+                    guaranteed responses?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Does the client have experience in implementing or supporting the technologies prescribed by the
+                    architecture? If no, how is that being addressed?
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    <br />
+    <br />
+</p>
+<p>
+    <strong>Technical Integrity</strong>
+</p>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="612" bgcolor="#CCCCCC">
+                <p>
+                    <strong>Interview Questions</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is your maintenance window for the system, application, database, and network?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do you need to support multiple concurrent users?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do you need all components continuously available?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is there a single point of failure in any component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How would a power outage affect your availability?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How do planned changes affect availability?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Are there single threaded areas that would impact concurrent users?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Can the components of your systems exploit SMP or cluster technology?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How would a breach in security affect availability?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Are there severity-based response time criteria for your vendor support?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Can this component take advantage of redundancy to improve its availability?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What are the performance objectives for this component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How can you verify that this component is meeting its performance objectives?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is there a threshold of performance degradation that would trigger changes to this system?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is performance to be measured at the source or at the destination?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How is the load to be generated for performance testing?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do you have any response time objective in your Service Level Agreements?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is your expected average and peak transaction rate?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is your average and peak utilization?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What tools do you use for performance monitoring, reporting and tuning?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How do you handle workload balancing across multiple servers?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How do you control the resources (for example, CPU, storage, DASD) used by individual users?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How is response time measured (for example, end-to-end or by individual component)?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Can your transaction be backed out if any failure occurs before its completion?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do you require two-phase commit?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What kind of serialization and locking mechanism are you using for database and distribution service
+                    components?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Does each interface in the process validate its input?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Does this component have built-in integrity checking?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Does each major step perform logging?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do you require time synchronization?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Are there any time dependencies in this component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is the granularity of backup and recovery?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How long is your backup window?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How long is your recovery window?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Can backup take place while the component is in use?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do you have any requirements for roll forward recovery, in this component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do you have any requirements for point-in-time recovery?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is this component responsible for its own recovery, or does it rely on an underlying component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How do you authenticate a user?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What controls exist to prevent unauthorized access?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What level of authentication is controlled?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What level of access control granularity do you require?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is third party authentication required?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is an audit trail required?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What level of regulated security is required?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What level of access control granularity do you require?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do any of your systems transmit user IDs and passwords in the clear across the network?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Are there any hard coded passwords in this component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is your security server centralized or distributed?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is the users' expectation of the availability, in hours, of this application?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How would this project affect the capacity of the client workstations?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How quickly do you need to respond to unexpected growth by changing capacity?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How quickly can you reallocate resources to handle unexpected workload?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is your rule of thumb on when to seek increased capacity?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How should this system react when you reach capacity?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do you have a help desk? If yes, do they support this component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do you have a centralized focal point for control of this component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How are problems reported and managed for this component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is there a problem determination procedure for this component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is your change control process?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Are there automated alert processing and notification functions within your components?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How do you distribute SW updates?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Are there any requirements to support multiple languages?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Have you had a security audit recently? If yes, what were the findings and how were they acted on?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Have you completed a process to remove unused or dormant IDs?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Are there reports for identifying repeated unauthorized access attempts? If so, are they followed up
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is there a limit on the number of systems that can share the password database?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What happens when the communication between the remote site is temporarily lost? How quickly would your
+                    security solution resynchronize the separate password databases?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Does this component offer translation between two different security mechanisms?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Can this security solution fully recover from a complete loss (corruption) of its primary password
+                    database? How long would it take, and has it been tested?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is there a documented process for creating new user ID's and groups? Who administrates it?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Is there a documented standard for your group structure?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Do you require data replication? If so, how current do you require the replicated data to be?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    If there is a disk failure, can the database continue to operate?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    If the database runs in a cluster, how will the loss of a node impact the database availability?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Can your database, tables, index be supported across multiple volumes?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is the maximum table size and database size for your application?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What are the transaction types in your application? (For example, adhoc or pre-planned, simple or
+                    complex queries, OLTP update)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Are there specific features required for this database? (For example, store procedure.)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    Does your database take advantage of the unique features of your host? (For example, workload manager,
+                    etc.)
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<p>
+    <strong>Architectural Qualities</strong>
+</p>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="612" bgcolor="#CCCCCC">
+                <p>
+                    <strong>Interview Questions</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is the maximum number of active users?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is the maximum number of connected users?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is the maximum number of defined users?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What growth rate do you anticipate?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How much transactional data is involved?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    How much repository data is involved?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is your philosophy for managing your increase in capacity? (For example, larger systems or more
+                    systems)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What does your client consider when identifying a cost-effective solution (such as the cost of
+                    software, hardware, availability, maintenance, scalability, manageability, services, and skills against
+                    the number of users)?
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<p>
+    <strong>Ability to Deliver</strong>
+</p>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="612" bgcolor="#CCCCCC">
+                <p>
+                    <strong>Interview Questions</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What is the team's experience in using the technologies prescribed by the architecture?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What skills do you currently have in this component area (e.g., Java, MQSeries, CORBA, CICS, etc?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What skills can you purchase for this component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What education and training is available in this component area?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612">
+                <p>
+                    What skills are missing for this project?
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<p>
+    <strong>Development Approach</strong>
+</p>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr bgcolor="#CCCCCC">
+            <td width="1">
+            </td>
+            <td valign="top" width="612">
+                <p>
+                    <strong>Interview Questions</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="1">
+            </td>
+            <td valign="top" width="612">
+                <p>
+                    What AD Methodology are you employing?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="1">
+            </td>
+            <td valign="top" width="612">
+                <p>
+                    Do you have documented application development methodology, guidelines, procedures, and/or standards
+                    manuals?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="1">
+            </td>
+            <td valign="top" width="612">
+                <p>
+                    What are the development phases of the your AD process?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="1">
+            </td>
+            <td valign="top" width="612">
+                <p>
+                    If it a full life cycle methodology (i.e., planning through production support and maintenance)?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Where is the greatest and least involvement of the business user in the process (i.e., requirements,
+                    design, testing, etc.)?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    What is the perceived business merit of the current methodology?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Why are you not currently using a methodology?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    What is the methodology basis (structured, IE, data/process, OO)?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    What automated tools do you use for AD?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    How are rapid delivery, incremental development, and prototyping handled by the methodology?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Does your methodology provide client server support or support for distributed applications?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Is there a process owner for the software process?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Who enforces standards and procedures?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Who does analysis?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Are design and code reviews coverage measured and recorded?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Is there a formal management process for determining if the prototyping of software functions is an
+                    appropriate part of the design process?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Is a mechanism used for ensuring traceability between the software top-level and detailed design?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Are internal software design reviews conducted?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Is a mechanism used for ensuring traceability between the software-detailed design and the code?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Are coding standards applied to the development project?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Are software code reviews conducted?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Is a mechanism used for configuration management of the software tools used in the development process?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Describe the checkout and check-in for source code?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Are the development environment defined and all components installed and operating?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    How do you manage testing within each component?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Does your test environment represent your production system? (For example, software release level,
+                    hardware, workload)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    Can processes associated with this component be automated? (For example, backup, log switch)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    How do you manage performance tuning within each component? (For example, hardware and software,
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    What naming standards exist in all component areas?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="612" colspan="2">
+                <p>
+                    What are your existing standards?
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><p/>Viability is typically re-assessed multiple times, as more information becomes available during the project lifecycle. The
+purpose of the technique paper is to provide additional guidance on the steps of assessing the viability of any of the
+following: business requirements, solution design, cutover to production and project delivery. The questions are intended
+to supplement those found in the Viability Assessment work product description. It is used as part of the overall process
+of performing a Viability Assessment. The guidance in this technique is organized in terms of four types of assessment
+conducted at various phases of the project: 
+<ul>
+    <li>
+        Assessment of the business requirements and constraints (section 1)
+    </li>
+    <li>
+        Assessment of the solution design (section 2)
+    </li>
+    <li>
+        Assessment of the cutover to production (section 3)
+    </li>
+    <li>
+        Assessment of the project delivery (section 4
+    </li>
+</ul><br />
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="95%">
+                <a href="./../../../core.tech.common.extend-ibm_int/guidances/guidelines/resources/AssessingViability.GIF" target="_blank"><img border="1"                 src="./../../../core.tech.common.extend-ibm_int/guidances/guidelines/resources/AssessingViability.GIF" width="450" /></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    The document sections are best applied to the project lifecycle as shown below, however, the practitioner is encouraged
+    to use all sections of the document they feel are relevant to the assessment.
+</p>
+<p>
+    <a href="./../../../core.tech.common.extend-ibm_int/guidances/guidelines/resources/AssessingViabilityv3-0.doc" target="_blank">AssessingViabilityv3-0.doc</a>
+</p>
+<p>
+    <a href="./../../../core.tech.common.extend-ibm_int/guidances/guidelines/./resources/AssessingViabilityv3-0.odt" target="_blank">AssessingViabilityv3-0.odt</a><br />
+    &nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Tue Aug 31 11:07:11 IST 2010</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

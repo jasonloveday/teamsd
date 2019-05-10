@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Estimation Considerations: Component Model</title>
+<meta name="uma.type" content="EstimationConsiderations">
+<meta name="uma.name" content="component_model">
+<meta name="uma.presentationName" content="Component Model">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_uUje4DfTEdy5uPLchEwddA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Estimation Considerations: Component Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/estimationconsiderations.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guidance discusses estimation considerations for component modeling.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Here are the main factors to consider when estimating how long it takes to develop a component model:
+</p>
+<ul>
+    <li>
+        How many scenarios are there for system use and what is their complexity?
+    </li>
+    <li>
+        How many business rules are there and what is their complexity?
+    </li>
+    <li>
+        How many non-functional requirements are there?
+    </li>
+    <li>
+        What is the level of knowledge of the staff involved? Have they done this kind of work before?
+    </li>
+    <li>
+        Is there any intellectual capital that can be reused? This includes both documentation and exiting components.
+    </li>
+    <li>
+        Are there any existing reference architectures or&nbsp;frameworks that can be utilized?
+    </li>
+    <li>
+        What modeling tools are available?
+    </li>
+    <li>
+        How many existing packages/components must be integrated with your system? Do these packages/components have well
+        defined and well documented interfaces?
+    </li>
+    <li>
+        To what level of completion do you plan to develop the Component Model? Do you plan to maintain it&nbsp;throughout
+        the subsequent life of the project?
+    </li>
+</ul>
+<p>
+    The table below gives some estimating guidelines for building a component model.
+</p>
+<p>
+    These guidelines assume the following:
+</p>
+<p>
+    1.&nbsp;Approximately 50 well documented scenarios for system use, or <strong>use cases</strong>. If your requirements
+    are not in use case format, add time to read the functional requirements and formulate scenarios for system use.&nbsp;
+</p>
+<p>
+    2.&nbsp;Each use case has an average of 8 steps; half the steps have one alternative.
+</p>
+<p>
+    3.&nbsp;An Enterprise level modeling tool is available that supports UML and allows multiple users to work on it.&nbsp;
+    A tool has a large impact on the effort involved. Developing a component model is not just a matter of creating a few
+    pictures with a drawing tool; it can be quite complex and time-consuming.&nbsp;A multi-user UML modeling tool with
+    configuration management capabilities greatly reduces the effort.
+</p>
+<p>
+    4.&nbsp;All architectural artifacts (business rules, requirements, components and interfaces) are organized with unique
+    identifiers. Identifiers allow you to make&nbsp;references between these artifacts without having to retype
+    information.
+</p>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr bgcolor="#CCCCCC">
+            <td valign="top" width="228">
+                <p>
+                    <strong>Step</strong>
+                </p>
+            </td>
+            <td valign="top" width="385">
+                <p>
+                    <strong>Estimating Considerations</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="228">
+                <p>
+                    Identifying&nbsp;candidate components
+                </p>
+            </td>
+            <td valign="top" width="385">
+                <p>
+                    Allow one day to review the input work products and define an initial set of components.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="228">
+                <p>
+                    Partitioning
+                </p>
+            </td>
+            <td valign="top" width="385">
+                <p>
+                    Plan half a day to one day to understand the business processes.
+                </p>
+                <p>
+                    Allow one day to read the requirements and identify the architecturally significant ones.
+                </p>
+                <p>
+                    For each architecturally significant use case, allow half a day to draw an initial component
+                    interaction diagram.&nbsp;
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="228">
+                <p>
+                    Structuring
+                </p>
+            </td>
+            <td valign="top" width="385">
+                <p>
+                    Allow half a day per use case to document the responsibilities of each component and identify any new
+                    components.
+                </p>
+                <p>
+                    Allow one day to review all non-functional requirements&nbsp;and associate them with components
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="228">
+                <p>
+                    Layering
+                </p>
+            </td>
+            <td valign="top" width="385">
+                <p>
+                    Allow half to one day to assign components to layers using a modeling tool.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="228">
+                <p>
+                    Defining component interfaces
+                </p>
+            </td>
+            <td valign="top" width="385">
+                <p>
+                    For each component, allow half a day to draw out the interfaces and specify the operation signatures.
+                    Allow a total of another two days to associate these interfaces with core types. This estimate includes
+                    verifying that&nbsp;all operations are capable of supporting the data types.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="228">
+                <p>
+                    Assigning business rules to components
+                </p>
+            </td>
+            <td valign="top" width="385">
+                <p>
+                    Allow one hour per business rule to specify which component(s) should handle that rule.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="228">
+                <p>
+                    Specifying components
+                </p>
+            </td>
+            <td valign="top" width="385">
+                <p>
+                    For each component, allow half a day to specify the component and all its interfaces with enough detail
+                    to begin design.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="228">
+                <p>
+                    Putting it all together
+                </p>
+            </td>
+            <td valign="top" width="385">
+                <p>
+                    Putting the architecture documentation into a readable form involves:<br />
+                    - Extracting the relevant diagrams from the modeling tool<br />
+                    - Writing additional supporting text<br />
+                    - Laying out the document and&nbsp;setting up cross references
+                </p>
+                <p>
+                    Allow 5-10 days for this activity, depending on the number of components and the required quality of
+                    the finished document.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Fri Dec 07 23:13:16 IST 2007</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

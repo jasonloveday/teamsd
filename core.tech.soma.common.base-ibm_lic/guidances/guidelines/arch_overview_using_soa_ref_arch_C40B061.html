@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Architecture Overview Using SOA Reference Architecture</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="arch_overview_using_soa_ref_arch">
+<meta name="uma.presentationName" content="Architecture Overview Using SOA Reference Architecture">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_WGCXkIPsEd-SjondPgnSQQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_WGCXkIPsEd-SjondPgnSQQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Architecture Overview Using SOA Reference Architecture</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">How to develop architecture overview using IBM SOA Reference Architecture aka IBM SOA Solution Stack?</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architecture_overview_7BDD690F.html" guid="mweb3072ED040425425485256882005791A4">Architecture Overview</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    IBM SOA Reference Architecture&nbsp;Solution View aka IBM SOA Solution Stack&nbsp; represent logical architecture
+    consisting of nine abstract&nbsp;layers - five horizontal layers and four vertical cross cutting layers. It provides a
+    blueprint to facilitate the definition and instantiation of the architecture for various levels of scope: the
+    ecosystem, an enterprise or a specific solution. It supports different kind of architectural styles including the SOA,
+    object-oriented, component based architecture, event-driven, and message-driven styles. The maturity of our clients
+    will indicate the combination of required architecture styles.&nbsp; The nine&nbsp;layers of the architecture&nbsp;are:
+</p>
+<ol>
+    <li>
+        Operational systems layer
+    </li>
+    <li>
+        Component layer
+    </li>
+    <li>
+        Services layer
+    </li>
+    <li>
+        Process layer
+    </li>
+    <li>
+        Consumer layer
+    </li>
+    <li>
+        Integration layer
+    </li>
+    <li>
+        Quality of service layer
+    </li>
+    <li>
+        Information layer
+    </li>
+    <li>
+        Governance layer
+    </li>
+</ol>
+<p>
+    The layered architecture is not strict meaning a particular layer can directly interact with any layers under it but
+    not the layers above it.
+</p>
+<p>
+    The introduction of services (or interface) layer in the logical architecture elevated the common notion of
+    "programming to interfaces instead of implementation"&nbsp;from programming model and from just being a concern for
+    developers to an&nbsp;architectural style and a new mantra for architects.
+</p>
+<p>
+    Layer 1 represents the operational layer of the architecture including&nbsp;infrastructure and operational systems
+    building blocks.
+</p>
+<p>
+    Layers 2-5 represents the various aspects of functional layers of the architecture such as components, services,
+    business processes, user interface, portals, channels etc.
+</p>
+<p>
+    Layers 6-9 represents non functional layers of the architecture in a nutshell. Typically products from IBM and other
+    vendors help to instantiate the architectural building blocks in these layers.
+</p>
+<p>
+    SOA Reference Architecture consists of a set of layers that
+</p>
+<ul>
+    <li>
+        Contain a set of <strong>attributes, responsibilities</strong>, and their associated <strong>rules</strong>.
+    </li>
+    <li>
+        Contain a set of <strong>architectural building blocks</strong> that reside in (or constitute) a layer and are
+        linked via a set of dependencies, associations and contracts
+    </li>
+    <li>
+        Capture the set of <strong>options</strong> available at each layer that capture the <strong>architectural
+        decisions</strong> which have to be made; that impact aspects of the layers. An architectural decision concerns
+        itself with the configuration and usage of architectural building blocks
+    </li>
+    <li>
+        Include the mechanisms necessary for <strong>interaction</strong> among the layers
+    </li>
+</ul>
+<p>
+    The following is an example of instantiated SOA reference architecture and presents an architecture overview for the
+    solution in scope. Multiple such architecture overview diagrams based on the SOA reference architecture can be created
+    to represent different functional area.
+</p>
+<p>
+    <img style="WIDTH: 986px; HEIGHT: 545px" alt="" src="./../../../core.tech.soma.common.base-ibm_lic/guidances/guidelines/./resources/instantiated_soa_ref_arch.jpeg" width="600"     height="545" /><br />
+</p>
+<p>
+    The diagram shows different building blocks in each of the layers and interaction between&nbsp;the layers. The arrows
+    between process and service layers signifies that&nbsp;business processes in the process layer are enabled by the
+    services in the services layer. The arrows between services and component layers signifies that services&nbsp;are
+    allocated/placed to service components for realization. The arrows between service component and functional and
+    technical components signifies dependencies between service components, functional components and technical components.
+    The arrows between component layer and operational systems layer signifies component dependency on existing operational
+    systems. Similarly interaction between horizontal and vertical layers can be depicted.
+</p>
+<p>
+    An architect would need to consider options and decide building blocks for each of the layers, interaction among the
+    layers, product mapping for these building blocks when applicable and so forth to instantiate IBM SOA Reference
+    Architecture for a specific solution as shown above. As part of realization decision for the solution an architect
+    identifies different layers of the architecture in play in the solution or parts of the solution.
+</p>
+<p>
+    Following figure illustrates interactions with vertical layers in particular integration layer.
+</p>
+<p>
+    <img style="WIDTH: 829px; HEIGHT: 438px" alt="" src="./../../../core.tech.soma.common.base-ibm_lic/guidances/guidelines/./resources/interaction_with_integration_layer.jpeg" width="600"     height="357" />
+</p>
+<p>
+    The interactions with integration layer in the above example are described as follows:
+</p>
+<ol>
+    <li>
+        &nbsp;Through the service discovery and invocation process, the web client looks up the View Profile Service.
+    </li>
+    <li>
+        A connection is made to the Integration Layer (ESB).
+    </li>
+    <li>
+        The ESB performs protocol conversion, if necessary
+    </li>
+    <li>
+        It subsequently routes the call to the appropriate destination.
+    </li>
+    <li>
+        It then receives the results of the call.
+    </li>
+    <li>
+        It then aggregates the results of the call.
+    </li>
+    <li>
+        The aggregated result is transformed and returned to the client in a format that can be consumed by it (For
+        example, in the case of the web client, the aggregated result is returned in an HTML format).
+    </li>
+</ol>
+<p>
+    As mentioned above the&nbsp;IBM&nbsp;SOA Reference Architecture provides a blueprint for not just SOA based solution
+    but also non-SOA. The layered architecture provides flexibility to choose a set of interaction patterns
+    for&nbsp;realization scenarios with all or a subset of layers based on usage scenario.
+</p>
+<p>
+    <img style="WIDTH: 911px; HEIGHT: 487px" alt="" src="./../../../core.tech.soma.common.base-ibm_lic/guidances/guidelines/./resources/realization_interaction_scenarios.jpeg" width="600"     height="487" /><br />
+    &nbsp;
+</p>
+<p>
+    The rightmost pattern (pattern 6)&nbsp;depicts the most flexible architecture but requires the highest maturity in the
+    organization.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/ibm_soa_ref_arch_solution_view_CF8E0BDF.html" guid="_bo6j0Kc1Ed2pr7pb2_6dZA">IBM SOA Reference Architecture : Solution View</a>
+</li>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/ibm_soa_ref_arch_86A81A68.html" guid="_JAbSEG85Ed-9z7-UXfcS-A">IBM SOA Reference Architecture - Two Views</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Whitepapers</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/whitepapers/ibm_soa_ref_arch_solution_view_E8BE9C46.html" guid="_LtswgEq-EduxwIVIhJQ80A">IBM SOA Reference Architecture : Solution View</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">arsanjan@us.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Thu Mar 17 19:36:47 IST 2011</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Rent-a-Car Service Hierarchy based on Existing Asset Analysis</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="rent_a_car_service_hierarchy_eaa">
+<meta name="uma.presentationName" content="Rent-a-Car Service Hierarchy based on Existing Asset Analysis">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_wtpfsBryEdqPvNY1HlMbiA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_wtpfsBryEdqPvNY1HlMbiA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Rent-a-Car Service Hierarchy based on Existing Asset Analysis</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Sample of services for rent-a-car scenario identified via Existing Asset Analysis.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_portfolio_6751031D.html" guid="_tjjhkBmaEdqx_IUyKxxtEg">Service Portfolio</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    In the Rent-a-car example, the services from the existing system were identified with the help of analysis of the code
+    with an SME and the relevant documentation. No impact analysis tools were used, as the identification of various
+    transactions in the existing application was relatively straightforward. Each of these transactions was analyzed in
+    detail to identify the specific actions performed and the type of information exchanged. Transactions belonging to the
+    same transaction type were then mapped to the services which were described to perform similar capabilities. This
+    resulted in the identification of three types of services:<br />
+    <br />
+    1. Services that were identified through Process Decomposition (Top-down Analysis) were also identified by the Existing
+    Asset Analysis (Bottom-up).<br />
+    <br />
+    2. Services which were not identified through Process Decomposition (Top-down Analysis) were identified by the Existing
+    Asset Analysis (Bottom-up).<br />
+    <br />
+    3. The Services which were not considered to meet current and anticipated future business needs were not considered to
+    be included in the Service Portfolio. Only those services that have distinct business value are considered for
+    componentization. Note: The functionality that is of business value will be considered for componentization and later
+    exposed as a service.<br />
+    <br />
+    Figure&nbsp;1 shows only a partial list of services that were identified by both Process Decomposition and Existing
+    Asset Analysis (in blue - 3.1.5, 3.2.2, 3.6.1, 3.6.4) and those that were identified only through Existing Asset
+    Analysis (in red – 3.1.8, 3.2.4, 3.2.5, 3.7.1, 3.7.2). Services identified should then be prioritized based on the
+    current and future business needs provided by the client. Only the high priority services should be considered for
+    componentization. Note: This prioritization has not been reflected in the example below.<br />
+    <br />
+    <img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/Technique-Fig43.gif" />
+</p>
+<p>
+    <a id="_Toc107116755" name="_Toc107116755"></a><strong>Figure 1: Rent-a-car example –candidate services identified from
+    existing applications<br />
+    </strong><br />
+    Figure&nbsp;2 shows the candidate services identified from functionality such as Create Reservation, Modify
+    Reservation, etc provided by existing applications. For now, it is assumed that the existing applications can deliver
+    the quality of service required for the services and the figure shows the implementation of services directly from
+    existing applications, bypassing the use of service components.<br />
+    <br />
+    <img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/Technique-Fig44.gif" />
+</p>
+<p>
+    <strong>Figure&nbsp;2: Rent-a-car existing functionality as services</strong><br />
+    <a id="_Toc107116756" name="_Toc107116756"></a>
+</p></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

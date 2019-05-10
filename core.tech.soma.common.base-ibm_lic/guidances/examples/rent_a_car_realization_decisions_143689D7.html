@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Rent-a-Car Realization Decisions</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="rent_a_car_realization_decisions">
+<meta name="uma.presentationName" content="Rent-a-Car Realization Decisions">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_siuPAB_iEdqF5c1Hhhq2Uw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_siuPAB_iEdqF5c1Hhhq2Uw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Rent-a-Car Realization Decisions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Sample realization decision model, demonstrating how IMS integration will be realized, and realization decision table, documenting the particulars.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_specification_3B8A4E6E.html" guid="_umgOsJ6vEd261rSlziDYzQ">Service Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Figure 1 shows the use of a MQ IMS Bridge to integrate with the existing IMS applications.
+</p>
+<p>
+    <img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/Technique-Fig66.gif" />
+</p>
+<p>
+    <a id="_Toc107116778" name="_Toc107116778"></a><strong>Figure 1:</strong> <strong><i>Rent-a-car</i> Realization
+    decision</strong>
+</p>
+<p>
+    Table&nbsp;1 documents the realization decision that was made related to the support of an IMS fixed message format.
+</p>
+<table cellspacing="0" cellpadding="2" width="626" border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="86" bgcolor="#E6E6E6">
+                <p>
+                    <b>Issue</b>
+                </p>
+            </td>
+            <td valign="top" width="540">
+                <p>
+                    The IMS fixed message format to integrate with legacy IMS based COBOL and Assembler language
+                    application programs cannot be changed.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="86" bgcolor="#E6E6E6">
+                <p>
+                    <b>Guiding Principles</b>
+                </p>
+            </td>
+            <td valign="top" width="540">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <ul>
+                    <li>
+                        Maximize delivery of business capability within time/money constraints
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li>
+                        Minimize impact of change to Reservation System and existing POS
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li>
+                        Minimize technology churn, system integration and host development risk
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li>
+                        Leverage the existing fixed message format to access legacy applications
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="86" bgcolor="#E6E6E6">
+                <p>
+                    <b>Options Considered</b>
+                </p>
+            </td>
+            <td valign="top" width="540">
+                <p>
+                    <b>Option: MQ IMS Bridge</b>
+                </p>
+                <p>
+                    This option would allow services to be exposed using an XML message interface, but the messages will be
+                    transformed to IMS fixed format before presenting to legacy systems.<br />
+                    This will be achieved through MQSeries based message transport using MQ IMS bridge. The SOAP messages
+                    are converted by MQ IMS bridge to proprietary fixed IMF format for the backend systems. Similarly, it
+                    does reverse transformation from fixed IMF format to XML SOAP messages.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="86" bgcolor="#E6E6E6">
+                <p>
+                    <b>Realization Decision</b>
+                </p>
+            </td>
+            <td valign="top" width="540">
+                <p>
+                    Expose services using an XML message interface but transform message to IMS format before presenting to
+                    legacy system.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="86" bgcolor="#E6E6E6">
+                <p>
+                    <b>Justification</b>
+                </p>
+            </td>
+            <td valign="top" width="540">
+                <ul>
+                    <li>
+                        It preserves the IMS fixed message format for communications with legacy system while exposing the
+                        services via XML. No other option was considered due to the constraints: 
+                        <ul>
+                            <li>
+                                IMS fixed message format must continue to be used for interactions with legacy system
+                            </li>
+                            <li>
+                                MQ Series message transport must be part of any solution that requires services to be
+                                exposed
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="86" bgcolor="#E6E6E6">
+                <p>
+                    <b>Implications</b>
+                </p>
+            </td>
+            <td valign="top" width="540">
+                <p>
+                    If transformation is to be done on zSeries, a new technical capability would need to be introduced into
+                    that environment. This would violate a basic principle of the project: “avoid impact to the existing
+                    applications and environment”. XML would need to be transformed to IMS fixed format messages at some
+                    point in the flow.<br />
+                    <br />
+                    Transformation will be performed on a distributed platform before/after zSeries.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <a id="_Toc101699576" name="_Toc101699576"></a><strong>Table 1:</strong><strong><i>Rent-a-car</i> Realization decision
+    for IMS message format</strong>
+</p></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

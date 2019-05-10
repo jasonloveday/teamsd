@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Architectural Decisions and Principles for Team Solution Design</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="arch_decisons_principles_tsd">
+<meta name="uma.presentationName" content="Architectural Decisions and Principles for Team Solution Design">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_DB6ZIPHsEdyQkoYzAyZ7Vg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_DB6ZIPHsEdyQkoYzAyZ7Vg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Architectural Decisions and Principles for Team Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This element illustrates typical examples of architectural decisions and architecture principles.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The following represent examples of architectural decisions. <strong>Note that in a pre-sales context, not every row of
+    the Architectural Decisions template is needed for every decision.&nbsp; Also, this work product is very helpful in
+    capturing most decisions that impact the solution design, not just those that impact the architecture.</strong>
+</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <b>Architectural Decisions</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Subject Area</b>
+            </td>
+            <td>
+                Programming model
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Architectural Decision</b>
+            </td>
+            <td>
+                Define the level of integration which will be exposed to the client application programmer (including
+                servlets)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Issue or Problem</b>
+            </td>
+            <td>
+                The issue is how much detail regarding the backend data sources will be exposed to the servlet developers.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Assumptions</b>
+            </td>
+            <td>
+                Backend data sources will be two or more CICS legacy systems EJB support will be available as an option
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Motivation</b>
+            </td>
+            <td>
+                This decision will affect the number of people who must be skilled on the complexity of backend system
+                interfacing
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Alternatives</b>
+            </td>
+            <td>
+                1. Expose API's associated with CICS gateway 2. Develop business object interface that will hide source of
+                data
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Decision</b>
+            </td>
+            <td>
+                A business object interface will be developed that will hide the CICS access
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Justification</b>
+            </td>
+            <td>
+                1. This will restrict more complex knowledge of integrating with CICS systems to a small team instead of
+                all developers. 2. If changes occur in the backend systems, application logic is protected, with changes
+                limited to data access methods of the business object layer. 3. This supports the architectural principle
+                on Complexity hiding.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Implications</b>
+            </td>
+            <td>
+                1. A formal design must be accomplished for business object layer<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Derived requirements</b>
+            </td>
+            <td>
+                1. EJB and related tool support may be required 2. Choice of EJB access (if used) must be made and training
+                for this must be made available.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Related decisions</b>
+            </td>
+            <td>
+                CICS access software must be selected
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<table border="1">
+    <tbody>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <b>Architectural Decision</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Subject Area</b>
+            </td>
+            <td>
+                Enterprise Connectivity
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Architectural Decision</b>
+            </td>
+            <td>
+                Means to communicate between with backend systems and databases
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Problem Statement</b>
+            </td>
+            <td>
+                The e-business application should integrate with several backend systems and databases.&nbsp; The question
+                is how to best communicate with these systems.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Assumptions</b>
+            </td>
+            <td>
+                Interactions with back-end systems will be a mix of synchronous and asynchronous communications.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Motivation</b>
+            </td>
+            <td>
+                Because of the degree of application integration needed, a decision must be made on enterprise connectivity
+                to avoid inconsistent and unmanageable connectivity.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Alternatives</b>
+            </td>
+            <td>
+                <u>1. Point-to-Point Connectivity</u> This alternative connects the application server connect directly and
+                individually to each necessary enterprise system, using the protocol best suited for that system.&nbsp; For
+                example, connectivity to the mainframe could use Common Programming Interface for Communications
+                (CPI-C).&nbsp; Alternatively, messages could be exchanged individually with each system using a messaging
+                product such as Message Queuing Series (MQSeries) or Electronic Data Interchange (EDI).&nbsp; A very basic
+                option would be to exchange data via File Transfer Protocol (FTP).<br />
+                <br />
+                <u>2. Integration Hub</u> This alternative centralizes all enterprise communications at a common
+                intermediary called an Integration Hub.&nbsp; Business-level messages are given to the hub for
+                delivery.&nbsp; The hub routes the message to the correct enterprise system, translating the message if
+                necessary into a format acceptable by the enterprise system and communicating with the enterprise system in
+                an appropriate protocol.&nbsp; This hub can be used to support synchronous and asynchronous
+                integration.<br />
+                <br />
+                <u>3. Business Workflow</u> This alternative adds onto the Integration Hub by adding business process
+                functions to its capabilities.&nbsp; A message would trigger a set of further messages to different
+                destinations based on a pre-defined workflow for that business process.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Decision</b>
+            </td>
+            <td>
+                The e-business Reference Architecture will use the Integration Hub to enable enterprise connectivity. This
+                alternative provides a consistent message based option for integration with disparate backend
+                systems.&nbsp; Further this option can be easily extended as needed to support Business Workflow as needed.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Justification</b>
+            </td>
+            <td>
+                Because of the number of different systems that must be accessed by any e-business application, it would
+                seem prudent to have the application server communicate using one method (messages) to one system (the
+                Integration Hub).&nbsp; This also provides the flexibility of relocating data and functions to different
+                enterprise systems with no change to systems that access that data.&nbsp; Furthermore, the Integration Hub
+                will simplify communications among all legacy systems and databases, allowing other projects within the
+                enterprise to leverage this investment.<br />
+                <br />
+                The translation capabilities of the Integration Hub are also a big advantage in the business-to-business
+                world.&nbsp; It is expected that this hub would be accessible to authorized trading partners, each of whom
+                may adopt a different message “standard” for their business-to-business&nbsp; (B2B) communications.&nbsp;
+                The Integration Hub would be able to translate these different message formats into a consistent format for
+                communication with the organization’s enterprise system.<br />
+                <br />
+                Another advantage of this option is its ability to support different collaboration models such as
+                blackboard, point-to-point or Publish/Subscribe.<br />
+                <br />
+                Although the business workflow option is intriguing and seems to offer benefits, at this time there does
+                not seem to be a sufficient gain in this process for the cost incurred.&nbsp; However, as the
+                organization’s business and technical processes evolve, this option could be added onto the Integration
+                Hub’s functionality.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Implications</b>
+            </td>
+            <td>
+                All enterprise applications will need to be enabled for working with the Integration hub.&nbsp; A set of
+                business messages will need to be defined, as well as translation rules for other systems.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Derived requirements</b>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Related Decisions</b>
+            </td>
+            <td>
+                AD2, Enterprise Message Format
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    Architecture principles can be very helpful in&nbsp;considering&nbsp;architectural decisions. The client should be able
+    to tell you if there are important IT or design principles that you should consider in developing a solution in the
+    pre-sale environment. You may choose to develop other principles in collaboration with the client. The following table
+    gives an example of how to record such principles.<br />
+</p><br />
+<br />
+<table border="1">
+    <tbody>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <b>Architecture Principles</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Category / topic</b>
+            </td>
+            <td>
+                Complexity hiding
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Principle / policy</b>
+            </td>
+            <td>
+                The programming model for client developers will hide the complexity of interfacing to legacy systems
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Explanation</b>
+            </td>
+            <td>
+                In this context, client developers are responsible for developing applets, servlets and HTML. Legacy data
+                will be accessed from within servlets. The servlet developer must be presented a common interface that is
+                independent of the number and type of backend legacy systems.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Relevant requirements</b>
+            </td>
+            <td>
+                see non-functional requirement #xxx
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Motivation</b>
+            </td>
+            <td>
+                Over time, the legacy systems will change and new ones may be added. It is desirable to insulate client
+                programs from these changes. It is also desirable to simplify the client programming model by having a
+                single interface for programmers to learn that does not change as backend systems change.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Implications</b>
+            </td>
+            <td>
+                1. An integration server node will be required. 2. A client programming model must be selected. 3. An
+                additional layer will exist that must be accounted for in performance modeling. 4. A new common business
+                interface must be designed. 5. Consideration must be given in the operational model for global signon, and
+                flowing of security and transactional contexts.
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: Non-functional Requirements Themes</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="nonfunctional_rqmts_themes">
+<meta name="uma.presentationName" content="Non-functional Requirements Themes">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4Y8RdEdyD76CYS6Ta7A", "_zlwEoFQcEeGwTOzXE8ElHw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_zlwEoFQcEeGwTOzXE8ElHw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: Non-functional Requirements Themes</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This concept provides a brief overview of the different architectural qualities that provide the various themes that are typically used to categorize non-functional requirements.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/nonfunctional_requirements_67C22734.html" guid="mwebA79F29E86DD9BD38852568850050F6EA">Non-Functional Requirements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The non-functional requirements for a business system address those aspects of the system that, whilst not directly
+    affecting the functionality of the system, can have a profound effect on how that business system is accepted both by
+    the users and the people responsible for supporting that system.&nbsp; These aspects cover a broad range of themes,
+    ranging from how easy the system is to maintain once installed, to how quickly the individual transactions within the
+    system can be executed.
+</p>
+<p>
+    The major non-functional themes are listed below:
+</p>
+<ul>
+    <li>
+        <strong><a href="#performance">Performance (including Capacity)</a></strong>
+    </li>
+    <li>
+        <strong><a href="#volumetrics">Volumetrics</a></strong>
+    </li>
+    <li>
+        <strong><a href="#scalability">Scalability</a></strong>
+    </li>
+    <li>
+        <strong><a href="#security">Security</a></strong>
+    </li>
+    <li>
+        <strong><a href="#regulatory">Regulatory Compliance</a></strong>
+    </li>
+    <li>
+        <strong><a href="#usability">Usability</a></strong>
+    </li>
+    <li>
+        <strong><a href="#maintainability">Maintainability (including Flexibility)</a></strong>
+    </li>
+    <li>
+        <strong><a href="#availability">Availability (including Recoverability and Reliability)</a></strong>
+    </li>
+    <li>
+        <strong><a href="#manageability">Manageability</a></strong>
+    </li>
+    <li>
+        <strong><a href="#environmental">Environmental (including Safety)</a></strong>
+    </li>
+</ul>
+<p>
+    The requirements of the system to be delivered must be understood for each of these non-functional themes. Together
+    with the functional requirements they define the baseline against which the business system must be designed. It is
+    essential that both sets of requirements are captured during the initial stages of a project.
+</p>
+<p>
+    Not every non-functional theme will apply to every project and the development of content related to any one theme may
+    be developed in parallel, or in any sequence. While the individual themes are intended to be independent to some
+    extent, it is likely that will need to be some level of balancing of concerns across the different themes based on the
+    impacts changes in one will have on the feasibility and/or cost of implementing others.
+</p>
+<h3>
+    <a id="performance" name="performance">Performance (including Capacity)</a>
+</h3>
+<p>
+    Concerns captured by performance theme are related to how efficient and how fast the system is. Example:
+</p>
+<ul>
+    <li>
+        Does the system respond fast enough to user actions
+    </li>
+    <li>
+        Can the system support suitable number of concurrent users
+    </li>
+    <li>
+        Can the system support enough transactional throughput
+    </li>
+</ul>
+<h3>
+    <a id="volumetrics" name="volumetrics">Volumetrics</a>
+</h3>
+<p>
+    This requirement theme defines required size of the system, such as ability to store and process required volumes of
+    particular data elements, or ability to support certain with number of user profiles. The volumetrics determine size of
+    storage, memory that the system needs to support while sustaining throughput and performance targets. Some volumetrics
+    are also used as configuration parameters of the system. For example a&nbsp;third party system may have a built in
+    constraint on number accounts per user, max number of transactions per batch. Defining required values up front is
+    helpful in identifying potential problems early.
+</p>
+<p>
+    From a performance testing perspective, the volumetrics drive the size of the test data sets used during performance
+    tests.
+</p>
+<h3>
+    <a id="scalability" name="scalability">Scalability</a>
+</h3>The scalability theme focuses on the ability of the system to be scaled effectively to handle changes in volume and
+deliver greater throughput whilst still meeting an acceptable level of response. This is done by understanding how, over
+the life of the business system; the overall workload is likely to grow (or occasionally lessen) from the current usage. 
+<h3>
+    <a id="security" name="security">Security</a>
+</h3>IT security concerns relate to protecting confidentiality, integrity, and availability of information against security
+risks. These high-level concerns are addressed through a variety of security controls which need to be incorporated in the
+business system design and business processes.&nbsp; Security requirements are often a mix of both functional and
+non-functional requirements, with those requirements being split between the Non-functional Requirements and Security &
+Privacy Requirements artifacts.&nbsp; 
+<h3>
+    <a id="regulatory" name="regulatory">Regulatory Compliance</a>
+</h3>Most regulatory compliance is predicated upon keeping accurate and reliable records of particular kind for a period of
+time. If the business system is to be creating, storing or processing such records then a requirement for corresponding
+functionality needs to be created. The confidentiality, integrity and availability of these records need to be protected
+against IT security risks. That is why regulatory compliance concerns overlap with the IT Security discussed in previous
+section. 
+<h3>
+    <a id="usability" name="usability">Usability</a>
+</h3>The usability requirements reflect concerns about the ease of use and accessibility of the system. Usability of the
+business system is determined largely by quality of its user interface. The usability is predicated on the responsiveness
+of the user interface hence usability considerations lead to the requirements for performance – particularly response time.
+Other concerns relate to ergonomics, visual impact, structure, navigation, accessibility by people with disabilities. 
+<h3>
+    <a id="maintainability" name="maintainability">Maintainability (including Flexibility)</a>
+</h3>Requirements relating to the theme of maintainability cover both the ability to make future enhancements to the system
+or changes in the environment, as well as facilitating the discovery and correction of defects.&nbsp; Maintainablity is
+tied difectly to serviceability in that it allows a system to be repaired or have updates performed in such a way as to
+minimize the disruption of service of the application.&nbsp; 
+<h3>
+    <a id="availability" name="availability">Availability (including Recoverability and Reliability)</a>
+</h3>
+<p>
+    The availability theme addresses the ability of the solution to provide it's expected services at a stated instant or
+    over a stated period of time that reflects the overall readiness of the system. It is typically expressed as ratio of
+    the proportion of time that the service is actually available for use by the customers within the agreed service hours.
+</p>
+<p>
+    The reliability aspect focus on freedom from operational failure within an IT system. Reliability is the probability
+    that an item will perform for a specified interval under stated conditions. Simply stated, it is how long the system
+    can work.&nbsp; This differs from resilience which focuses on the ability of the system to continue working with faults
+    in one or more components.
+</p>
+<p>
+    Recoverability deals with what is required to restore services to an operational condition, usually in terms of time
+    and expected functionality along with the what if any is an acceptable level of data loss.
+</p>
+<h3>
+    <a id="manageability" name="manageability">Manageability</a>
+</h3>
+<p>
+    This theme deals with&nbsp;systems management and operations aspects of the proposed solution.&nbsp; System management
+    requirements may&nbsp;appear functional in nature, for example how should a component raise an exception to indicate
+    business or technical failures, or may be constraints that are placed on the system, for example it is mandated that
+    systems management software from a particular vendor must be used.
+</p>
+<h3>
+    <a id="environmental" name="environmental">Environmental (including Safety)</a>
+</h3>
+<p>
+    The environmental non-functional requirements theme typically focuses on the physical locations within which the system
+    must operate and should include considerations for any unusual environmental conditions such as required cooling,
+    vibration isolation or power concerns.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">tvoss@sg.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Wed Feb 15 00:47:25 IST 2012</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">February 2012 - baseline version</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

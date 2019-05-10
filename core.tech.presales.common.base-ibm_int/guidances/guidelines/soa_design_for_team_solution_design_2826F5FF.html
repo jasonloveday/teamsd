@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Service Oriented Architecture Design for Team Solution Design</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="soa_design_for_team_solution_design">
+<meta name="uma.presentationName" content="Service Oriented Architecture Design for Team Solution Design">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_t4Bw0PqoEdyBdP2Q1C9JPg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_t4Bw0PqoEdyBdP2Q1C9JPg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Service Oriented Architecture Design for Team Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline explains the impact of SOA on the development of various work products.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/business_direction_CD735940.html" guid="mweb5E09C6D8970ACF5D85256BE9006ADCC1">Business Direction</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/define_key_services_5576D29A.html" guid="_PvTKIPdwEdyd_7bCW3QEvg">Define Key Services</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/nonfunctional_requirements_67C22734.html" guid="mwebA79F29E86DD9BD38852568850050F6EA">Non-Functional Requirements</a>
+</li>
+<li>
+<a href="./../../../core.mgmt.wwpmm.common.base-ibm_lic/workproducts/proj_definition_4B3100FE.html" guid="mweb160626331DE06601852568A900804F05">Project Definition</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/rqmts_matrix_C1104253.html" guid="mweb84BD804CC8ECF0ED85256885005A2D8F">Requirements Matrix</a>
+</li>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_model_AA7DDA59.html" guid="_fxbwIBmHEdqx_IUyKxxtEg">Service Model</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/technical_environment_D0E8F7C5.html" guid="mweb7BEEAAEC8091A5F08525688200609192">Technical Environment</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/use_case_model_A80F05C7.html" guid="mwebED77EA705636E0878525688500610AD7">Use-Case Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    If the project involves a Service Oriented Architecture (SOA), the Team Solution Design work products may be impacted
+    as described below.&nbsp; This guideline provides an overview of the work products that are often used in a Service
+    Oriented Architecture. This may be simply because you are documenting what exists or because your solution will result
+    in a change to the SOA environment.<br />
+    <br />
+    Impact on other work products:
+</p>
+<ul>
+    <li>
+        Business Direction provides a description for the client's key goals and initiatives which are used to scope our
+        projects.&nbsp; They are also used to drive the analysis to define use cases and key services that are important to
+        the client.
+    </li>
+    <li>
+        Current IT Environment helps us to understand the SOA infrastructure and services that already exist and can be
+        reused.&nbsp; Work products from prior projects might have been captured to further document the Current IT
+        Environment.
+    </li>
+    <li>
+        Use Case Model can be used to describe an interaction with an existing or proposed service, especially a long
+        running, interruptible service.&nbsp; The Use Case can be used to drive a demo, be used in a proof of concept, or
+        show a walkthrough of an Architecture Overview Diagram or Operational Model.
+    </li>
+    <li>
+        Functional requirements (captured in Project Definition or, if there are many of them, Requirements Matrix) are
+        used as a starting point for subsystems and service components identification.
+    </li>
+    <li>
+        Non-Functional Requirements might describe availability, response time, scalability and other requirements.&nbsp;
+        These NFR's might also drive Service Level Agreements.&nbsp; NFRs can be discovered during a wide range of
+        requirements gathering and analysis activities, including those that are part of <strong>Task: Define Key
+        Services</strong>.&nbsp; NFRs can be used to properly model subsystems and components, and to support component
+        placement decisions that may be made during other project activities.
+    </li>
+    <li>
+        A Component Model might be used to show Service Dependencies: component relationship diagram for functional
+        dependencies or a sequence diagram for processing dependencies.&nbsp; The Component Model describes the structure
+        of an IT system in terms of its software components with their responsibilities, interfaces, (static) relationships
+        and the way they collaborate to deliver the required functionality.&nbsp; It is the main product documenting the
+        functional aspect of the architecture of an IT system.
+    </li>
+    <li>
+        If a Service Model is included, there are two views that might be helpful.&nbsp; The first shows the dependencies
+        between services.&nbsp; This example comes from a sample in System Architect for TeamSD which shows the dependency
+        between logical service templates (that is, not yet "contracted").
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p>
+                &nbsp; <img height="374" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/resources/service_model_l_dep_view.gif" width="600" />
+            </p>
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                            <p>
+                                <strong>Figure 1.</strong> Logical Service Dependency View
+                            </p>
+                        </blockquote>
+                    </blockquote>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<p dir="ltr">
+    This second example from SA4TeamSD shows the relationship between some of the services above and the components that
+    offer (provide) or request the services. This figure shows a partial view:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p dir="ltr">
+                <img height="571" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/resources/service_model_l_structure_view.gif" width="600" /><br />
+            </p>
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                            <p>
+                                <strong>Figure 2.</strong> Logical Service Structure View
+                            </p>
+                        </blockquote>
+                    </blockquote>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<ul>
+    <li dir="ltr">
+        Architectural Decisions should show how the client requirements impact the SOA solution, including any services
+        that are to be defined or realized, such as buy, build or subscribe.&nbsp;Non-functional Requirements provide a
+        dominate role in making these decisions.
+    </li>
+    <li dir="ltr">
+        Architecture Overview Diagram might show services mapped to software components.&nbsp;The <strong>Task: Define Key
+        Services&nbsp;</strong>can provide input for this work product during&nbsp;the <strong>Identify Relevant
+        Services</strong>&nbsp;step.&nbsp;Domain Decomposition identifies functional areas that can be represented in an
+        enterprise view of the Architecture Overview.&nbsp; Existing Asset Analysis identifies specific enterprise systems
+        that can be key elements of the solution represented in a system or IT view. These decisions also impact the
+        Operational Model.
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p dir="ltr">
+                <img height="377" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/resources/SOA_Solution_stack.jpg" width="600" />
+            </p>
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                            <p dir="ltr">
+                                <strong>Figure 3.</strong> SOA Solution Stack
+                            </p>
+                        </blockquote>
+                    </blockquote>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<ul>
+    <li dir="ltr">
+        Operational Model:&nbsp;Since this artifact describes the “operational” aspect of an IT system’s architecture, it
+        should describe the required operational characteristics and capabilities needed to implement a Services Oriented
+        Architecture.&nbsp; This includes the infrastructure to support integration, monitoring, governance, etc.&nbsp;
+    </li>
+</ul>
+<p>
+    There is also an impact on Team Solution Design tasks, including the obvious impact on tasks associated with the
+    creation of the above work products - most notably <strong>Refine Viability Assessment</strong>.)
+</p>
+<ul>
+    <li>
+        Refine Viability Assessment often identifies risks or issues that must be resolved or at least mitigated before we
+        make our proposal.&nbsp; Sometimes we are able to resolve these concerns with a small investment like a Proof of
+        Technology or a Software Trial.&nbsp; Other times, a more substantial investment is required -- a Proof of
+        Concept.&nbsp; In a Service Oriented Architecture, part of the PoC might be accessing (consuming) services.&nbsp;
+        In a PoC, we focus on what needs to be "proved" so the services we create or modify might not need to include
+        capabilities that are already known.&nbsp; This can reduce the complexity and cost of the PoC.&nbsp; For example,
+        accessing backend applications or data sources might be very costly and time consuming with little benefit.&nbsp;
+        In a case like this, access to the backend would be "stubbed out" or simulated.&nbsp; When that access is via a
+        service, then simplifying the service is easy since the implementation is hidden from the service consumer.
+    </li>
+</ul>
+<p dir="ltr">
+    <br />
+    Sometimes, the above work products and tasks are not enough to capture the client's requirements and to describe how
+    your solution can address their needs.&nbsp;Under those circumstances, the Task<strong>: Define Key Services</strong>
+    and the <strong>Work Product: Service Model</strong> might help.
+</p>
+<p dir="ltr">
+    Acknowledgment: special thanks to Ed Calusinski for his help on this Guideline.&nbsp;<br />
+    <br />
+    Mark Palmer<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">tlseeve@us.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Tue May 03 00:06:49 IST 2011</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">November 2008 - baseline version|July 2010 - updated to reflect System Architect considerations</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

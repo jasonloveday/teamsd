@@ -1,0 +1,1233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Operational Model for Team Solution Design</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="operational_model_tsd">
+<meta name="uma.presentationName" content="Operational Model for Team Solution Design">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_5ymlYK2ZEdyaUuyek1jM3w"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_5ymlYK2ZEdyaUuyek1jM3w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Operational Model for Team Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This example illustrates typical operational modeling diagrams.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/operational_model_5CE9CFC9.html" guid="mwebD1869C2CAF6E9991852568A4004FA5D9">Operational Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The following example illustrates various views and other information that might be included in an Operational Model.
+    Following this is a second example developed using SA4TeamSD configuration of IBM's Rational System Architect.
+</p>
+<p>
+    <strong>Example: Logical Operational View<br />
+    </strong><br />
+    <img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/conceptual_system_topology_diagram.JPG" width="600" height="416" />&nbsp;<br />
+    <br />
+</p>
+<p>
+    <strong>Example: Physical Operational View&nbsp;<br />
+    </strong><br />
+    <img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/physical_system_topology_diagram.JPG" width="600" height="409" /><br />
+    <br />
+    Note: for other example views such as security, walk through etc., refer to the latest version of the ESS e-business
+    Reference Architecture.<br />
+    <br />
+</p>
+<p>
+    <strong>Sample Node Description</strong>
+</p><br />
+<table border="1">
+    <tbody>
+        <tr>
+            <td>
+                Node Name
+            </td>
+            <td>
+                <b>Network Intrusion Detection Node</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Node Description
+            </td>
+            <td>
+                This node serves to monitor the DMZ for unusual traffic patterns that might indicate an attack on the
+                network.&nbsp; Ideally this node will detect an intrusion and notify the system/network manager that
+                intrusion has occurred.&nbsp; Note that an attack is defined as unauthorized attempts to gain access
+                through the public firewall.&nbsp; Intrusion is when such an attack has successfully penetrated the public
+                firewall.&nbsp; When an intrusion occurs and is detected and notified, it is red alert situation. Intrusion
+                can come via hacks through the back door, hacks from staff from same or remote location or from successful
+                hacks through the firewall. Detection has to be done with a very high degree of accuracy and on a timely
+                manner (preferably within minutes).<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Presentation function
+            </td>
+            <td>
+                Monitor, keyboard, mouse and remote display functions
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Processing function
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Data
+            </td>
+            <td>
+                Local stores for audit logs
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Infrastructure
+            </td>
+            <td>
+                Use of architectural conventions for Intrusion Detection Modules, Messaging specification for audit data
+                and its transmission or some of the approaches that have to be followed.&nbsp; These are components of the
+                Common Intrusion Detection Framework.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Presentation services
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Processing services
+            </td>
+            <td>
+                <p>
+                    Intrusion detection is typically based on analyzing network auditable events such as
+                </p>
+                <ul>
+                    <li>
+                        Users logging in at unusual hours
+                    </li>
+                    <li>
+                        Unexplained reboots
+                    </li>
+                    <li>
+                        Unexplained time changes
+                    </li>
+                    <li>
+                        Unusual error messages
+                    </li>
+                    <li>
+                        Failed login attempts
+                    </li>
+                    <li>
+                        Users logging in from unusual sites / locations
+                    </li>
+                </ul>
+                <p>
+                    This node should support the ability to track and analyze such network events on a real-time basis.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Data services
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Hardware
+            </td>
+            <td>
+                See Server/Hardware/Software Matrix
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Operating system
+            </td>
+            <td>
+                See Server/Hardware/Software Matrix
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Connections
+            </td>
+            <td>
+                See Server Nodes Communication Matrix
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Management
+            </td>
+            <td>
+                This node needs to support an administration interface with the ability to add, enable and change profiles,
+                transcoders, style sheets and external annotation files.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Components contained
+            </td>
+            <td>
+                Refer to Node/Components Matrix
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Nonfunctional Requirements
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Users and Presentation
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Performance and Capacity
+            </td>
+            <td>
+                This node should have more than adequate processing capacity to handle intrusion detection during peak or
+                burst conditions, when the systems could be perceived to be vulnerable. In addition, based on the detection
+                mechanism outlined in the previous section, it is necessary for large amount of data to be stored and
+                retrieved by this node.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Availability
+            </td>
+            <td>
+                24 x 7 x 365 Automatic Failover and Restart Enabled
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Cost and Benefit
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Security
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Risk
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Node Management
+            </td>
+            <td>
+                Remote systems management via SNMP
+            </td>
+        </tr>
+    </tbody>
+</table>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p>
+        <br />
+        Deployment units are arbitrary groupings of components intended to simplify deployment planning. The components
+        included are grouped together because they perform related functions, tend to change together and are dependent on
+        one another for release levels etc. For example, WS2 might contain all application components.
+    </p>
+</blockquote>
+<p>
+    <strong>Sample connection description matrix</strong>
+</p><br />
+<table border="1">
+    <tbody>
+        <tr>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                <b>Reverse</b> <b>Proxy</b>
+            </td>
+            <td>
+                <b>Transcoder</b>
+            </td>
+            <td>
+                <b>Web</b> <b>Portal</b> <b>Node</b>
+            </td>
+            <td>
+                <b>Web Application</b> <b>Server</b>
+            </td>
+            <td>
+                <b>Integration</b> <b>Hub</b>
+            </td>
+            <td>
+                <b>Web Services Gateway</b>
+            </td>
+            <td>
+                <b>Directory</b> <b>and</b> <b>Security</b>
+            </td>
+            <td>
+                <br />
+                <br />
+                <b>Database Server</b>
+            </td>
+            <td>
+                <b>Enterprise</b> <b>System</b>
+            </td>
+            <td>
+                <b>External</b> <b>Systems</b>
+            </td>
+            <td>
+                <b>Systems</b> <b>Management</b> <b>Server</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Reverse Proxy</b>
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                XML / HTML HTTP
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Transcoder</b>
+            </td>
+            <td>
+                HTTP
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Web Portal Node</b>
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                JDBC, ODBC
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Web Application Server</b>
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                XML MQI, HTTP
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                JNDI
+            </td>
+            <td>
+                JDBC, ODBC
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Integration Hub</b>
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                XML MQI, HTTP
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                JNDI
+            </td>
+            <td>
+                JDBC, ODBC
+            </td>
+            <td>
+                MQI, HTTP
+            </td>
+            <td>
+                HTTPS
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Web Services Gateway</b>
+            </td>
+            <td>
+                <b>HTTP,</b> <b>HTTPS</b>
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                <b>HTTP, HTTPS, RMI</b>
+            </td>
+            <td>
+                <b>MQI, XML</b>
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                JNDI
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                <b>HTTP,</b> <b>HTTPS</b>
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Directory and Security</b>
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                JNDI
+            </td>
+            <td>
+                JNDI
+            </td>
+            <td>
+                JNDI
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Database Server</b>
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                JDBC, ODBC
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Enterprise System</b>
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                MQI, HTTP
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>External Systems</b>
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                <b>N/A</b>
+            </td>
+            <td>
+                HTTP, HTTPS
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                NA
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Systems Management</b>
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+            <td>
+                SNMP, HTTP
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<p>
+    <strong>Sample Node-Deployment unit mapping</strong>
+</p><br />
+<br />
+<table border="1">
+    <tbody>
+        <tr>
+            <td>
+                <b>Logical Node</b>
+            </td>
+            <td>
+                <b>Components</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Client Node
+            </td>
+            <td>
+                Pervasive Computing (PvC) Client Web Client
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Protocol Firewall Node
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Edge Server Node
+            </td>
+            <td>
+                Load Balancer
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Transcoder Node
+            </td>
+            <td>
+                Device Formatter
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Web Portal Node
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Web Server
+                    </li>
+                    <li>
+                        Search Engine
+                    </li>
+                    <li>
+                        File Services
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Web Application Server Node
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Web Application Server
+                    </li>
+                    <li style="LIST-STYLE-TYPE: none">
+                        <ul>
+                            <li>
+                                Request Controller
+                            </li>
+                            <li>
+                                Session Manager
+                            </li>
+                            <li>
+                                Response Controller
+                            </li>
+                            <li>
+                                Response Template
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Application Services
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Private Web Services Directory
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Web Server
+                    </li>
+                    <li>
+                        UDDI Registry
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Web Services Gateway
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Web Server
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                External (Public) Web Services Directory
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Web Server
+                    </li>
+                    <li>
+                        UDDI Registry
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Directory and Security Node
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Directory
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Personalization Node
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Personalizer
+                    </li>
+                    <li>
+                        Campaign Management
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Content Management Node
+            </td>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Integration Hub Node
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Integration Services
+                    </li>
+                    <li style="LIST-STYLE-TYPE: none">
+                        <ul>
+                            <li>
+                                Hub Listener
+                            </li>
+                            <li>
+                                Integration Workflow
+                            </li>
+                            <li>
+                                Message Router
+                            </li>
+                            <li>
+                                Message Transform
+                            </li>
+                            <li>
+                                Connectors
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Database Server Node
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Database Services
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enterprise Systems Node
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Enterprise Services
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                External Systems Node
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        External System Services
+                    </li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Systems Management Node
+            </td>
+            <td>
+                <ol>
+                    <li>
+                        Systems Management
+                    </li>
+                    <li>
+                        Audit Log
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    <br />
+</p>
+<p>
+    <strong>Sample general walkthrough description for Use Case "Obtain Customer Relationships"<br />
+    </strong><br />
+    <img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/sample_general_walkthrough_description.JPG" width="600" height="375" /><br />
+    For a visual summary of the walkthrough please refer to the event trace in the figure above.
+</p>
+<div style="MARGIN-LEFT: 2em">
+    <ol>
+        <li>
+            The scenario begins as the customer will enter the URL of the logon page of the e-business application in the
+            URL field of the web browser on the Client Node and press the Enter key.
+        </li>
+        <li>
+            The URL request will be forwarded to the e-business system across the Internet.
+        </li>
+        <li>
+            The request enters the system and is routed by the Edge Server Node to the Reverse Proxy Node that can service
+            the request.&nbsp;
+        </li>
+        <li>
+            The Reverse Proxy Node determines that the request is for the logon page which is a Static HTML form and
+            forwards the request to the Web Portal Node.
+        </li>
+        <li>
+            The Web Portal Node will retrieve the static form and determines that the form needs to be encrypted.&nbsp; The
+            form is encrypted and is returned to the web browser.
+        </li>
+        <li>
+            The user will enter his User ID and password into the secure HTML form and press the Submit button in order to
+            send this information to the system for authentication.&nbsp;
+        </li>
+        <li>
+            The form is sent back to the e-business application and is sent to the Reverse Proxy Node.
+        </li>
+        <li>
+            The Reverse Proxy Node determines that this form needs to call a Java Servlet for authenticating the user and
+            it forwards the request to the Web Application Server Node.
+        </li>
+        <li>
+            The Web Application Server Node will call the Login Servlet.&nbsp; This servlet issues a Login request to the
+            Directory and Security Node through a JNDI call.&nbsp;
+        </li>
+        <li>
+            Once the user ID and password are authenticated, the Web Application Server node uses the retrieved user
+            authorizations to build the session context for the user.&nbsp; It will then issue a call to the Integration
+            Hub Node to retrieve the user’s account information from the backend enterprise system.
+        </li>
+        <li>
+            The Integration Hub Node will format the request and issue a call to the Enterprise System Node.
+        </li>
+        <li>
+            The Enterprise System Node will execute the program that retrieves the user’s data and send this response back
+            to the Integration Hub.
+        </li>
+        <li>
+            The Integration Hub will reformat the response and send it back to the Web Application Server Node.
+        </li>
+        <li>
+            The Web Application Server will call the appropriate template JavaServer Pages (JSP) to format the response
+            data as a HTML file.
+        </li>
+        <li>
+            The HTML response file is encrypted and sent back to the Web Browser.<br />
+        </li>
+    </ol>
+</div>
+<p>
+    <strong>Examples using SA4TeamSD<br />
+    </strong>The following examples are developed using the SA4TeamSD configuration of IBM Rational System Architect. They
+    are derived from the&nbsp;MyBank example that is available for System Architect. Note that this SA4TeamSD example may
+    be considerably more elaborate in some aspects than would typically be required in a pre-sale situation.
+</p>
+<p>
+    <strong>Example using SA4TeamSD: Logical Operational View</strong>
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p>
+        MyBank&nbsp;- Customers and Call Center
+    </p>
+</blockquote>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    &nbsp;<img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/logical_operational_view.gif" width="600" height="388" />&nbsp;
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    <strong>Example using SA4TeamSD: Physical Operational View</strong>
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    MyBank &nbsp;- Customer Sopport Portal
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    &nbsp;<img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/physical_operational_view.gif" width="600" height="452" />
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    <strong>Example using SA4TeamSD Node Description - General Properties</strong>
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    &nbsp;<img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/node_desc_gen_prop.gif" width="600" height="141" />
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    <strong>Example using SA4TeamSD Node Description - Node Connections</strong>
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    &nbsp;<img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/node_desc_connections.gif" width="600" height="421" />
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    <strong>Example using SA4TeamSD Node Description - Non Functional Requirements</strong>
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    &nbsp;<img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/node_desc_nfr.gif" width="600" height="96" />
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    &nbsp;
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    &nbsp;
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    <strong>Example&nbsp;walkthrough using SA4TeamSD for obtaining customer account information&nbsp;</strong><br />
+    <br />
+</div>
+<div style="MARGIN-LEFT: 2em" class="noindent">
+    <img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/sa_om_walkthrough.gif" width="600" height="283" />
+</div></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Attached Files</th><td class="sectionTableCell">
+<UL>
+<li>
+<a href="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/op_mdl_report.doc" target="_blank">op_mdl_report.doc</a>
+</li>
+</UL>
+</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

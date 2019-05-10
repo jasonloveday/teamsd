@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Work Product (Artifact): Component Specification
+			(ART 0516)
+		</title>
+<meta name="uma.type" content="WorkProductDescriptor">
+<meta name="uma.name" content="component_specification">
+<meta name="uma.presentationName" content="Component Specification">
+<meta name="element_type" content="WorkProductDescriptor">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_r0U7sb1HEdyrVscmNb_pGw&path=_r0U7sb1HEdyrVscmNb_pGw,_B-6ukb1IEdyrVscmNb_pGw,_-hTFQb1UEdyrVscmNb_pGw,_WJAI0cXREeaaG61gY1NekQ';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>WorkProductDescriptor<div id="page-guid" value="_WJAI0cXREeaaG61gY1NekQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Work Product (Artifact): Component Specification
+			(ART 0516)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/workdes_lg_dgm32.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Specifies the details for individual components identified in the Component Model.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The Component Specification details the responsibilities and key characteristics for individual components. These
+    details allow developers to create an executable architecture to validate the architectural approach.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Container Artifact</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../process.tech.teamsd.base-ibm_int/deliveryprocesses/component_model_F499D91D.html" guid="_Xns0pd2kEdy-jeg0wYuB9Q">Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    This artifact specifies the details of a component identified in the Component Model. The specification shows the
+    interfaces offered and used by the component, identifies where business rules are placed, and details the operations
+    and their signatures for each interface.
+</p>
+<p>
+    <strong>Component Interfaces</strong> – An interface specifies one or more operation signatures and is both offered and
+    used by a component. Offering an interface means the component makes the interface available for other components to
+    use.&nbsp;&nbsp;Each interface provides a unique and well-defined set of operations. Hiding the structure of a
+    component and its data behind an interface allows that data to be changed without affecting how the interface is
+    used.&nbsp; The actual composition of that data may change, but the interface that provides access to that data is
+    fixed. Interfaces also describe the state of a component.
+</p>
+<p>
+    <strong>Business Rules</strong> – Business Rules dictate the behavior of a system, and the component specification
+    defines how the system implements the business rules.&nbsp; For example, a business rule may state that Internet
+    transactions for an on-line order can not exceed $1000 for a given account. A component that manages account
+    transactions may define an on-line transactions interface that implements this business rule.
+</p>
+<p>
+    <strong>Operations</strong> – Fully specified Component Specifications assign operations and operation signatures to
+    the interfaces and may define pre- and post-conditions on the operations.&nbsp; Pre- and post-conditions specify the
+    effect of an operation without prescribing an algorithm or implementation.&nbsp;A post-condition specifies the effect
+    of the operation on the components data or state.&nbsp;A pre-condition is the condition under which the operation
+    guarantees that the post-condition is true.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    The Component Specification defines the following information for each component:<br />
+</p>
+<ul>
+    <li>
+        <strong>Name</strong> – uniquely identifies the component and its primary function
+    </li>
+    <li>
+        <strong>Description</strong> –outlines the primary function of the component and how it is positioned within the
+        overall architecture
+    </li>
+    <li>
+        <strong>Responsibilities</strong> –lists responsibilities allocated to the component, stated in natural language
+    </li>
+    <li>
+        <strong>Required service levels</strong> – for non-functional requirements, lists all the service levels that the
+        component must support (such as must be available during office hours)
+    </li>
+    <li>
+        <strong>Reasonableness & risk</strong> – identifies the risks associated with this component, together with a
+        mitigation strategy if the risk is high
+    </li>
+    <li>
+        <strong>Design rationale</strong> – details any design decisions that influence how the component should be
+        implemented
+    </li>
+    <li>
+        <strong>Implementation approach</strong> – details how the component should be implemented and the technology used
+        to implement it
+    </li>
+    <li>
+        <strong>Component Interfaces</strong> – lists and visually models the interfaces offered and used by a component
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/component_specification_61FFE0B2.html" guid="_rM0xkDfWEdyIwaPzqVg2tg">Component Specification </a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Points to consider when deciding whether to use a Component Specification:<br />
+</p>
+<ul>
+    <li>
+        The Component Specification provides value when the architecture is complex, such that new team members need a
+        simplified, abstracted model to understand it.
+    </li>
+    <li>
+        The extra work required to ensure that the Component Specification and Executable Architecture remain consistent
+        must be balanced against the benefit of having a view of the system that represents only the most important details
+        of how the system works. It can be very costly to maintain a high degree of fidelity between the Component
+        Specification and Executable Architecture. As the complexity of the Component Specification increases, so does the
+        cost to maintain it.
+    </li>
+    <li>
+        Once you no longer maintain the Component Specification, its value decays rapidly. At some point, it will no longer
+        accurately reflect the Executable Architecture. Deciding to no longer maintain the Component Specification may be
+        appropriate (it may have served its purpose), but the decision should be a conscious one.
+    </li>
+</ul>
+<p>
+    Component Specifications tend to be useful in companies where systems live for decades, or where there are many
+    variants of the system.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell"><p>
+    The absence of this work product may result in:
+</p>
+<ul>
+    <li>
+        Brittle architecture with components that may not be reused, maintained, or replaced without impacting the overall
+        system&nbsp;
+    </li>
+    <li>
+        Ambiguous and incomplete component definitions requiring developers to clarify the scope and interoperability of
+        components
+    </li>
+    <li>
+        Inability to select appropriate implementation technologies or 3rd party packages to implement component
+        responsibilities&nbsp;
+    </li>
+    <li>
+        Difficulty creating an executable architecture to validate the architectural approach<br />
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell"><p>
+    A Component Specification may not be necessary when:<br />
+</p>
+<ul>
+    <li>
+        The overall system is quite small and the division of functional responsibility between components is clearly
+        understood&nbsp;
+    </li>
+    <li>
+        &nbsp;The structure of the overall system can be adequately described in some other form&nbsp;
+    </li>
+    <li>
+        The environment for the system is trivial and does not require detailed considerations of how applications and data
+        are organized<br />
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell"><h4 style="MARGIN: 6pt 0in">
+    Notation
+</h4>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    The Component Specification consists of both a textual definition and visual model of a component's responsibilities,
+    characteristics, and interfaces.<br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    The textual definition includes the following information:<br />
+</p>
+<table bordercolor="#000000" cellspacing="1" cellpadding="1" border="1">
+    <tbody>
+        <tr bgcolor="#CCCCCC">
+            <td valign="top" width="149">
+                <p>
+                    <strong>Property</strong>
+                </p>
+            </td>
+            <td valign="top" width="277">
+                <p>
+                    <strong>Description</strong>
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p>
+                    <strong>UML Representation</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="149">
+                <p>
+                    Name
+                </p>
+            </td>
+            <td valign="top" width="277">
+                <p>
+                    The name of the Component
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p>
+                    The attribute "Name" on model element.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="149">
+                <p>
+                    Description
+                </p>
+            </td>
+            <td valign="top" width="277">
+                <p>
+                    Brief description of the component
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p>
+                    Tagged value, of type "short text".
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="149">
+                <p>
+                    Responsibilities
+                </p>
+            </td>
+            <td valign="top" width="277">
+                <p>
+                    List of component responsibilities
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p>
+                    A (predefined) tagged value on the superclass "Type".
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="149">
+                <p>
+                    Required Service Levels (Non-Functional Requirements)
+                </p>
+            </td>
+            <td valign="top" width="277">
+                <p>
+                    List of Service Levels supported by the Component
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p>
+                    Tagged value, of type "short text".
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="149">
+                <p>
+                    Reasonableness & Risk
+                </p>
+            </td>
+            <td valign="top" width="277">
+                <p>
+                    Statement(s) about the risks associated with the design of the component
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p>
+                    Tagged value, of type "short text".
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="149">
+                <p>
+                    Design Rationale
+                </p>
+            </td>
+            <td valign="top" width="277">
+                <p>
+                    Component design decisions
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p>
+                    Tagged value, of type "short text".
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="149">
+                <p>
+                    Implementation Approach
+                </p>
+            </td>
+            <td valign="top" width="277">
+                <p>
+                    Implementation guidance and instructions
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p>
+                    Tagged value, of type "short text".
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="149">
+                <p>
+                    Diagrams
+                </p>
+            </td>
+            <td valign="top" width="277">
+                <p>
+                    Diagrams (detailed below) local to the component that complete its specification.
+                </p>
+            </td>
+            <td valign="top" width="213">
+                <p>
+                    Owned by an enclosing package, via the aggregation "owns".
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    The visual model consists of three UML diagrams:<br />
+</p>
+<ul>
+    <li>
+        <strong>Component Specification Diagram</strong> - shows the interfaces offered and used by a component
+    </li>
+    <li>
+        <strong>Interface Responsibility Diagram</strong> - depicts the data managed by each interface; shows dependencies
+        between data and interfaces
+    </li>
+    <li>
+        <strong>Interface Specification Diagram</strong> - shows the information types managed by interfaces; shows how
+        interfaces manage a component's state<br />
+    </li>
+</ul>
+<p>
+    <img height="320" alt="Component Specification Diagram" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/component_specification_diagram.gif"     width="576" />
+</p>
+<p style="MARGIN-BOTTOM: 0pt; TEXT-ALIGN: center" align="center">
+    <b style="mso-bidi-font-weight: normal">Component Specification Diagram</b>
+</p>
+<p>
+    A component specification diagram shows a single component with the interfaces it uses as well as the ones it
+    offers.<br />
+</p>
+<p>
+    <strong><img height="353" alt="Interface Responsibility Diagram" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/interface_responsibility_diagram.gif"     width="600" /></strong>
+</p>
+<p>
+    <strong>Interface Responsibility Diagram</strong>
+</p>
+<p>
+    An Interface Responsibility Diagram the information managed each interface and brings dependencies to the surface. It
+    shows an association between interfaces and entities from the logical data model (LDM). It does not show information or
+    state that the components manage through the interfaces.
+</p>
+<p>
+    <img height="200" alt="Interface Specification Diagram" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/interface_specification_diagram.gif"     width="600" />
+</p>
+<p>
+    <strong>Interface Specification Diagram</strong>
+</p>
+<p>
+    An Interface Specification Diagram depicts the information model of an interface. It shows all of the information types
+    that are needed by the interface. These types correspond to dynamic or "in-flight" data. They are not the same as
+    persistent data, but they usually map to the underlying entities of the logical data model from which they are derived.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/component_specification_430EC355.html" guid="_ivUZwDfWEdyIwaPzqVg2tg">Component Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">Philippe_Spaas@be.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Thu Sep 26 09:14:53 IST 2013</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+					contentPage.onload();
+					contentPage.processPage.fixDescriptorLinks();
+				</script>
+</html>

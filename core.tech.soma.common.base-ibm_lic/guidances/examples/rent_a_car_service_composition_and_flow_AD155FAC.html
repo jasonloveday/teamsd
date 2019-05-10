@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Rent-a-Car Service Composition and Flow</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="rent_a_car_service_composition_and_flow">
+<meta name="uma.presentationName" content="Rent-a-Car Service Composition and Flow">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_xM0s0B_FEdqF5c1Hhhq2Uw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_xM0s0B_FEdqF5c1Hhhq2Uw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Rent-a-Car Service Composition and Flow</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Provides examples of different types of service composition for short and long-running processes.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_dependencies_2F080FA0.html" guid="_aedOEBmcEdqx_IUyKxxtEg">Service Dependencies</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    For the Rent-a-car service composition shown in table 1, a higher level composite service is created / composed out of
+    other services.
+</p>
+<p>
+    The services selected for exposure are circled in red and bold.
+</p>
+<ul>
+    <li>
+        The dotted circle refers to a composition of everything within that circle.
+    </li>
+    <li>
+        The long-running process of Rent Vehicle (B) includes the composition of the exposed services Reserve Vehicle,
+        Check-out Vehicle and Check-in Vehicle. However, it is not an exposed service. The short-running process of Reserve
+        Vehicle (A) is not only a composition or choreography of services but is also an exposed service.
+    </li>
+</ul><br />
+<br />
+<table cellspacing="0" cellpadding="1" border="1">
+    <thead>
+        <tr>
+            <td valign="top" width="316" bgcolor="#E6E6E6">
+                <p>
+                    <b>A. Short-running, non-interruptible process (micro-flow)</b>
+                </p>
+            </td>
+            <td valign="top" width="316" bgcolor="#E6E6E6">
+                <p>
+                    <b>B. Long-running , interruptible process<br />
+                    (macro-flow)</b>
+                </p>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td valign="top" width="316">
+                <p align="center">
+                    <img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/Technique-Table14-1.gif" />
+                </p>
+            </td>
+            <td valign="top" width="316">
+                <p align="center">
+                    <b><img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/Technique-Table14-2.gif" /></b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="316">
+                <p>
+                    Reserve Vehicle is composed of:
+                </p>
+                <ul>
+                    <li>
+                        Check Rates
+                    </li>
+                    <li>
+                        Make Reservation
+                    </li>
+                </ul>
+            </td>
+            <td valign="top" width="316">
+                <p>
+                    Rent Vehicle is composed of:
+                </p>
+                <ul>
+                    <li>
+                        Reserve Vehicle
+                    </li>
+                    <li>
+                        Check-out Vehicle
+                    </li>
+                    <li>
+                        Check-in Vehicle
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+ 
+<p>
+    <a id="_Toc101699570" name="_Toc101699570"></a><a id="_Toc89746611" name="_Toc89746611"></a><a id="_Toc85852378" name="_Toc85852378"></a><a id="_Toc85473869" name="_Toc85473869"></a><a id="_Toc85473737" name="_Toc85473737"></a><strong>Table 1:</strong> <strong><i>Rent-a-car</i> service composition</strong>
+</p>
+<p>
+    In terms of the SOA layers, Reserve Vehicle would appear in both the choreography layer and the services layer whereas
+    Rent Vehicle would appear only in the choreography layer.<br />
+    <br />
+    The left column in table 1 shows a short-running non-interruptible process or micro-flow. In this case, Reserve Vehicle
+    depends on Check Rates and Make Reservation to complete a transaction of reserving a vehicle. The Reserve Vehicle
+    process cannot be interrupted and must complete entirely for success of the larger service.
+</p>
+<p>
+    The right column in the table shows a long-running process of Rent Vehicle. After a vehicle has been reserved, the
+    client checks-out the vehicle from the rental lot at a later time, uses the vehicle over several days or weeks, and
+    then returns it to the rental lot. At that time, the vehicle is checked in. Since the duration between services
+    comprising this larger service of Rent Vehicle may be days or weeks, it is specified as a long-running transaction or
+    interruptible process.
+</p>
+<p>
+    The decision on transaction management versus manual compensation is a key architectural decision that will be made in
+    service specification during the state management decisions.
+</p></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

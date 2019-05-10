@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Work Product (Artifact): Component Model
+			(ART 0515)
+		</title>
+<meta name="uma.type" content="WorkProductDescriptor">
+<meta name="uma.name" content="component_model">
+<meta name="uma.presentationName" content="Component Model">
+<meta name="element_type" content="WorkProductDescriptor">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_JCG3AbozEdyoutuWGu0opA&path=_JCG3AbozEdyoutuWGu0opA,_MlRwob1FEdyrVscmNb_pGw,_EZkfQgD4Ed2JMcEzMiB9RQ';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, defaultQueryStr, false, true, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>WorkProductDescriptor<div id="page-guid" value="_EZkfQgD4Ed2JMcEzMiB9RQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Work Product (Artifact): Component Model
+			(ART 0515)
+		</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/workdes_lg_dgm32.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Describes the functional view of a system, including both the structure and modularity of the software components. Depicts the dynamic behavior of the components and the way in which they interact to accomplish the required functionality.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of the component model is to help organize projects, manage the complexity of the solution, and ensure that
+    all architecturally requirements have been addressed. It helps developers design and implement the solution and
+    understand the big picture of the system design.
+</p><p/><p>
+    To document subsystems and relevant relationships and dependencies, and delineate the service, functional and technical
+    components that each subsystem will contain in a solution based on service oriented principles. Subsystems provide the
+    bridge from a business function view to an IT function view. During service component specification, this artifact is
+    used to:
+</p>
+<ul>
+    <li>
+        Identify subsystems to provide the transition from business to IT aspects of a solution based on service-oriented
+        principles
+    </li>
+    <li>
+        Elaborate the responsibilities, behavior, interfaces and relationships between subsystems
+    </li>
+    <li>
+        Elaborate the Service Components that expose subsystem functions
+    </li>
+    <li>
+        Elaborate Functional and Technical Components used by Service Components
+    </li>
+    <li>
+        Document the allocation of components to architectural layers of the SOA Reference Architecture [Solution view]
+    </li>
+    <li>
+        Facilitate the use of SOA specific component based design principles and patterns such as the enterprise component
+        pattern
+    </li>
+</ul><p/><p>
+    <strong>Note for pre-sale solution design (Team Solution Design users):</strong> In a pre-sale
+    context<strong>,</strong> the component model is used:
+</p>
+<ul>
+    <li>
+        To describe the high-level functional view&nbsp;of the system
+    </li>
+    <li>
+        To describe the responsibilities, relationships, boundaries and interactions of components&nbsp;&nbsp;
+    </li>
+    <li>
+        As a definition of the components that have to be considered in development of&nbsp;the operational model
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="30%"><span class="sectionTableCellHeading">Responsible:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.presale_sol_design.base-ibm_int/capabilitypatterns/technical_solution_architect_4E14DCF7.html" guid="_cPsHoN5NEdy-jeg0wYuB9Q">Technical Solution Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell" colspan="2"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.presale_sol_design.base-ibm_int/capabilitypatterns/technical_solution_architect_4E14DCF7.html" guid="_cPsHoN5NEdy-jeg0wYuB9Q">Technical Solution Architect</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Input To</th><td class="sectionTableCell" width="30%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../practice.tech.presale_sol_design.base-ibm_int/capabilitypatterns/identify_high_level_data_sources_F9624643.html" guid="_EZkfQAD4Ed2JMcEzMiB9RQ">Identify High Level Data Sources</a>
+</li>
+</ul>
+</td><td class="sectionTableCell" width="30%"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>None</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">External:
+								</span>
+<ul>
+<li>None</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Output From</th><td class="sectionTableCell" colspan="3">
+<ul>
+<li>
+<a href="./../../practice.tech.presale_sol_design.base-ibm_int/capabilitypatterns/identify_high_level_data_sources_F9624643.html" guid="_EZkfQAD4Ed2JMcEzMiB9RQ">Identify High Level Data Sources</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    The component model describes the structure of a system in terms of its software components with their
+    responsibilities, interfaces, relationships, and the way they collaborate to deliver the required functionality. The
+    component model is the main artifact documenting the functional view of the architecture and serves as an abstraction
+    of the design. Components identified may be decomposed into further component models before they complete the
+    specification required for detailed design.<br />
+</p>
+<p>
+    Component models help define and document:<br />
+</p>
+<ul>
+    <li>
+        The structure of the system
+    </li>
+    <li>
+        The recurring interactions and dependencies between sets of components
+    </li>
+    <li>
+        The components present within an enterprise, each of which may be made up of smaller components.
+    </li>
+</ul>
+<p>
+    Component models are documented at 2 levels:<br />
+</p>
+<ul>
+    <li>
+        The logical level - focuses on specifying the components' responsibilities and characteristics required to deliver
+        the requirements. These specifications are technology and product neutral.
+    </li>
+    <li>
+        The physical level -focuses on how to implement the components to meet the previously established specifications.
+    </li>
+</ul>
+<p>
+    You may transform logical components into physical components via custom development, the purchase of products, or the
+    reuse of assets.<br />
+</p>
+<p>
+    It may be important to maintain a separation between logical and physical components on larger projects. However,
+    smaller or less complex projects may evolve a single logical component model into a physical model, and end up with
+    only a physical model.<br />
+</p>
+<p>
+    Examples of components at the logical level are a 'Message Bus' or a 'Customer Relationship Manager' component.
+    Components at the physical level that implement these logical components might be 'IBM WebSphere Message Broker' or
+    'Siebel Contact Center.'<br />
+</p><p/><p>
+    The Subsystem sits at the transition point between business and IT aspects. Subsystem analysis validates and completes
+    the mapping of high level business functions to high level IT functions that started during Functional Area
+    Analysis.&nbsp;&nbsp;A Subsystem represents a large-grained organizing&nbsp;construct that provides logical grouping of
+    functions and functionally-cohesive, business aligned services.&nbsp;&nbsp;
+</p>
+<p>
+    During this process of elaboration, mapping is taken from the subsystem level down to the service component
+    level.&nbsp; Service components identified during Subsystem Analysis are elaborated and specified during Component
+    Specification. Service Components are initially associated with subsystems that are functionally aligned with business
+    domain functional areas. This relationship provides traceability and justification for their inclusion in the solution.
+</p>
+<p>
+    A Service Component is a large grained unit that acts as a container of functionality provided by functional and
+    technical components. A characteristic of Service Components is the use of several key design patterns: façade,
+    composite, mediator and rule objects.
+</p>
+<p>
+    Services used in an SOA based solution are realized through Service Components which belong to a specific business
+    function aligned subsystem. Each Service Component will have the responsibility of ensuring the QoS of the services it
+    will realize. As an enterprise-scale asset, each Service Component qualifies for funding, governance and maintenance
+    associated with it. Infrastructure management must be in place to ensure availability, load balancing, security,
+    performance, versioning and overall health of the Service Component that will be responsible for implementing the
+    functionality of a set of services and ensuring its quality of service. Functional components and technical components
+    can be used across several Service Components.
+</p>
+<p>
+    In an SOA project, this artifact progresses through a more detailed elaboration of the model that originated with the
+    subsystem analysis. Key differentiating aspects of the service Component Model are the use of the Enterprise Component
+    pattern in the elaboration of Service, Functional and Technical Components, and a technique that focuses on concise
+    modeling at the component level.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell"><p>
+    The Component Model consists of:<br />
+</p>
+<ul>
+    <li>
+        <strong>Introduction.</strong> Describes the context, purpose, scope, and intended audience of the component model.
+    </li>
+    <li>
+        <strong>Model Overview.</strong> Explains how the model has been organized, particularly if several component
+        models were built.
+    </li>
+    <li>
+        <strong>Notation.</strong> If appropriate, describes any notation used in the document.
+    </li>
+    <li>
+        <strong>Overview of Layers and Subsystems.</strong> May describe logical components and/or physical components.
+    </li>
+    <li>
+        <strong>Component Relationship Diagrams.</strong> Shows the relationships between components.
+    </li>
+    <li>
+        <strong>Component Interaction Diagrams.</strong> Describes the collaboration between components.
+    </li>
+    <li>
+        <strong>Component Descriptions.</strong> Describes in detail each component's responsibilities and interfaces,
+        required service levels (non-functional requirements), risk, design rationale, and implementation approach.<br />
+    </li>
+</ul><p/><p>
+    For services projects:
+</p>
+<ul>
+    <li>
+        Subsystems are shown as high level components which will be decomposed in subsequent elaborations.
+    </li>
+    <li>
+        Subsystem descriptions and relationships to other subsystems are shown as component documentation and component
+        diagrams.<br />
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Notation</th><td class="sectionTableCell"><p>
+    The different kinds of diagrams and their associated notation used in documenting the Component Model are summarized
+    below.
+</p>
+<p>
+    <strong>Component Relationship Diagram</strong>
+</p>
+<p>
+    A Component Relationship Diagram shows the static dependency relationships between components or subsystems.<br />
+    <img height="361" alt="Component Diagram" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/component_diagram.gif" width="546" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Figure 1 - Component Relationship Diagram
+</p>
+<p>
+    <strong>Component Interaction Diagram</strong>
+</p>
+<p>
+    A Component Interaction Diagram shows the interactions between individual component instances and how a number of such
+    component instances collaborate together to realize a scenario. Interaction diagrams also show the sequential flow of
+    messages over time.
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img height="294"     alt="Component Interaction Diagram" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/component_interaction_diagram.gif" width="600" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Figure 2 - Component Interaction Diagram
+</p><p/><p>
+    Subsystems are described in terms of responsibilities, composition, behavior, interfaces, and relationships between
+    subsystems. The internal composition of subsystems is described by identifying the Service Components, Functional
+    Components, and Technical Components that each subsystem will contain. These elements are described in several ways
+    using a combination of UML diagrams and textual descriptions. Subsystems provide bridge from a business function view
+    to an IT function view.&nbsp; The figure below shows a typical subsystem relationship diagram:
+</p>
+<p>
+    <img height="191" alt="" src="./../../core.tech.soma.common.base-ibm_lic/workproducts/resources/subsystem_relationship.jpg" width="386" />
+</p>
+<p>
+    The figure below shows how Service Components are grouped within subsystems, and are associated with functional and
+    technical components.
+</p>
+<p>
+    <img style="WIDTH: 419px; HEIGHT: 314px" height="234" alt="" src="./../../core.tech.soma.common.base-ibm_lic/workproducts/resources/ServiceComponent-Fig1.gif" width="332" />
+</p>
+<p>
+    <strong>Component allocation to architectural layers</strong> - A key realization decision is to allocate components to
+    architectural layers. Component allocation to layers can be represented using a diagram similar to below. A more
+    detailed allocation of components to layers should also be performed based on the layers of the application
+    architecture being used.
+</p>
+<p>
+    <img style="WIDTH: 614px; HEIGHT: 376px" height="348" alt="" src="./../../core.tech.soma.common.base-ibm_lic/workproducts/resources/ServiceComponent-Fig4.gif" width="574" />
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Selected Representation</th><td class="sectionTableCell"><p>
+    A UML modeling tool is the preferred method for developing the component model. UML 2.0 is the standard notation.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Illustrations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Templates</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/templates/component_model_formal_66108D2F.html" guid="_Fxgu0DejEdyFMtjeREc5MQ">Component Model (formal)</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/templates/component_model_soma_5E3B021.html" guid="_h4rDgBK9Ed2t0d9pJfMO0A">Component Model for SOMA</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Examples</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/component_model_E382216F.html" guid="_m39qIDfWEdyIwaPzqVg2tg">Component Model </a>
+</li>
+<li>
+<a href="./../../core.tech.presales.common.base-ibm_int/guidances/examples/component_model_tsd_1A4B70BC.html" guid="_lf-AcKzaEdyaUuyek1jM3w">Component Model for Team Solution Design</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/examples/rent_a_car_reservation_svc_comp_internal_flow_E220413D.html" guid="_lNNpwB_REdqF5c1Hhhq2Uw">Rent-a-Car Reservation Service Component Internal Flow</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/examples/rent_a_car_service_component_class_diagram_95128200.html" guid="_znHnMB_UEdqF5c1Hhhq2Uw">Rent-a-Car Service Component Class Diagram</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/examples/rent_a_car_subsystem_analysis_60700C52.html" guid="_nryskBsREdqPvNY1HlMbiA">Rent-a-Car Subsystem Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Points to consider when deciding whether to use a Component Model:<br />
+</p>
+<ul>
+    <li>
+        A Component Model is useful when you must design the system for multiple target environments, with separate design
+        architectures. The Component Model is an abstraction, or a generalization, of the system design. It omits most of
+        the details of the design in order to provide an overview of the system's functionality.
+    </li>
+    <li>
+        The Component Model provides value when the design is complex, such that new team members need a simplified,
+        abstracted model to understand it. A well-defined architecture can serve the same purpose.
+    </li>
+    <li>
+        Balance the extra work required to ensure that the component and design models remain consistent against the
+        benefit of having a view of the system that represents only the most important details of how the system works. It
+        can be very costly to maintain a high degree of fidelity between the Component Model and the system design. A less
+        ambitious approach might be to maintain the Component Model with only the most important components and the key
+        abstractions in the design. As the complexity of the Component Model increases, so does the cost to maintain it.
+    </li>
+    <li>
+        Once you no longer maintain the Component Model, its value decays rapidly. At some point, it no longer accurately
+        reflects the current functional design of the system. Deciding to no longer maintain the Component Model may be
+        appropriate, as it may have served its purpose, but the decision should be a conscious one.
+    </li>
+</ul>
+<p>
+    Component models tend to be useful in companies where systems live for decades, or where there are many variants of the
+    system.<br />
+</p>
+<p>
+    To ensure the successful development of a component model on a project, your team should:<br />
+</p>
+<ul>
+    <li>
+        Create a stable and coherent structure
+    </li>
+    <li>
+        Focus on the right levels of abstraction
+    </li>
+    <li>
+        Develop relationship and interaction diagrams in parallel
+    </li>
+    <li>
+        Select architecturally significant requirements as inputs to the Component Model
+    </li>
+    <li>
+        Plan how your team will leverage the Component Model throughout the project lifecycle
+    </li>
+</ul><p/><p>
+    <strong>Note for pre-sale solution design (Team Solution Design users):</strong>&nbsp; In a pre-sale context,&nbsp;the
+    Component Model&nbsp;illustrates the basic ideas of the proposed architecture but may be substantially less elaborate
+    than it will be&nbsp;during later design phases. This&nbsp;artifact includes guidance tailored to the pre-sale
+    environment. In a pre-sale context the following elements of the component model are recommended. More complex
+    situations may require more elaboration. For more complex situations, Team Solution Design users may opt to use the
+    SA4TeamSD configuration of IBM's Rational System Architect tool to develop the required elements of the Component
+    Model. For guidance on the adoption and use of System Architect (SA4TeamSD), refer to the associated tool mentor.
+</p>
+<ul>
+    <li>
+        <strong>Component Description:</strong> As general guidance, at a high level, components depict the major
+        subsystems and boundaries&nbsp;and interfaces&nbsp;of the overall system. Later they can be decomposed or
+        refactored as necessary. Components are often built or acquired as a cohesive unit, separate in some way from other
+        components. <strong>System Architect</strong> includes the ability to model&nbsp;and describe various aspects of
+        components.
+    </li>
+    <li>
+        <strong>Component Relationship Diagram:</strong> This diagram&nbsp;is a static view which shows the organization of
+        and dependencies among a set of components. This diagram will indicate where interfaces must exist.&nbsp;SA4TeamSD
+        users&nbsp;can create this diagram using the Logical or Physical Relationship View. This view is typically based on
+        a using relationship where one component depends on another based on using an interface that is offered.
+        SA4TeamSD&nbsp;also offers Logical and Physical Structure Views which&nbsp;depict component relationships based on
+        the sum of all messages flowing between components. &nbsp;
+    </li>
+    <li>
+        <strong>Component Interaction Diagram:</strong> This diagram is based on the UML Sequence Diagram which is a kind
+        of UML Interaction Diagram. It emphasizes the ordering of messages between components to execute some particular
+        scenario. This is helpful in a pre-sale context to understand important functions of the proposed system. The
+        pre-sale level of elaboration should focus on the most important or least well understood
+        interactions.&nbsp;<strong>System Architect</strong> users will create this diagram using the Logical Sequence
+        View. An alternative is the Logical Collaboration View.<br />
+    </li>
+</ul>
+<p>
+    For a discussion on the necessity of this work product and appropriate levels of elaboration for a pre-sale
+    environment, consult the guidance entitled <strong><em>Pre-sale Work Product Usage for Team Solution
+    Design.&nbsp;</em></strong>
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    <strong>Enterprise Architecture Influence:</strong> Existing enterprise architecture is an important influence on
+    solution design. See the associated&nbsp;<em><strong>Guideline: The&nbsp;Role of Enterprise Architecture in Solution
+    Design</strong></em> for guidance on EA&nbsp;artifacts (or their equivalents) that should be considered when developing
+    this work product.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Tailoring</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Impact of not having</th><td class="sectionTableCell"><p>
+    It is difficult to gain an understanding of the structure of a complex system without some kind of component
+    model.<br />
+</p>
+<p>
+    The absence of this artifact may result in:<br />
+</p>
+<ul>
+    <li>
+        Difficulty managing the development project&nbsp;
+    </li>
+    <li>
+        The need for individual designers and developers to understand most of the inner details of the entire system&nbsp;
+    </li>
+    <li>
+        Difficulty managing parallel development due to imprecise definitions of the work allocated to development groups
+    </li>
+    <li>
+        Missed opportunities for reuse of high level components&nbsp;
+    </li>
+    <li>
+        An incomplete design with key design elements missing
+    </li>
+    <li>
+        Lack of information (such as the relevant service level requirements) essential to the appropriate placement of
+        applications and data across the system infrastructure
+    </li>
+    <li>
+        Difficulty tracing requirements through to implementation and validating that the architecturally significant
+        requirements are realized in the executable architecture<br />
+    </li>
+</ul><p/><ul>
+    <li>
+        Failure to identify and utilize service components can lead to realization of services through suboptimal design
+        techniques that can limit both the initial and long term viability of the service&nbsp;
+    </li>
+    <li>
+        Failure to apply the Enterprise Component pattern can lead to a suboptimal non-standard design that may increase
+        the coupling between service consumer and provider, a very undesirable outcome for an SOA based solution
+    </li>
+</ul>
+<p>
+    An additional objective of SOA based initiatives is to achieve business alignment of the IT solution, which is in part
+    represented by the mapping of functional areas to subsystems as depicted in early elablorations of this artifact.
+    Failure to carry out subsystem analysis can negatively impact the ability to meet this objective for several reasons:
+</p>
+<ul>
+    <li>
+        Business domain may not be clearly mapped to the IT solution through decomposition into high level subsystems,
+    </li>
+    <li>
+        Large grained grouping of functionality may not exist, leading to increased system and business complexity
+    </li>
+    <li>
+        An appropriate container for service, functional and technical components may not exist, complicating later design,
+        development and deployment related activities.
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Reasons for not needing</th><td class="sectionTableCell"><p>
+    A Component Model may not be necessary when:<br />
+</p>
+<ul>
+    <li>
+        The overall system to be developed is quite small
+    </li>
+    <li>
+        The functional view of the overall system can be adequately described in some other form, as may be the case with a
+        simple package-based organization of the architecture<br />
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Representation Options</th><td class="sectionTableCell"><p>
+    Ideally, you should represent component models using a UML modeling tool that supports the UML 2 notation defined for
+    this artifact. Modeling tools help ensure consistency between models and between the various diagrams they contain by
+    allowing model elements to be shared among many models or diagrams. These tools also allow multiple views of the same
+    model.<br />
+</p>
+<p>
+    Alternatively, you can represent component models through a series of stand-alone diagrams developed in diagramming
+    tools, then bound together within a word-processing document. A diagramming tool is difficult to maintain if any model
+    element appears in multiple diagrams, as changes to the model element must be made in each diagram on which it appears.
+    These tools may be appropriate for smaller projects in which the development and maintenance of the component model is
+    limited in scope, resources and effort. However, this approach is impractical for a team of practitioners responsible
+    for maintaining an up-to-date component model that interoperates with other models, such as the requirements and
+    operational models.<br />
+</p>
+<p>
+    Whichever option you choose, do not underestimate the importance of using a common notation and standard like UML 2.
+    All diagrams, irrespective of representation option, should use formal notation, and UML 2 is recommended.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/component_model_F85D7AB9.html" guid="_vKC9QDejEdyFMtjeREc5MQ">Component Model</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/checklists/subsystem_analysis_7662E2FE.html" guid="_cQJ9cBsWEdqPvNY1HlMbiA">Subsystem Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.presales.common.base-ibm_int/guidances/guidelines/component_model_tsd_EF2B96DE.html" guid="_0XHa4KzaEdyaUuyek1jM3w">Component Model for Team Solution Design</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/guidelines/managing_data_with_components_D0B70DAF.html" guid="_IFoswDfTEdy5uPLchEwddA">Managing Data With Components</a>
+</li>
+<li>
+<a href="./../../core.tech.presales.common.base-ibm_int/guidances/guidelines/pre_sale_wp_usage_guideline_1154DB8.html" guid="_X6EVcKKoEdyHuIne4CkNdw">Pre-sale Work Product Usage for Team Solution Design</a>
+</li>
+<li>
+<a href="./../../core.tech.presales.common.base-ibm_int/guidances/guidelines/soa_design_for_team_solution_design_2826F5FF.html" guid="_t4Bw0PqoEdyBdP2Q1C9JPg">Service Oriented Architecture Design for Team Solution Design</a>
+</li>
+<li>
+<a href="./../../core.tech.presales.common.base-ibm_int/guidances/guidelines/role_of_ea_in_soln_design_8DBB0D23.html" guid="_9B8jEFo2EeCeD8_Z8azGSQ">The Role of Enterprise Architecture in Solution Design</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Supporting Materials</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/supportingmaterials/service_component_ref_6405491D.html" guid="_unfmUBsEEdqPvNY1HlMbiA">References: Service Component</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tool Mentors</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.presales.common.base-ibm_int/guidances/toolmentors/system_architect_tsd_2075B08B.html" guid="_OW_W8FoYEd-eLIli7F0A4w">Rational System Architect for Team Solution Design</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_int/guidances/toolmentors/umf_starter_kit_rsa_34F16DC1.html" guid="_hRCeUKG7EeC3iM5oSOc9wg">UMF Starter Kit for RSA [LINK]</a>
+</li>
+<li>
+<a href="./../../core.tech.presales.common.base-ibm_int/guidances/toolmentors/uml_tooling_tsd_staruml_474079EB.html" guid="_yZHvQIsoEd20I-5ejvuVFQ">UML Tooling for Team Solution Design (StarUML)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Estimation Considerations</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/estimationconsiderations/component_model_7500CD0C.html" guid="_uUje4DfTEdy5uPLchEwddA">Component Model</a>
+</li>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/guidances/estimationconsiderations/subsystem_analysis_AD916C9B.html" guid="_afyGMBLEEd2t0d9pJfMO0A">Subsystem Analysis</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">Philippe_Spaas@be.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Thu Sep 26 09:07:53 IST 2013</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">November 2008 - baseline version|July 2010 - updated to reflect System Architect considerations|May, 2011 - added guidance on EA influence</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+					contentPage.onload();
+					contentPage.processPage.fixDescriptorLinks();
+				</script>
+</html>

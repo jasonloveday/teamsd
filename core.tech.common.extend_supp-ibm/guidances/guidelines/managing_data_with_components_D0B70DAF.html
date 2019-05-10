@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Managing Data With Components</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="managing_data_with_components">
+<meta name="uma.presentationName" content="Managing Data With Components">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_IFoswDfTEdy5uPLchEwddA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_IFoswDfTEdy5uPLchEwddA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Managing Data With Components</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes a step-by-step technique on how to associate components with data in a persistent data store and exchange that data with the dynamic session data needed by a component at run-time. This technique can be used as part of the more general technique of component modeling.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Typical project teams perform component modeling and data modeling as separate tasks. This may lead to a mismatch
+    between the dynamic or "in-flight" data that components require (state) and the underlying data stores that make that
+    data persistent. This technique shows a way of tying together these two separate concerns.<br />
+</p>
+<p>
+    One of the key elements of object-oriented design is that of encapsulation, or information hiding, whereby an object
+    binds its state and its behavior together and hides them from clients that use that object. Encapsulation is the
+    process of hiding all of the details of an object that do not contain its essential characteristics. [BOOCH91]<br />
+</p>
+<p>
+    <a class="elementLinkWithUserText" href="./../../../core.tech.common.extend_supp/guidances/concepts/component_CB167D48.html" guid="_0YP18MlgEdmt3adZL5Dmdw">Components</a>, and increasingly services, adopt the same principle of encapsulation. A
+    component is a modular unit of functionality, accessed through one or more interfaces that encapsulate its own state
+    and behavior. [ADS02]
+</p>
+<p>
+    In practice, two issues often arise when defining encapsulated components:<br />
+</p>
+<ul>
+    <li>
+        The logical data model is separate from the components or services that need to access data
+    </li>
+    <li>
+        Components require their state to be defined and persisted in a data store
+    </li>
+</ul>
+<p>
+    The challenge is how to join components with the underlying databases where persistent data and state is stored.<br />
+</p>
+<p>
+    The technique described here offers an approach for addressing this challenge, based on the work of Cheesman and
+    Daniels [CHEESMAN00]. This approach may also be appropriate for services [DODD05].<br />
+</p>
+<p>
+    <strong><font size="3">Step 1: Produce a logical data model showing business entities<br />
+    </font></strong>
+</p>
+<p>
+    Produce a logical data model (LDM) showing business entities and the relationship between the entities in your system.
+    Figure 2 shows an example of a partial LDM for a banking application.<br />
+</p>
+<p>
+    In this particular example, the LDM is drawn using components from UML2 with the stereotype &lt;&lt;entity&gt;&gt;.
+    Entity components model data only and do not have any associated behavior.<br />
+    <br />
+</p>
+<p>
+    <img height="338" alt="Logical Data Model" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/logical_data_model.gif" width="338" />
+</p>
+<p>
+    <strong>Figure 2: Logical Data Model</strong>
+</p>
+<p>
+    <font size="3"><strong>Step 2: Identify core business entities</strong></font>
+</p>
+<p>
+    Identify core entities to determine which data depends on other data and which is stand-alone. [CHEESMAN00]<br />
+</p>
+<p>
+    A core business entity is an one that:<br />
+</p>
+<ul>
+    <li>
+        Has an independent existence
+    </li>
+    <li>
+        Has no mandatory associations to other business types, and
+    </li>
+    <li>
+        Is within the scope of the problem space being looked at.
+    </li>
+</ul>
+<p>
+    In the example shown in Figure 3 'Account' and 'Customer' are core because they could exist independently whereas
+    'TransactionRecord' and 'SecurityProfile' are not stand alone, they depend on 'Account' and 'Customer' respectively.
+    'Bank' could be a core business type, but it is not within the scope of problem space of this solution.<br />
+</p>
+<p>
+    <img height="356" alt="Core Business Entities" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/core_business_entities.gif" width="350" />
+</p>
+<p>
+    <strong>Figure 3: Core Business Entities</strong>
+</p>
+<p>
+    <br />
+    <font size="3"><strong>Step 3: Assign interfaces to manage core business entities</strong></font>
+</p>
+<p>
+    As a rule, create one business interface for each core entity type. Use a naming convention of the form 'IMgt', for
+    example&nbsp;'IAccountMgt', indicating the interface manages instances of this type.<br />
+</p>
+<p>
+    An Interface Responsibility Diagram is a UML2 component diagram that shows the information managed by each interface
+    and dependencies between interfaces and entities. Each entity should be owned by exactly one interface. Show allocation
+    of entities to interfaces using a UML2 association. Figure 4 shows an example Interface Responsibility Diagram. In this
+    example, you assign interfaces to the core types 'Account' and 'Customer'.<br />
+</p>
+<p>
+    <img height="338" alt="Interface Responsibility Diagram" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/interface_responsibility_diagram.gif"     width="600" />
+</p>
+<p>
+    <strong>Figure 4: Interface Responsibility Diagram</strong>
+</p>
+<p>
+    <strong><font size="3">Step 4: Specify the information to be managed by an interface<br />
+    </font></strong>
+</p>
+<p>
+    The Interface Responsibility Diagram (Figure 4 above) shows an association between interfaces and entities from the
+    LDM. It does not show information or state that the components manage through the interfaces; an Interface
+    Specification Diagram shows this information.<br />
+</p>
+<p>
+    The Interface Specification Diagram shows the possible states of a component to which the operations can refer. All
+    changes to the state of a component caused by a given operation can be described in this information model. Showing
+    states in this way also allows you to specify pre- and post-conditions, which may affect that state.<br />
+    The Interface Responsibility Diagram of Figure 4 is shown again in Figure 5 with a circle drawn around the interface
+    and associated core type.<br />
+    <br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    <img height="346" alt="Interface Responsibility Diagram - Account Management"     src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/interface_responsibility_diagram_2.gif" width="600" />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    <strong>Figure 5: Interface Responsibility Diagram</strong>
+</p>
+<p>
+    <br class="MsoNormal" style="MARGIN: 6pt 0in" />
+    Assign the following operations to the interface 'IAccountMgt':<br />
+</p>
+<ul>
+    <li>
+        debitAccount - debits an account by an amount
+    </li>
+    <li>
+        creditAccount - credits an account by an amount
+    </li>
+    <li>
+        getBalance - gets an account's balance
+    </li>
+    <li>
+        fundTransferAllowed - checks if its possible to transfer funds between two accounts
+    </li>
+    <li>
+        getAccountsFor - gets all the accounts for a customer
+    </li>
+    <li>
+        getAccountInformation - gets the account information
+    </li>
+</ul>
+<p>
+    For each operation in the interface, specify the data it needs to pass and return. Assign the typed parameters and
+    returns to the operation. Capture this information on an Interface Specification Diagram, illustrated for the
+    IAccountMgt interface in Figure 6.<br />
+    <br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    <img height="226" alt="Interface Specification Diagram" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/interface_specification_diagram.gif"     width="600" />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    <strong>Figure 6: Interface Specification Diagram</strong>
+</p><br class="MsoNormal" style="MARGIN: 6pt 0in" />
+<br />
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Unlike an Interface Responsibility Diagram that shows a mapping between components, interfaces and persistent entities,
+    an Interface Specification Diagram shows a mapping between components, interfaces and the state those components have
+    at runtime.<br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Represent this state using the stereotype &lt;&lt;informationType&gt;&gt;. Information types correspond to dynamic or
+    "in-flight" data. They are not the same as persistent data, even though they usually map to that data. Generally, an
+    entity maps to a relational database table or some other persistence mechanism, whereas an informationType is a view of
+    an underlying persistent entity. There may be several such "views," each managed by different components.<br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Convert the Interface Responsibility Diagram of Figure 5 to the Interface Specification Diagram of Figure 6 by removing
+    any attributes not required. The end result is that each operation in the interface contains only data types of the
+    information types managed through that interface.<br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    In Figure 6 the operation 'getBalance' has a parameter 'accountNum' of type 'String' and a return type of 'String'. The
+    parameters 'accountNumber' and 'currentBalance' store the information in 'Account'.<br />
+    <br />
+    <strong><font size="3">Step 5: Assign pre- and post-conditions to the operations<br />
+    </font></strong>
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Pre- and post-conditions are kinds of an assertion. They are false only if an error has occurred. You should usually
+    check assertions only during build (either automatically during compilation or manually during test), not during
+    runtime execution.<br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Having a pre-condition makes it explicit what the caller is responsible for checking. Without this explicit statement
+    of responsibility, there could be too little or too much checking. Too much checking is as bad as too little because it
+    leads to "program bloat" and makes programs overly complex and difficult to maintain.<br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    A pre-condition does not stop an operation from executing [MEYER97]. Some practitioners erroneously use the term
+    pre-condition to describe a situation that needs to be true in order for an operation to be executed. This is better
+    termed a guard condition or the triggering event for execution. [DODD05].<br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    At run time, treat pre- and post-conditions as written specifications for how the system should behave. You can then
+    test them during the various phases of testing. However, you can also check assertions at run time using some form of
+    exception handling.<br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    Figure 7 shows an example of a pre- and post-condition written using English for an operation in the 'IAccountMgt'
+    interface. You may write pre- and post-conditions more formally using the Object Constraint Language (OCL)
+    [WARMER99].<br />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    <img height="352" alt="Pre- and Post- Conditions" src="./../../../core.tech.common.extend_supp-ibm/guidances/guidelines/./resources/pre_and_post_conditions.gif" width="600" />
+</p>
+<p class="MsoNormal" style="MARGIN: 6pt 0in">
+    <strong>Figure 7: Pre- and Post- Conditions</strong>
+</p><br class="MsoNormal" style="MARGIN: 0in 0in 0pt" />
+<br />
+<p class="MsoNormal" style="MARGIN: 0in 0in 0pt">
+    See <em>Patterns of Enterprise Application Architecture</em>, by Martin Fowler<font face="Helv"><font face="Arial">,
+    for more information about mapping between objects and relational databases.</font></font>
+</p>
+<p>
+    <br />
+</p>
+<h4 style="MARGIN: 6pt 0in">
+    References
+</h4>
+<h4 style="MARGIN: 6pt 0in">
+    <br />
+</h4>
+<table cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td valign="top" width="121">
+                <p>
+                    [ADS02]
+                </p>
+            </td>
+            <td valign="top" width="518">
+                <p>
+                    Kahan, Ed et al. <em>Architecture Description Standard Overview</em> , IBM, 2002.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="121">
+                <p>
+                    [BOOCH91]
+                </p>
+            </td>
+            <td valign="top" width="518">
+                <p>
+                    Booch, Grady. <em>Object-Oriented Design with Applications</em> , Benjamin Cummings, 1991, ISBN:
+                    0-8053-0091-0.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="121">
+                <p>
+                    [CHEESMAN00]
+                </p>
+            </td>
+            <td valign="top" width="518">
+                <p>
+                    Cheesman, John & Daniels, John. <em>UML Components</em> , Addison-Wesley, 2000, ISBN: 0201708510.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="121">
+                <p>
+                    [DODD05]
+                </p>
+            </td>
+            <td valign="top" width="518">
+                <p>
+                    Dodd, John. Practical Service Specification and Design Part 3: Specifying Services, CBDi Journal, June
+                    2005.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="121">
+                <p>
+                    [MEYER97]
+                </p>
+            </td>
+            <td valign="top" width="518">
+                <p>
+                    Meyer, Bertrand. <em>Object-Oriented Software Construction</em> , Prentice-Hall, 1997, ISBN:
+                    0136291554.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="121">
+                <p>
+                    [WARMER99]
+                </p>
+            </td>
+            <td valign="top" width="518">
+                <p>
+                    Warmer, J and Klepp, A. <em>The Object Constraint Language - Precise Modeling with UML</em> , Addison
+                    Wesley, 1999, ISBN: 0201379406.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend_supp/guidances/concepts/component_CB167D48.html" guid="_0YP18MlgEdmt3adZL5Dmdw">Component</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Thu Feb 19 04:56:34 IST 2009</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

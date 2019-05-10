@@ -1,0 +1,941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Whitepaper: Understanding SOMA Essentials for Team Solution Design</title>
+<meta name="uma.type" content="Whitepaper">
+<meta name="uma.name" content="soma_essentials_for_team_solution_design">
+<meta name="uma.presentationName" content="Understanding SOMA Essentials for Team Solution Design">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4acRdEdyD76CYS6Ta7A", "_ZA1ggPqdEdyBdP2Q1C9JPg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_ZA1ggPqdEdyBdP2Q1C9JPg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Whitepaper: Understanding SOMA Essentials for Team Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/whitepaper.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/define_key_services_5576D29A.html" guid="_PvTKIPdwEdyd_7bCW3QEvg">Define Key Services</a>
+</li>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_model_AA7DDA59.html" guid="_fxbwIBmHEdqx_IUyKxxtEg">Service Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The Service Oriented Modeling and Architecture (SOMA) method provides in-depth guidance on how to move from the
+    business models created through Component Business Modeling (CBM) or similar business analysis techniques, to the
+    models required by a SOA solution design. Building a service-oriented architecture requires more than just a list of
+    services. It requires conceptualization, identification, specification and realization of services that bring business
+    and IT together in the SOA paradigm. This requires modeling the attributes of each service and their relationships. It
+    requires a technique for the analysis and design of services.<br />
+    <br />
+    SOMA is a method aimed at enabling target business processes through the identification, specification and realization
+    of business-aligned services that form the SOA foundation. SOMA creates continuity between the business intent and IT
+    implementation by extending business characteristics (e.g. goals and key performance indicators) into the IT analysis
+    and architectural decisions. The analysis and modeling performed during SOMA is not specific to any technology or
+    product, but establishes a context for making technology and product specific decisions in later phases of the
+    lifecycle. Its goal is to provide guidance in the modeling (analysis and design) of SOA.<br />
+    <br />
+    Business componentization and analysis provide inputs essential to SOMA:
+</p>
+<ul>
+    <li>
+        business transformation focus area with descriptions of its logical groupings of business capabilities (i.e.
+        partitioning into business domains),
+    </li>
+    <li>
+        business process model for the focus area and
+    </li>
+    <li>
+        business goals and corresponding metrics.
+    </li>
+</ul>
+<p>
+    SOMA produces outputs that are required by SOA implementation activities. Key work products include:
+</p>
+<ul>
+    <li>
+        Service Model
+    </li>
+    <li>
+        Goal-Service Model (GSM)
+    </li>
+    <li>
+        Component Model
+    </li>
+</ul>
+<p>
+    Organizations define goals to meet their mission and to set strategic direction. Although there are no universally
+    agreed-upon terms, expressions such as "goals", "business goals" or "strategic goals" are often used by business
+    stakeholders to mean business aspirations. In SOMA, the term goal denotes a business aspiration, usually at a high
+    level (e.g. increase revenue by 5%).<br />
+    <br />
+    Once an enterprise has analyzed its mission and defined its goals, it needs a way to measure progress toward those
+    goals. Many things contribute to organization's success. Those that are key contributors such as Key Performance
+    Indicators (KPI's), also known as Key Success Indicators (KSI's) or Key Business Indicators (KBI's), are used by
+    businesses to define and measure progress toward their goals. In SOMA, KPI's represent quantifiable measurable
+    objectives, agreed to beforehand, that reflect the critical success factors of an organization.<br />
+    <br />
+    KPI's differ depending on an industry and an organization. A sales organization may have as one of their KPIs the
+    percentage of its sales that comes from return customers. A Customer Service Organization may have a KPI that measures
+    a number of customer calls answered in under a minute. To determine if the objectives associated with a KPI are being
+    met, the KPI may need to be broken down into one or more metrics, which identify specific measurements to collect for
+    analysis (e.g. time to close an average sale deal).<br />
+    <br />
+    SOMA activities are grouped into major steps, including Identification, Specification, Realization, Implementation and
+    Deployment as shown below.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <p>
+                        <img height="488" alt="SOMA Major Steps" src="./../../../core.tech.presales.common.base-ibm_int/guidances/whitepapers/resources/SOMA_major_steps.jpg" width="515" />
+                    </p>
+                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                                    <p>
+                                        <strong>Figure 1.</strong> SOMA Major Steps
+                                    </p>
+                                </blockquote>
+                            </blockquote>
+                        </blockquote>
+                    </blockquote>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<p dir="ltr">
+    Figure 2 shows each step subdivided into individual activities. Each step is carried out by applying one or more
+    complementary techniques, many of which are likely to be familiar to practitioners reading this paper.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <p dir="ltr">
+                    <img height="317" alt="SOMA Lifecycle" src="./../../../core.tech.presales.common.base-ibm_int/guidances/whitepapers/resources/SOMA_Lifecycle.jpg" width="600" />
+                </p>
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                                        <p dir="ltr">
+                                            <strong>Figure 2.</strong> SOMA Lifecycle
+                                        </p>
+                                    </blockquote>
+                                </blockquote>
+                            </blockquote>
+                        </blockquote>
+                    </blockquote>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<p dir="ltr">
+    <strong>Goal-service modeling<br />
+    </strong>The primary objective of Goal-Service Modeling is to align services with business goals and to facilitate
+    identification and prioritization of services. In addition, it is used to filter out those services that do not meet
+    business goals.<br />
+    <br />
+    Goal-Service Modeling links services to business goals and identifies services by analyzing the goals of an enterprise
+    or a business unit. This technique starts with generalized statements of business goals, with subsequent decomposition
+    into sub-goals that must be met in order to fulfill the higher level goal. This eventually leads to a level of
+    decomposition that supports the identification of services associated with the sub-goals. During this process, KPIs are
+    identified and collected; along with the metrics that will be used to measure, monitor and verify the degree of success
+    in actually achieving the goals.<br />
+    <br />
+    Goal-Service Modeling establishes the conceptual link between services and business goals, as well as the means to
+    demonstrate whether the goals are actually being achieved once the services are implemented. It also narrows the focus
+    of analysis for the other two service identification techniques.<br />
+    <br />
+    <strong>Variation-oriented analysis and Variation-oriented design<br />
+    </strong>Variation-Oriented Analysis (VOA) isolates functional and structural aspects of the domain that have
+    variations or are likely to change from those aspects that represent commonalities or likely to remain unchanged.
+    Variation-Oriented Design (VOD) then designs pluggable system variations that can evolve and grow without intrusive
+    alterations to architecture and code.<br />
+    <br />
+    VOA is applied during the analysis phase of an engagement (e.g. Macro Design) and provides input to VOD. VOD takes
+    place during the design (e.g. Micro Design). For simplicity, both VOA and VOD are discussed together in this section
+    because of their similarity and their relationship to each other. VOA is used during SOMA Identification and VOD is
+    used during SOMA Specification.<br />
+    <br />
+    A key benefit of applying VOA and VOD is achieved when elements of the domain that are most likely to change are
+    isolated and externalized. As a result, the introduction of future variations requires less restructuring of the
+    application or architecture. For example, the identification of Account Type and Account Rule Type simplifies the
+    introduction of new accounts, each with their own components and rules, without having to substantially alter the
+    existing structure or function of the system.<br />
+    <br />
+    Identification and modeling of business elements that are expected to vary over time parallels in some respects the
+    concept of generalization and specialization commonly applied during OOAD to achieve a well normalized design. VOA and
+    VOD, however, go further by externalizing the instance of each variation that results in a more flexible design that is
+    highly adaptable to change over time. This is achieved by modeling the domain in terms of type hierarchies at each
+    point of variation and associating externalized type and variation rules with a common type and rules that represent
+    the commonalities spanning all the variations.<br />
+    <br />
+    <strong>Specification<br />
+    </strong>In this step, the three key elements of services, components and flows are elaborated through the following
+    activities:
+</p>
+<ul dir="ltr">
+    <li>
+        <div>
+            Service specification - defines the dependencies, composition, exposure decisions, messages, quality service
+            constraints and decisions regarding the management of state within a service.
+        </div>
+    </li>
+    <li>
+        <div>
+            Subsystem analysis - identifies the service components (and related functional and technical components) and
+            relationships that will be used to realize the services.
+        </div>
+    </li>
+    <li>
+        <div>
+            Component specification - elaborates on the service components and creates the details of the service
+            components required to realize services.
+        </div>
+    </li>
+</ul>
+<p>
+    A key technique used in the SOMA Specification step is the Service Litmus Test (SLT). An overview of the SLT is
+    provided below.<br />
+    <br />
+    <strong>Service Litmus Test<br />
+    </strong>During SOMA Identification, a list of candidate services (and other elements) is identified. During SOMA
+    Specification, decisions are made to establish which of these candidate services will actually be exposed for a SOA
+    solution.<br />
+    <br />
+    Figure 3 depicts the four (out-of-the-box) gating criteria of the SLT used to determine if a candidate service should
+    be exposed.
+</p>
+<ol>
+    <li>
+        <div>
+            Business alignment<br />
+            This refers to the traceability of a service to business goals, i.e., is the service of value to a business?
+        </div>
+    </li>
+    <li>
+        <div>
+            Composability<br />
+            A service that is composable is self-contained and can participate in a composition or choreography. It is
+            deployed independently but may cooperate with other services at run-time to execute business processes in
+            support of business goals. There are no external dependencies involved that would disallow the service from
+            participating in a composition.
+        </div>
+    </li>
+    <li>
+        <div>
+            Externalized Service Description<br />
+            A service has an externalized service description, either generated through automated tools or created
+            manually.
+        </div>
+    </li>
+    <li>
+        <div>
+            Redundancy Elimination/Reusability<br />
+            This refers to the functionality of a service being provided once and used in multiple business processes.
+        </div>
+    </li>
+</ol>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <p dir="ltr">
+                    <img height="404" alt="SOMA Litmus Test" src="./../../../core.tech.presales.common.base-ibm_int/guidances/whitepapers/resources/Service_Litmus_Test.jpg" width="600" />
+                </p>
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                                <p>
+                                    <strong>Figure 3.</strong> Service Litmus Test Criteria
+                                </p>
+                            </blockquote>
+                        </blockquote>
+                    </blockquote>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<p dir="ltr">
+    <strong>Realization Decisions</strong><br />
+    This step deals with the architectural and realization decisions that have to be made to implement the service
+    functionality, taking into consideration quality of service as well as business and IT constraints. These decisions are
+    made and refined throughout the SOMA process and comprises of the following activities:
+</p>
+<ul dir="ltr">
+    <li>
+        <div>
+            Service allocation - deals with the allocation of services into their appropriate component containers.
+        </div>
+    </li>
+    <li>
+        <div>
+            Component allocation to layers - identifies appropriate architectural layers where components are to be placed
+            and the rules for how the layers interact with each other.
+        </div>
+    </li>
+    <li>
+        <div>
+            Technical feasibility exploration - assessment of feasibility of technical constraints and technology
+            identified to realize services.
+        </div>
+    </li>
+</ul>
+<p dir="ltr">
+    <strong>Service allocation<br />
+    </strong>A key technique used in SOMA realization decisions step is service allocation.<br />
+    <br />
+    Service allocation associates services with service components that will realize them. Service allocation is an ongoing
+    and iterative process that can start as soon as services and service components are first identified (i.e. during the
+    SOMA Identification step). During service realization decisions, it is essential to verify that services have been
+    allocated to service components. Validation of service allocation decisions can lead to some refactoring in cases where
+    a service that was initially assigned to one component needs to be re-assigned to another as a result of evaluation of
+    refined requirements.<br />
+    <br />
+    <strong>SOMA work products<br />
+    </strong>There are four new work products where Service Model and Goal-Service Model are two key ones. Another key work
+    product, the Component Model, is leveraged to document the details of service components which are used to realize
+    services.<br />
+    <br />
+    Figure 4 shows the work products involved during SOMA. The Service Model captures the initial list and categorization
+    of candidate services, as well as the specification and realization decisions for services that will be exposed. Note
+    that realization decisions are actually documented in the Architectural Decisions work product. Components and flows
+    are captured at several levels of elaboration during SOMA identification and specification steps in Process Definition,
+    Use Case Model, Service Model and Component Model work products.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <br dir="ltr" />
+                <br />
+                <p dir="ltr">
+                    <img height="339" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/whitepapers/resources/SOMA_work_products.jpg" width="600" />
+                </p>
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                            <p dir="ltr">
+                                <strong>Figure 4.</strong> SOMA and Related Method Work Products
+                            </p>
+                        </blockquote>
+                    </blockquote>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<p dir="ltr">
+    The Service Model, depicted below in figure 5, augments other method work products by capturing information related to
+    services not captured in other work products. The service model is built incrementally as Service Oriented Modeling and
+    Architecture (SOMA) activities are iteratively carried out. It is composed of a number of elements summarized in the
+    table below.
+</p>
+<table class="MsoTableGrid8" style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; mso-border-alt: solid navy .75pt; mso-yfti-tbllook: 480; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-border-insideh: .75pt solid navy; mso-border-insidev: .75pt solid navy"  cellspacing="0" cellpadding="0" border="1">
+    <thead>
+        <tr style="mso-yfti-irow: -1">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: navy 1pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: navy; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-shading: white; mso-pattern: solid navy"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt; mso-yfti-cnfc: 1">
+                    <b><span style="COLOR: white">Section</span></b>
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: navy 1pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: navy; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-shading: white; mso-pattern: solid navy; mso-border-left-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt; mso-yfti-cnfc: 1">
+                    <b><span style="COLOR: white">Description</span></b>
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: navy 1pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: navy; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-shading: white; mso-pattern: solid navy; mso-border-left-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt; mso-yfti-cnfc: 9">
+                    <b><span style="COLOR: white">SOMA step where created</span></b>
+                </p>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="mso-yfti-irow: 0">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ccffff; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Portfolio
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ccffff; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    List of candidate services discovered during SOMA service identification activities.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ccffff; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>SOMA Identification</b><span style="mso-bidi-font-weight: bold">:</span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Domain Decomposition</span></span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Goal-Service Modeling</span></span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Existing Asset Analysis</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 1">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ccffff; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Hierarchy
+                </p><br class="MsoNormal" style="MARGIN-TOP: 6pt" />
+                <br />
+                <br class="MsoNormal" style="MARGIN-TOP: 6pt; TEXT-INDENT: 0.5in" />
+                <br />
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ccffff; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Candidate services organized using a business significant categorization scheme, making evaluation of
+                    candidate service more manageable. Domain Decomposition Functional Area Analysis typically provides the
+                    classification scheme.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ccffff; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>SOMA Identification</b><span style="mso-bidi-font-weight: bold">:</span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Domain Decomposition: Functional Area Analysis</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 2">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ccffff; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Exposure
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ccffff; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Documents the rationale behind why we chose to expose a given candidate service or group of services in
+                    the service hierarchy or composition. The Service Litmus Test is applied to candidate services to make
+                    exposure decisions.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ccffff; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    Service Specification:
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                     style="mso-list: Ignore">·</span></span> <span dir="ltr">Exposure Decisions using the Service Litmus
+                    Test as part of Service Re-factoring and Rationalization</span>
+                </p>
+            </td>
+        </tr>
+        <tr style="HEIGHT: 55.5pt; mso-yfti-irow: 3">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; HEIGHT: 55.5pt; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Dependencies
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; HEIGHT: 55.5pt; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Documents dependencies between services in the model.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; HEIGHT: 55.5pt; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Service Specification</b><span style="mso-bidi-font-weight: bold">:</span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Model Service Dependencies</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 4">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Composition and Flow
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Identifies which services are choreographed together to form a composite service.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Service Specification</b><span style="mso-bidi-font-weight: bold">:</span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Identify Service Composition and Flow</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 5">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Context Aware Attributes
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Specifies context aware attributes for dynamic assembling and routing.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Service Specification</b>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                     style="mso-list: Ignore">·</span></span> <span dir="ltr">Specify Context-Aware Service
+                    Specification</span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 6">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Operation
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Identifies service operations.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Service Specification</b>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr">Identify Service Operation</span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 7">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Events
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Identify events that trigger services and service operations.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Service Specification:</b>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                     style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Identify</span> Events</span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 8">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Rules and Policies
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Specify/associate rules executed by service and service operation and policies it follows.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Service Specification</b>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr">Associate Business Rules and Policies</span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 9">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Context Diagram
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Illustrates the service consumers and service providers.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Service Specification</b>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr">Specify Context-Aware Service
+                    Specification</span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 10">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Messages
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Documents messages that are exchanged between service consumer and service provider.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Service Specification</b><span style="mso-bidi-font-weight: bold">:</span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Specify Input, Output, Error Messages</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 11">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Non-Functional Requirements
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Documents the non-functional requirements that dictate those characteristics.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Service Specification</b><span style="mso-bidi-font-weight: bold">:</span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Gather and Categorize Non-functional Requirements</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 12">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    State Management Decisions
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    State can be an important consideration for composite services and the related decisions are documented
+                    here.
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Service Specification</b><span style="mso-bidi-font-weight: bold">:</span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span style="mso-bidi-font-weight: bold">Document</span>
+                    <span style="mso-bidi-font-weight: bold">State</span> <span                     style="mso-bidi-font-weight: bold">Management Decisions</span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 13">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Service Allocation To Components
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt">
+                    Map to Service Component realizing the service and Functional and Technical Components
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffff99; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 8">
+                    <b>Component Specification</b><span style="mso-bidi-font-weight: bold">:</span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 8; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Allocate Services to Component</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow: 14; mso-yfti-lastrow: yes">
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffbbdd; PADDING-BOTTOM: 0in; BORDER-LEFT: navy 1pt solid; WIDTH: 113.4pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="151">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt; mso-yfti-cnfc: 2">
+                    <span style="mso-bidi-font-weight: bold">Realization Decisions</span>
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffbbdd; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 229.5pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="306">
+                <p class="MsoNormal" style="MARGIN-TOP: 6pt; mso-yfti-cnfc: 2">
+                    <span style="mso-bidi-font-weight: bold">Documents architectural decisions that deal with how the
+                    services will be realized, such as buy, build, subscribe, etc. Nonfunctional requirements are prominent
+                    criteria in many of these decisions. Realization Decisions are documented in the Architectural
+                    Decisions work product.</span>
+                </p>
+            </td>
+            <td             style="BORDER-RIGHT: navy 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; BACKGROUND: #ffbbdd; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 130.2pt; PADDING-TOP: 0in; BORDER-BOTTOM: navy 1pt solid; mso-border-alt: solid navy .75pt; mso-border-left-alt: solid navy .75pt; mso-border-top-alt: solid navy .75pt"              valign="top" width="174">
+                <p class="MsoNormal" style="MARGIN: 6pt 0in 3pt; mso-yfti-cnfc: 10">
+                    <b>Realization</b><span style="mso-bidi-font-weight: bold">:</span>
+                </p>
+                <p class="MsoNormal"                 style="MARGIN: 0in 0in 3pt 7.9pt; TEXT-INDENT: -7.9pt; TEXT-AUTOSPACE: ideograph-numeric; mso-yfti-cnfc: 10; mso-list: l0 level1 lfo1; tab-stops: list 8.1pt; mso-layout-grid-align: auto; punctuation-wrap: hanging; mso-vertical-align-alt: auto">
+                    <span                     style="FONT-FAMILY: Symbol; mso-bidi-font-weight: bold; mso-bidi-font-family: Symbol; mso-fareast-font-family: Symbol"><span                      style="mso-list: Ignore">·</span></span> <span dir="ltr"><span                     style="mso-bidi-font-weight: bold">Establish Realization Decisions</span></span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <p>
+                    <strong>Figure 5.</strong> Service Model Detail
+                </p>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<p dir="ltr">
+    <strong>Goal-service model work product</strong><br />
+    The Goal-Service Model work product links business goals (e.g. increase revenue by new product introduction) and KPI's
+    (e.g. 4% increase in revenue from new product X) with the services that will fulfill them. This work product captures
+    information on high-level business goals and sub-goals, KPI's, metrics to measure KPI's and services to support the
+    goals. The table below shows a template to document the information.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+            <p dir="ltr">
+                <img height="183" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/whitepapers/resources/Goal_service_model_template.jpg" width="600" />
+            </p>
+            <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                    <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                        <blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+                            <p dir="ltr">
+                                <strong>Figure 6.</strong> Goal-service model template
+                            </p>
+                        </blockquote>
+                    </blockquote>
+                </blockquote>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+</blockquote>
+<ul dir="ltr">
+    <li>
+        <div>
+            <strong>Goal or sub-goal:</strong> Organizations define goals to meet their mission and to set strategic
+            direction. In SOMA, the term goal denotes a business aspiration starting at a high level. For example a high
+            level goal could be to increase revenue. This goal can be decomposed into sub-goals such as "increase revenue
+            from &lt;x&gt;", and "increase revenue from &lt;y&gt;".
+        </div>
+    </li>
+    <li>
+        <div>
+            <strong>KPI's:</strong> KPIs are used to determine how well a business is meeting its goals, or to assess the
+            level of performance of business processes. For example, for the goal "increase revenue", a specific KPI could
+            be "increase revenue by 5% during the next fiscal year". This provides a specific way to determine if the goal
+            has been met.
+        </div>
+    </li>
+    <li>
+        <div>
+            <strong>Metrics:</strong> Metrics identify the type of measurements that need to be collected to assess the
+            state of the KPIs. For a KPI such as "increase revenue by 5% during the next fiscal year", a metric could be
+            "record the revenue from all revenue generating transactions". Measurements would then need to be taken of each
+            relevant transaction, across all systems that support those transactions. An implication of this is that all of
+            the individual measurements dictated by the metric would need to be aggregated and reported in a meaningful way
+            so that it can be determined if the related KPI has been met.
+        </div>
+    </li>
+    <li>
+        <div>
+            <strong>Service:</strong> a (candidate) service that can be used to meet the goal or sub-goal. This reflects a
+            mapping between goals (or sub-goals) and services in the service portfolio of the Service Model work product.
+            Initially the service mapping will be based on candidate services. Later as specific service exposure decisions
+            are made, candidate services can become services chosen for exposure. Service exposure decisions are recorded
+            in the Service Model work product.
+        </div>
+    </li>
+    <li>
+        <div>
+            <strong>Data Attributes:</strong> Data attributes necessary to measure KPIs and metrics.<br />
+        </div>
+    </li>
+</ul>
+<p dir="ltr">
+    As mentioned, SOMA activities are subdivided into three major steps: Identification, Specification and Realization
+    Decisions. These steps, which are carried out in an iterative fashion, building up the services portfolio, specifying
+    services chosen for exposure, and making key realization decisions that are required in order to carry out activities
+    that take place later in the solution development life cycle.
+</p>
+<p dir="ltr">
+    <strong><u>Create a Service Portfolio<br />
+    </u></strong>
+</p>
+<p dir="ltr">
+    SOMA describes three identification techniques that can be used to add services to the Service Portfolio. Domain
+    Decomposition is a top-down business-driven decomposition of a business domain, into functional areas, subsystems and
+    components.&nbsp; Existing Asset Analysis is a bottom-up analysis that examines assets such as existing custom,
+    packaged applications, and industry models, to determine what can be leveraged to realize service
+    functionality.&nbsp;Goal-Service Modeling is an analysis that starts with business goals that are decomposed into
+    sub-goals and supporting services.
+</p>
+<p dir="ltr">
+    <strong><u>Organize the Service Portfolio using a classification hierarchy<br />
+    <br />
+    </u></strong>The service candidates in the Service Portfolio can be categorized by applying a classification scheme
+    that is meaningful to the SOA initiative. Functional areas that were identified during Functional Area Analysis provide
+    a useful business context for developing a classification scheme.
+</p>
+<p dir="ltr">
+    <strong><u>Make Service Exposure Decisions</u></strong>
+</p>
+<p dir="ltr">
+    The Service Portfolio initially identifies candidate services that have not been fully evaluated for service exposure.
+    Service exposure decisions will eventually be made, at which time some or all of the services in the Service Portfolio
+    will be chosen for exposure.<br />
+    In order identify those services that need to be exposed a set of criteria in the form of the Service Litmus Test (SLT)
+    can be used. This metaphor is used to denote a set of tests, that when applied, will determine if a given set of
+    services should be eligible for exposure.
+</p>
+<p dir="ltr">
+    <strong><u>Identify Service Dependency</u></strong>
+</p>
+<p dir="ltr">
+    Detailed review of the service will often expose a set of dependencies between services and between services and the
+    applications they rely on for realization of their functionality. Although, most dependencies might be on other
+    (exposed)services, some may be on components that have not been chosen to be exposed as a service.
+</p>
+<p dir="ltr">
+    <strong><u>Identify Service Compositions</u></strong>
+</p>
+<p dir="ltr">
+    Choreography or orchestration can be used to create a composition of services. That composition may or may not itself
+    be a service. For example Business Process Execution Language for Web Services (BPEL4WS) can be used to implement the
+    choreography or flow of services.
+</p>
+<p dir="ltr">
+    <strong><u>Summarize key non-functional requirements</u></strong>
+</p>
+<p dir="ltr">
+    A service consumer typically has expectations such as how fast a service will perform and its level of availability. A
+    service provider may impose certain requirements on a service consumer such as a security related requirement. It is
+    convenient to summarize requirements of this type in the service model to support validation of various aspects of the
+    model as well as decisions related to how services will be realized.
+</p>
+<p dir="ltr">
+    <strong><u>Create Message Specification</u></strong>
+</p>
+<p dir="ltr">
+    Services require input and output messages. Messages are identified and specified at a high level in the service model
+    (i.e. this is not a detailed level of specification).
+</p>
+<p dir="ltr">
+    <strong><u>Identify state management requirements for compositions<br />
+    </u></strong><strong><u><br />
+    </u></strong>Although individual services are considered stateless, compositions often have requirements to maintain
+    state information across the invocation of the composed services. The choreographer of the services is often
+    responsible for the management of state. Alternatively, a component that implements and realizes multiple related
+    services or operations on services may need to maintain state between invocations for performance reasons. State
+    Management in SOA environment can be considered to fall into three main categories: Transaction State, Security State
+    and Functional State.<br />
+    <br />
+    <strong>Conclusion</strong>
+</p>
+<p dir="ltr">
+    This overview of SOMA is intended to cover the essentials of the method -- just enough to help the solution design
+    architect using Team Solution Design to communicate the client environment and requirements and to effectively engage
+    with a SOMA architect.<br />
+</p>
+<p dir="ltr">
+    Acknowledgement: the above materials were extracted from a whitepaper by Luba Cherbakov, et al. My thanks to Luba,
+    especially, for the help she gave me in understanding SOMA.
+</p>
+<p dir="ltr">
+    Mark Palmer
+</p></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,11 @@
+.bannerDiv {
+	background-color: #15759F;
+}
+
+
+.bannerImg {
+	display: block;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	overflow: auto;  !important;
+}

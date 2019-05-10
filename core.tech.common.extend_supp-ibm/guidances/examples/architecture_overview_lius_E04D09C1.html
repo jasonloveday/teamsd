@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Architecture Overview for E-commerce (LIUS)</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="architecture_overview_lius">
+<meta name="uma.presentationName" content="Architecture Overview for E-commerce (LIUS)">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_kCqegDe2EdyjZfPoe205xw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_kCqegDe2EdyjZfPoe205xw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Architecture Overview for E-commerce (LIUS)</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This example shows an Architecture Overview for the LIUS e-commerce system. The Architecture Overview shows the major application subsystems and the tiers on which those subsystems will be deployed. It also shows the major legacy systems that the new system needs to interface to.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architecture_overview_7BDD690F.html" guid="mweb3072ED040425425485256882005791A4">Architecture Overview</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong>1. Diagram</strong>
+</p><img alt="Architecture Overview Example" src="./../../../core.tech.common.extend_supp-ibm/guidances/examples/resources/architecture_overview_example.gif" width="600" height="340" />
+<br />
+<p>
+    <strong>2.&nbsp;Key Concepts</strong>
+</p>
+<p>
+    <strong>Presentation</strong>
+</p>
+<p>
+    The user's interface to the LiUS system. Initially, for release 1, this will be a web browser interface only.
+</p>
+<p>
+    <br />
+    <strong>Presentation Integration & Delivery</strong>
+</p>
+<p>
+    Presentation integration and delivery handles user requests and sends them to the appropriate subsystem within LiUS. It
+    also sends responses back on the correct channel to the appropriate presentation subsystem.
+</p>
+<p>
+    The cache data store allows presentation information to be cached (potentially at multiple points in the delivery
+    network) to increase performance.<br />
+    In the future this subsystem will handle portal requests and responses also and would also be able to support new
+    channels for alternate presentation subsystems (for example, mobile devices).
+</p>
+<p>
+    <br />
+    <strong>Content Management</strong><br />
+    The content management is the central tool for authoring, editing, and reviewing content that is to be published to
+    LIUS. Content management comprises the services that deliver published content in a format capable of being handled by
+    the customer's browser.
+</p>
+<p>
+    Content will be diverse, including technical specification documents, marketing materials, downloadable software, video
+    and audio clips. Formats will include Hypertext Mark-up Language (HTML), style sheets, Java Server Pages (JSP's),
+    Portable Document Format (PDF) and Extensible Mark-up Language (XML).
+</p>
+<p>
+    Content is created in a content store and 'published' (as HTML, style sheets, templates etc) to a file system.
+</p>
+<p>
+    Content management operates behind the firewall and is not accessed by customers.
+</p>
+<p>
+    <br />
+    <strong>Commerce</strong>
+</p>
+<p>
+    Commerce services enable users to put products in a shopping list, save or send the list, and place an order. Included
+    is also a function for checking the current status of an order, placed on the Internet or through mail order.
+</p>
+<p>
+    This service includes registration and profile management enabling private and corporate users to register in LiUS and
+    work with their profile information.
+</p>
+<p>
+    The user registry, where user profiles are stored and used for authentication, is a separate Lightweight Directory
+    Access Protocol (LDAP) directory which is a standard LiUS platform component.
+</p>
+<p>
+    Included in this subsystem are the site statistics services that enable administrators to view detailed statistics on
+    the site and visitors' behavior.
+</p>
+<p>
+    The site administration service provides administrators with the tools they need to work with user profiles and perform
+    any other kind of administration that is needed to manage the site.
+</p>
+<p>
+    Personalization services might include one or more of the following:
+</p>
+<ul>
+    <li>
+        Selective delivery of content based on user profile, earlier behavior and/or selected preferences.
+    </li>
+    <li>
+        Classification of content in cooperation with the content management tool.
+    </li>
+    <li>
+        Recommendation engine, able to recommend similar, or complementary products.
+    </li>
+    <li>
+        Collaborative filtering that gives the possibility of suggesting products that other customers with similar
+        profiles/interests/order history have bought.
+    </li>
+</ul>
+<p>
+    <strong>LiUS Services</strong>
+</p>
+<p>
+    LiUS services provide a number of non-commerce functions:
+</p>
+<ul>
+    <li>
+        A download service to download tools, such as a kitchen planner, or media,&nbsp;for example,&nbsp;a TV
+        advertisement.<br />
+    </li>
+    <li>
+        Store services that enable users to access information on actual LiUS stores. Among other things, users can check
+        special offers, view maps, check stock availability, and find out about the opening hours.
+    </li>
+    <li>
+        A job service that allows job seekers to search for available jobs, apply for jobs, or sign up for an e-mail
+        subscription of new job ads.
+    </li>
+    <li>
+        Customer services allowing users to ask questions, search an FAQ, apply for LIUS cards and do self-service tasks.
+    </li>
+    <li>
+        Press services for delivering information to news agencies etc.
+    </li>
+</ul>
+<p>
+    <br />
+    <strong>Product Import</strong>
+</p>
+<p>
+    This subsystem imports, on a regular basis, data from the back-end systems and holds it locally in tier 2. This avoids
+    synchronous connections to back-end systems to display product information etc. The rules for transforming data from
+    one system to another are kept in a separate rules data store.
+</p>
+<p>
+    <br />
+    <strong>Application Integration</strong>
+</p>
+<p>
+    This subsystem provides an integration/decomposition service to the application subsystems (that is,&nbsp;Commerce and
+    LiUS Services) and 'hides' the potentially multiple back-end systems providing a single point of control. This is
+    particularly important as the number and types of interface are likely to change (for example the introduction of a
+    marketing database in future releases). A rules data store defines how requests to back-end systems get routed to the
+    actual system(s).
+</p>
+<p>
+    <strong>Stock Control System</strong>
+</p>
+<p>
+    The LiUS stock control subsystem is responsible for product prices (including VAT), stock availability, order tracking
+    and the receipt and processing of orders.
+</p>
+<p>
+    <br />
+    <strong>Product System</strong>
+</p>
+<p>
+    The LiUS product system stores all product related data (for example,&nbsp;product and article descriptions, images,
+    product to category mappings etc). Product data will be translated into multiple languages.
+</p>
+<p>
+    <br />
+    <strong>e-mail System</strong>
+</p>
+<p>
+    The LiUS e-mail system. This subsystem actually represents both the internal subsystem (Lotus Notes) and the external
+    e-mail subsystem.
+</p>
+<p>
+    <br />
+    <strong>Search Engine</strong>
+</p>
+<p>
+    The search service allows users to search for information (both editorial content provided by content contributors and
+    business content extracted from back-end systems).
+</p>
+<p>
+    This subsystem creates the indexes from the various data stores that a user will search through. Indexes are updated in
+    the data store owned by the search service subsystem.
+</p>
+<p>
+    <br />
+    <strong>Directory Services</strong>
+</p>
+<p>
+    This is the LiUS provided directory services that is used to get authentication information on internal users.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

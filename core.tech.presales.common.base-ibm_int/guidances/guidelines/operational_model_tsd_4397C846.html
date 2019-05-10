@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Operational Model for Team Solution Design</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="operational_model_tsd">
+<meta name="uma.presentationName" content="Operational Model for Team Solution Design">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_zhBSkK2ZEdyaUuyek1jM3w"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_zhBSkK2ZEdyaUuyek1jM3w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Operational Model for Team Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides direction in a pre-sale context regarding the type of information required for depicting an operational model. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/operational_model_5CE9CFC9.html" guid="mwebD1869C2CAF6E9991852568A4004FA5D9">Operational Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Development of architecture begins at the&nbsp;logical level and progresses to the physical level. The following points
+    provide additional information on this progression:
+</p>
+<ul>
+    <li>
+        The Operational model can be developed at different levels. It begins at a&nbsp;application logical&nbsp;level with
+        modest levels of detail. At this level, the primary focus is on the application and data components with less
+        concern for technology choices. Progressing to the&nbsp;logical level, the model includes technology
+        considerations. Finally, at the physical level, the model will include detailed specifications for actual
+        technology and products. For more complex designs, the model will iterate through each of these stages. For simpler
+        designs, the model may progress from&nbsp;logical to&nbsp;physical within a very short time. Progression toward the
+        physical&nbsp;level will be accelerated by physical constraints placed on the design by the client.
+    </li>
+    <li>
+        At any given time, it is normal to have various aspects of the operational model at different levels ranging from
+        logical to physical. The reason is that various aspects of the design progress at different rates. For example,
+        during discussion, the client may say that a certain component is constrained by standard to a specific product.
+        While the overall model may be at the logical stage, the nodes where that product&nbsp;is likely to be installed
+        have moved at least in part to the physical level. The point is to gather information where and when it is
+        available and reflect that in the model.
+    </li>
+    <li>
+        In a typical pre-sale context, the IT architect will likely be working at the logical level with some elements at
+        the physical&nbsp;level. In general, complete elaboration at the&nbsp;physical level is normally associated with an
+        actual implementation phase of the project. During implementation, the pre-sale IT architect is more likely to be
+        advising or assisting customer or IBM IT architects who are performing the implementation.
+    </li>
+</ul>
+<p>
+    The following illustrates the approach for developing a high level operational model in a pre-sale context.
+</p>
+<ul>
+    <li>
+        <strong>Create the Logical Operational View (more complex situations may also require a Physical Operational
+        View)</strong><br />
+        This view consists primarily of nodes, associated deployment units,&nbsp;connections and locations. The level of
+        detail in this view will increase as the model progresses from logical to physical. The&nbsp;view may be drawn
+        using descriptive symbols for nodes (such as contained in Visio) or simply using rectangles. For more complex
+        situations, a tool such as the SA4TeamSD configuration of IBM's Rational System Architect may also be used. For
+        relatively simple cases. the detail of the view&nbsp;may vary, including both logical and physical aspects. For
+        more complex situations one would normally construct separate logical and physical views. Formal tooling such as
+        System Architect would typically require separate views. For such complex situations, consult detailed guidance
+        associated with the Operational Model artifact. &nbsp;
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Identify the layers and/or locations of the system. A location is a geographic location (such as branch or
+                sales office) at which one or more nodes will be located.
+            </li>
+            <li>
+                Identify candidate nodes of the system. A node is an abstraction&nbsp;that&nbsp;contains a collection of
+                functional components. Initially, these nodes will be independent of any particular technology unless
+                constrained by the client's requirements.
+            </li>
+            <li>
+                Assign nodes to layers or locations as appropriate. A particular type of node may be assigned to multiple
+                locations.
+            </li>
+            <li>
+                Identify functional components and determine how they will be mapped to nodes. Initially these are normally
+                application components. For some pre-sale engagements, the focus may be on technical components necessary
+                for infrastructure. For more complex situations, various aspects of these components may be grouped
+                together in Deployment Units (DUs), which are in turn mapped to the nodes. DUs&nbsp;are characterized by
+                the operational facets of a component that they contain, such as Presentation, Execution, Data or
+                Installation. Every component will have an execution facet and may have other facets such as data as well.
+                Components are grouped together in the same DU because they share similar requirements. Initially, the
+                actual components represented in these DUs may not be resolved to specific programs or products. It is also
+                helpful to assign non functional requirements to DUs. For a complete discussion on DUs, see the appropriate
+                UMF artifacts (Deployment Unit Model and Deployment Unit Specification).
+            </li>
+            <li>
+                Identify&nbsp;required inter-node&nbsp;connections of the system. A connection allows communication between
+                two nodes based on the needs of the components contained in the nodes.&nbsp;
+            </li>
+            <li>
+                Identify nonfunctional requirements for each node.&nbsp;A nonfunctional requirement example is: "The
+                customer search function must be available 24x7". A nonfunctional requirement may also constrain some
+                interface, component, connection or node to a specific standard or product. If Deployment Units are used,
+                these node requirements can be derived from the DU's that have been assigned to the node.
+            </li>
+            <li>
+                If it is necessary to&nbsp;advance some aspect of the design to the physical level, determine node and DU
+                characteristics and specify appropriate hardware platforms and specification of software components. Also,
+                Identify functional components required for technical infrastructure and middleware and specify appropriate
+                software products.<br />
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Create the Node Description<br />
+        </strong>The node description may be text or a table which contains information such as the following:<br />
+        <table cellspacing="2" cellpadding="2" width="100%" border="1">
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>Node description</strong>
+                    </td>
+                    <td>
+                        Describe the general properties of the&nbsp;node. Description may&nbsp;include name, brief
+                        description of&nbsp;responsibilities of the node, location and how the node may be realized.&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Nonfunctional requirements</strong>
+                    </td>
+                    <td>
+                        Assign aspects of previously determined nonfunctional requirements to this node as appropriate.
+                        This could include such items as performance, capacity, availability etc.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Node Connections</strong>
+                    </td>
+                    <td>
+                        Identify connections from this node to other nodes. For each connection, identify the distant node,
+                        protocol, communication style, data characteristics, security requirement etc. This may be arranged
+                        as a table relating each node to every other node with connection details at relevant intersections
+                        in the table.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Deployment units or components contained</strong>
+                    </td>
+                    <td>
+                        A description of deployment units, components, software etc. that will reside on this node. This
+                        could include some or all of the following: Presentation, processing function, services,
+                        middleware, hardware features, operating system, connection, system management, security etc.
+                    </td>
+                </tr>
+            </tbody>
+        </table>For more complex nodes, it may also be helpful to include a diagram, depicting the node's components as
+        layered function.<br />
+    </li>
+    <li>
+        <strong>Create Node-Deployment Unit mapping</strong><br />
+        For complex systems where Deployment Units are used, create a table which cross references nodes and deployment
+        units.<br />
+    </li>
+    <li>
+        <strong>Create Walkthrough description<br />
+        </strong>Walkthroughs may be developed which illustrate step by step events within the system after it responds to
+        some external event. This description may correspond to one of the primary use cases in the Use Case Model.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Tue Jul 20 02:32:31 IST 2010</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">November 2008 - baseline version|July 2010 - updated to reflect System Architect considerations</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

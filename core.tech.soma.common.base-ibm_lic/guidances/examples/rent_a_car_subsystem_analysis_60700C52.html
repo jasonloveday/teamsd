@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Rent-a-Car Subsystem Analysis</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="rent_a_car_subsystem_analysis">
+<meta name="uma.presentationName" content="Rent-a-Car Subsystem Analysis">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_nryskBsREdqPvNY1HlMbiA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_nryskBsREdqPvNY1HlMbiA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Rent-a-Car Subsystem Analysis</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This example is based on a travel and transportation industry car rental project.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong><font size="3">Subsystems overview and relationships</font></strong>
+</p>
+<p align="center">
+    <img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/SubsysteAnalysis-Fig5.gif" />
+</p>
+<p align="center">
+    <u><font face="Helv">Figure 1: Subsystem Relationship diagram</font></u>
+</p>
+<p>
+    The Rent-a-car Rental process is supported by the Rental Subsystem which is dependant on four other subsystems:
+</p><br />
+<br />
+<table cellspacing="0" cellpadding="0" width="100%" border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="30%" bgcolor="#E6E6E6">
+                <p align="center">
+                    <b>Subsystem name</b>
+                </p>
+            </td>
+            <td valign="top" width="69%" bgcolor="#E6E6E6">
+                <p align="center">
+                    <b>Description</b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="30%">
+                <p>
+                    Rental
+                </p>
+            </td>
+            <td valign="top" width="69%">
+                <p>
+                    <span style="BACKGROUND: yellow">X</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="30%">
+                <p>
+                    Reservation
+                </p>
+            </td>
+            <td valign="top" width="69%">
+                <p>
+                    <span style="BACKGROUND: yellow">X</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="30%">
+                <p>
+                    Fleet management
+                </p>
+            </td>
+            <td valign="top" width="69%">
+                <p>
+                    <span style="BACKGROUND: yellow">X</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="30%">
+                <p>
+                    Customer Service
+                </p>
+            </td>
+            <td valign="top" width="69%">
+                <p>
+                    <span style="BACKGROUND: yellow">X</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="30%">
+                <p>
+                    Promotions Management
+                </p>
+            </td>
+            <td valign="top" width="69%">
+                <p>
+                    <span style="BACKGROUND: yellow">X</span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p align="center">
+    <u><font face="Helv">Figure 2: Subsystem List template</font></u>
+</p>
+<p>
+    Figure <span style="BACKGROUND: yellow">X</span> identifies key interactions among subsystems.
+</p>
+<p>
+    <span style="BACKGROUND: yellow">Need interaction diagram.</span>
+</p>
+<p class="WPDL2" style="MARGIN: 12pt 0in 6pt 0.5in; TEXT-INDENT: -0.5in; tab-stops: list .5in">
+    <strong><font size="3">Subsystem: Reservation</font></strong>
+</p>
+<p>
+    The Reservation subsystem is used to create and manage car rental reservations.
+</p>
+<p class="WPDL2" style="MARGIN: 12pt 0in 6pt 0.6in; TEXT-INDENT: -0.6in; tab-stops: list .6in">
+    <strong><font size="3">Subsystem Description</font></strong>
+</p>
+<p>
+    This section describes the functional responsibilities of the subsystem.&nbsp; Functional responsibilities are based on
+    input from the Functional Area Descriptions work product and are further elaborated during Subsystem Analysis.&nbsp;
+    This information can be captured using the template shown in&nbsp;Figure 3&nbsp;below:
+</p><br />
+<br />
+<table cellspacing="0" cellpadding="0" width="100%" border="1">
+    <tbody>
+        <tr>
+            <td valign="top" width="28%" bgcolor="#E6E6E6">
+                <p align="center">
+                    <b>Function</b>
+                </p>
+            </td>
+            <td valign="top" width="71%" bgcolor="#E6E6E6">
+                <p align="center">
+                    <b>Description</b>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="28%">
+                <p>
+                    Create reservation
+                </p><br />
+            </td>
+            <td valign="top" width="71%">
+                <p>
+                    Ability to create the reservation for the customer based in the customer reservation business process
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="28%">
+                <p>
+                    Locate reservation
+                </p><br />
+            </td>
+            <td valign="top" width="71%">
+                <p>
+                    Ability to locate reservation for and existing customer with a reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="28%">
+                <p>
+                    Cancel reservation
+                </p><br />
+            </td>
+            <td valign="top" width="71%">
+                <p>
+                    Ability to cancel an customer’s existing reservation
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p align="center">
+    <u><font face="Helv">Figure 3: Subsystem Description template</font></u>
+</p>
+<p class="WPDL2" style="MARGIN: 12pt 0in 6pt 0.6in; TEXT-INDENT: -0.6in; tab-stops: list .6in">
+    <strong><font size="3">Subsystem composition and interfaces</font></strong>
+</p>
+<p>
+    Figure 4 shows the service, functional and technical components that the Reservation subsystem is composed of.
+    Figure&nbsp;5 Maps functions the subsystem is responsible for to services, interfaces, and components associated with
+    the subsystem.
+</p>
+<p align="center">
+    <img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/SubsysteAnalysis-Fig8.gif" />
+</p>
+<p align="center">
+    <a id="_Ref100402719" name="_Ref100402719"><u><font face="Helv">Figure</font></u></a> 4<u><font face="Helv">: Subsystem
+    Composition and Interfaces diagram</font></u>
+</p><br />
+<br />
+<table cellspacing="0" cellpadding="0" width="100%" border="1">
+    <thead>
+        <tr>
+            <td valign="bottom" width="21%" bgcolor="#E6E6E6">
+                <br />
+                <p align="center">
+                    <b>Function</b>
+                </p>
+            </td>
+            <td valign="bottom" width="25%" bgcolor="#E6E6E6">
+                <br />
+                <p align="center">
+                    <b>Service</b>
+                </p>
+            </td>
+            <td valign="bottom" width="25%" bgcolor="#E6E6E6">
+                <br />
+                <p align="center">
+                    <b>Interface</b>
+                </p>
+            </td>
+            <td valign="bottom" width="27%" bgcolor="#E6E6E6">
+                <br />
+                <p align="center">
+                    <b>Service Component</b>
+                </p>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td valign="top" width="21%">
+                <p>
+                    Create reservation
+                </p><br />
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Reserve Vehicle
+                </p>
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Reserve Vehicle
+                </p>
+            </td>
+            <td valign="top" width="27%">
+                <p>
+                    Reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="21%">
+                <p>
+                    Create reservation
+                </p><br />
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Modify Reservation
+                </p>
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Modify Reservation
+                </p>
+            </td>
+            <td valign="top" width="27%">
+                <p>
+                    Reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="21%">
+                <p>
+                    Create reservation
+                </p><br />
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Get Options Information
+                </p>
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Get Options Information
+                </p>
+            </td>
+            <td valign="top" width="27%">
+                <p>
+                    Reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="21%">
+                <p>
+                    Create reservation
+                </p><br />
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Confirm Rental Agreement
+                </p>
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Confirm Rental Agreement
+                </p>
+            </td>
+            <td valign="top" width="27%">
+                <p>
+                    Reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="21%">
+                <p>
+                    Locate reservation
+                </p><br />
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Locate Reservation
+                </p>
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Locate Reservation
+                </p>
+            </td>
+            <td valign="top" width="27%">
+                <p>
+                    Reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="21%">
+                <p>
+                    Cancel reservation
+                </p><br />
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Cancel Reservation
+                </p>
+            </td>
+            <td valign="top" width="25%">
+                <p>
+                    Cancel Reservation
+                </p>
+            </td>
+            <td valign="top" width="27%">
+                <p>
+                    Reservation
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p align="center">
+    <u><font face="Helv">Figure 5</font></u><u><font face="Helv">: Subsystem Composition template</font></u>
+</p>
+<p>
+    Figure&nbsp;6 represents interactions among components within the Reservation subsystem.
+</p>
+<p>
+    <span style="BACKGROUND: yellow">Need a couple interaction diagrams to show how ECs use FCs and TCs.</span>
+</p>
+<p align="center">
+    <img src="./../../../core.tech.soma.common.base-ibm_lic/guidances/examples/resources/SubsysteAnalysis-Fig10.gif" />
+</p>
+<p align="center">
+    <u><font face="Helv">Figure 6</font></u><u><font face="Helv">: Example interaction diagram</font></u>
+</p><span style="FONT-SIZE: 10pt; BACKGROUND: yellow">Note: this example interaction appears to belong in part 1 of the
+example, to show interactions among subsystems, rather than interactions among components within a subsystem.</span></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,1085 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Non-Functional Requirements for Team Solution Design</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="non_functional_rqmts_tsd">
+<meta name="uma.presentationName" content="Non-Functional Requirements for Team Solution Design">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_Liz24KqVEdyaUuyek1jM3w"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Liz24KqVEdyaUuyek1jM3w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Non-Functional Requirements for Team Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This example for Non-Functional Requirements is derived from the eBusiness Reference Architecture (eBRA)</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/nonfunctional_requirements_67C22734.html" guid="mwebA79F29E86DD9BD38852568850050F6EA">Non-Functional Requirements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><div class="Section1">
+    The following are some of the general&nbsp;requirements from the ESS e-business Reference Architecture that are very
+    useful as examples to keep in mind not only while architecting a solution, but also when gathering requirements and
+    setting customer expectations. These examples&nbsp;are based on experience gained from deploying many e-business
+    solutions.They&nbsp;are examples&nbsp;that communicate various aspects of an e-business solution. However, note that
+    the specific needs of any given application are likely to be different and therefore must be analyzed and researched to
+    a sufficient degree. Also, these requirements would likely be split into several separate and more specific
+    requirements with more specific names.
+</div>
+<div class="Section1">
+    &nbsp;
+</div>
+<div class="Section1">
+    An additional example developed using the SA4TeamSD configuration of IBM's Rational System Architect is included at the
+    end of this guidance.<br />
+    <br />
+</div>
+<div class="Section1">
+    <table border="1">
+        <tbody>
+            <tr>
+                <td align="middle">
+                    <b>Index</b>
+                </td>
+                <td align="middle">
+                    <b>Requirement Name</b>
+                </td>
+                <td align="middle">
+                    <b>Priority</b>&nbsp; <strong>(MoSCoW)</strong>
+                </td>
+                <td align="middle">
+                    <b>Value(s)</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR001
+                </td>
+                <td>
+                    Connection Response Time
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    Normally, we would expect a requirement to be &lt;5 secs. But Web technology can make this a challenge,
+                    so be careful before agreeing to a figure. For external customers (Web connected) establishing a
+                    connection may be &gt; 30 sec. For internal users, normal connection times should be obtainable.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR002
+                </td>
+                <td>
+                    Read individual on-line response time for business transactions
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    <p align="left">
+                        The expected requirement is 1-2 seconds average. Take care when setting requirements for Web
+                        access. Response time through the Internet is highly unpredictable. Sub-second response is
+                        difficult to achieve with most thin-client topologies.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR003
+                </td>
+                <td>
+                    Read set on-line response time for business transactions
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    See comment above
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR003
+                </td>
+                <td>
+                    Update individual on-line response time for business transactions
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    See comment above
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR004
+                </td>
+                <td>
+                    Online transaction processing rate
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    Expected value is up to 50/second. Need ability to scale to large servers or to spread load across many
+                    servers dynamically. Numbers in excess of 50/sec require special consideration.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR005
+                </td>
+                <td>
+                    Number of online users
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    This number is not relevant for users connected through the Internet, which employs a connectionless
+                    protocol. BUT - it can become very relevant in that it can provide very high peak volumes in the next
+                    row. In a non-Internet environment, a typical large Enterprise requirement may be upwards of 20,000
+                    online users.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR006
+                </td>
+                <td>
+                    Number of concurrent online Users
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    In a non-Internet environment, a typical large Enterprise requirement may be upwards of 20,000 online
+                    users.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR007
+                </td>
+                <td>
+                    Batch processing volumes
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    Expected values for Enterprise customers are in the range 20K-200K per day, in terms of Bills,
+                    Reminders etc.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR008
+                </td>
+                <td>
+                    Server Database Size
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    For an Enterprise, will typically exceed 100GB for main customer files (e.g., the persistent storage
+                    requirement for a Utilities Customer Service System may be around 300GB for say 3 Million customers.)
+                    and 1TB is possible for certain Enterprises. These numbers appear to be increasing rapidly as more and
+                    more data is kept about either customers or their activities (meter readings etc).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR009
+                </td>
+                <td>
+                    End-user availability
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    Typically for an enterprise, 23*7 is demanded. Question the requirement if 24*7 is demanded as this can
+                    pose technical challenges, e.g. in Database housekeeping. Internet connection may mandate very high
+                    availability due to the need to provide "all hours" worldwide service.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR010
+                </td>
+                <td>
+                    Distribution of Systems Management
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    If the applications are required to be available 24*7, when do necessary systems management functions
+                    such as database tuning, upgrades, application of software patches, get completed? In other words,
+                    systems management functions need to be distributed around the clock and have to be performed at the
+                    "right" times. The times that are "right" for the application(s) are determined based on the
+                    availability, and usage patterns of these applications.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR011
+                </td>
+                <td>
+                    Strict Security requirements
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    Be careful with architectures that have strict security requirements (e.g. Health Insurance Portability
+                    and Accountability Act (HIPPA)).&nbsp; Current software and/or hardware solutions provide limited
+                    support for these types of requirements, particularly when they require integrated end to end
+                    support.&nbsp; If extensive application involvement is needed to support the security requirements,
+                    that in itself may be an issue.&nbsp; Solutions where the application plays an active role in
+                    authentication, authorization, and Non-Repudiation are generally considered less secure than solutions
+                    where the security is implemented through the infrastructure.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR012
+                </td>
+                <td>
+                    Application integrity
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    Expected to be Critical for this Context.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR013
+                </td>
+                <td>
+                    Access Granularity
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    Financial institutions may require field level security, in other words, certain users may not be
+                    permitted to view the content of certain fields (the classic example is the managing director's
+                    salary).
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR014
+                </td>
+                <td>
+                    Type of Threat
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    Internet connection should assume that there will be deliberate attempts to compromise security
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR015
+                </td>
+                <td>
+                    Single Login
+                </td>
+                <td align="middle">
+                    Could
+                </td>
+                <td>
+                    Very difficult to achieve with existing products.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR016
+                </td>
+                <td>
+                    Trusted Environment
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    Frequently, Enterprises consider Client tiers inherently untrustworthy.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR016
+                </td>
+                <td>
+                    Audit Trail
+                </td>
+                <td align="middle">
+                    Would Not
+                </td>
+                <td>
+                    Increasingly demanded, and not well supported by current DBMSs.&nbsp; Will likely involve additional
+                    application coding and risk.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR017
+                </td>
+                <td>
+                    Strategic versus Tactical
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    The architectures recommended by ESS as typically focused on more Strategic solution: may be
+                    over-engineered for Quick & Dirty ones.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR017
+                </td>
+                <td>
+                    Adaptability/ extensibility
+                </td>
+                <td align="middle">
+                    Could
+                </td>
+                <td>
+                    Increasingly important and has a high impact on application design.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR017
+                </td>
+                <td>
+                    Frequency of changes
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    Typically frequent.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR018
+                </td>
+                <td>
+                    Platform Neutrality
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    Often demanded.&nbsp; Helpful in any event to provide insulation from specific technologies.&nbsp; ESS
+                    provides logical architectures to decouple early parts of the design from physical choice.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR019
+                </td>
+                <td>
+                    Process change
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    Especially important in Insurance companies, which have a strong workflow need.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR020
+                </td>
+                <td>
+                    Rules based
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    Really, a solution to the flexibility problem rather than a requirement in its own right. SAP provides
+                    an example where in order to provide "Replicable Solutions", 10.000 tables need to be customized.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR021
+                </td>
+                <td>
+                    De jute and de facto standards
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    Conformance to Internet protocols and standards is critical
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR022
+                </td>
+                <td>
+                    Importance of batch processing
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    Usually critical in the Enterprise set we are considering.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR023
+                </td>
+                <td>
+                    Batch/Online Concurrence
+                </td>
+                <td align="middle">
+                    Could
+                </td>
+                <td>
+                    Increasingly demanded as a way of addressing the availability issue.&nbsp; Can be done but requires
+                    careful design of the solution, especially data locking strategies.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR024
+                </td>
+                <td>
+                    Importance of legacy integration
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    Critical for this Context.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR025
+                </td>
+                <td>
+                    Style of access
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    Typically all may be relevant and needed.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR026
+                </td>
+                <td>
+                    Data updates
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    If multiple legacy systems need to be handled inside one mid-tier transaction, severe problems are
+                    posed.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR027
+                </td>
+                <td>
+                    Distribution of printing
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    Customers who produce large volumes of printed output, such as bills, catalogs,
+                    newsletter/communications, etc. will benefit from carefully planned distribution of such printing
+                    activities.&nbsp; Geographical distribution to optimize on time as well as sorted & batched
+                    printing capabilities to optimize on postal costs should be taken into consideration.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR028
+                </td>
+                <td>
+                    Image
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    ESS provides some Image models and architectures, but they are not yet fully integrated into the ESS
+                    Transactional Architectures.&nbsp; Image Processing is very important for some large Insurance
+                    companies.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR029
+                </td>
+                <td>
+                    Size of Development
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    ESS constructs are intended to support very large development projects.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR030
+                </td>
+                <td>
+                    Cost
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    The particular stress which customer puts on costs could have a dramatic effect on design.&nbsp; A
+                    "Strategic" solution may be permitted sophisticated rules-based architecture in order to minimize the
+                    costs of change in use.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR031
+                </td>
+                <td>
+                    Distribution of Users
+                </td>
+                <td align="middle">
+                    Must
+                </td>
+                <td>
+                    All except Mobile are included (for these see Pervasive Computing Reference Architecture)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR032
+                </td>
+                <td>
+                    Type of employment
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    Affects the UI requirement, and the sophistication of HELP text.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR033
+                </td>
+                <td>
+                    User Interface
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    Current Web technology (Java) cannot support Advanced OOUI.&nbsp; ESS thin-client architectures will
+                    mitigate against very complex UIs.&nbsp; If Client insists on a high-function GUI, fat clients may be
+                    needed.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR034
+                </td>
+                <td>
+                    Multiple time zones
+                </td>
+                <td align="middle">
+                    TBD
+                </td>
+                <td>
+                    If this is critical, there will be implications for availability
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR035
+                </td>
+                <td>
+                    Maturity
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    If client demands maturity and if volumes are high, the Transactional ORBs should be approached with
+                    caution at this stage.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; NFR036
+                </td>
+                <td>
+                    Depth of Object Orientation
+                </td>
+                <td align="middle">
+                    Should
+                </td>
+                <td>
+                    ESS supports both OO and Object-based development.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="Section1">
+    <br />
+    The table below contains a sample set of questions that may be posed to the clients to solicit responses regarding the
+    non-functional requirements.
+</div>
+<div class="Section1">
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>
+                    <b>Question</b>
+                </td>
+                <td>
+                    <b>Response</b>
+                </td>
+                <td>
+                    <b>Explanation</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Number of Loans Processed
+                </td>
+                <td>
+                    20,000
+                </td>
+                <td>
+                    Revenue model estimates 10,000 loans processed in the year 1.&nbsp; All these loans are processed in
+                    the 4 month peak period
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total number of anticipated users of the system
+                </td>
+                <td>
+                    120
+                </td>
+                <td>
+                    The number of anticipated users of the system is a fraction of the overall population of end
+                    users.&nbsp; How an organization would promote the usage of an e-business applications would determine
+                    what percentage of the overall population of end users would use the system.&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Anticipated number of Concurrent Users
+                </td>
+                <td>
+                    50
+                </td>
+                <td>
+                    This value was based upon 20000 applications over a 4 month time = 5000 applications per month.&nbsp;
+                    5000 application over 30 days = 166 applications per day.&nbsp; Assuming a scenario in which all
+                    applications are created in 3-4 hours window, the anticipated number of concurrent users is
+                    approximately 50
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Expected Availability
+                </td>
+                <td>
+                    12 hrs / 6 days per week.
+                </td>
+                <td>
+                    Availability is best described in terms of XX% Uptime instead of 24X7.&nbsp; 24X7 could mean 100%
+                    availability and such requirements result in extremely expensive infrastructure.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Expected Response Time
+                </td>
+                <td>
+                    30 sec
+                </td>
+                <td>
+                    The response time could vary substantially between static and dynamic pages.&nbsp; In the case of
+                    dynamic pages involving backend data processing the response time would depend on response time
+                    provided by the backend systems.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="Section1">
+    <br />
+    &nbsp;
+</div>
+<div class="Section1">
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>
+                    <b>Question</b>
+                </td>
+                <td>
+                    <b>Response</b>
+                </td>
+                <td>
+                    <b>Explanation</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>&nbsp;</b>
+                </td>
+                <td>
+                    <b>&nbsp;</b>
+                </td>
+                <td>
+                    <b>&nbsp;</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Number of Loans Processed
+                </td>
+                <td>
+                    20000
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Number of Logical Transactions or Activities Performed by the users for a single loan application
+                </td>
+                <td>
+                    6
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Logical transactions processed in a peak hour
+                </td>
+                <td>
+                    300
+                </td>
+                <td>
+                    20000 * 6 logical transactions are processed in a 4-month period.&nbsp; Assuming majority of the loans
+                    are processed in 4 hours out of the 12 hour days = 20,000 * 6 / (4 * 30 Days * 4 Hours)&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Average number of Page Requests per Logical Transaction or Activity
+                </td>
+                <td>
+                    20
+                </td>
+                <td>
+                    12 for submitting the loan application; there is connectivity to the FICO for credit scoring; TO
+                    accommodate these Credit ASP transactions and for SSL connectivity that is required by both Seller desk
+                    to and Credit ASP server to server communication we have increased the number of page requests per
+                    logical transaction to 20.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Page Request Per Peak Hour
+                </td>
+                <td>
+                    6000
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Average Number of Hits per Page Request
+                </td>
+                <td>
+                    10
+                </td>
+                <td>
+                    A hit is a request for a file (not a web page) to a web server. A file could contain text, image,
+                    audio, video, binaries, etc. A web page is composed of one or more files. On average, a web page
+                    contains ten files. In other words, a hit on a page could result into requests for ten files.&nbsp; The
+                    variance on this value is quite large. One of the world’s busiest web sites sees more than twelve
+                    million hits during its peak hour.&nbsp; In the case of Internet Applications the number of users could
+                    depend on how the site is advertised. In the case of an Intranet Application the number of users could
+                    depend on what are the alternative methods available to accomplish the same task and how the employees
+                    are motivated to use the Intranet Application.&nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    What is the Peak Hit Rate per Hour (PHRH)
+                </td>
+                <td>
+                    60000
+                </td>
+                <td>
+                    PHRH = Page Requests per Peak Hour * Average number of Hits per Page Request (Assuming 1500 Loans Per
+                    Store Per Month * 600 Stores = 900,000 Loans Per Month). Each Loan Could have 10 distinct Logical
+                    Transactions. =&gt; 9,000,000 Logical Transactions Per Month via Web Interface. They operate 220 Hours
+                    Per Month =&gt; Logical Transaction Via Web Per Hour = 9,000,000 / 220 = 40,909 Each Logical
+                    Transaction is composed of 2.5 Page request on an average, =&gt; 2.5 Page Requests X 10 = 25 Hits =&gt;
+                    25 Hits X 40,909 = 1,000,000 Hits on an Average Per Hour
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    What percentage of Pages is Dynamically generated?
+                </td>
+                <td>
+                    75%
+                </td>
+                <td>
+                    Since loans are static pages
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    What is the processing complexity of the dynamically Generated Pages?
+                </td>
+                <td>
+                    100
+                </td>
+                <td>
+                    Rendering dynamic content to a browser requires significantly more processing power than does serving
+                    up static content from a file system. The extent of additional resources required varies with the
+                    method employed. A simple approach to estimating resource consumption for dynamic pages: If a static
+                    page takes "X" resources, then the dynamic processing, database look-up, page formatting, etc. will
+                    require, "N" times "X".&nbsp; This assumes the workload resource consumption profile (for example the
+                    ratio of disk I/O to LAN bandwidth) for the two types of processing are identical with just a
+                    multiplication factor required.&nbsp; For example, if a total of one static page and one dynamic page
+                    are served per hour, and the dynamic page consumes 100 times, the resources of the static page then one
+                    can think of serving those two pages as the equivalent of serving a total of 101 static pages.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    What's the average static file size (Kbytes)?
+                </td>
+                <td>
+                    30 KB
+                </td>
+                <td>
+                    Logo image is 47KB to 68KB, HTML is 6KB to 800KB, GIF is 8KB to 1GB, JPEG is 37KB to 800KB, etc.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    How much disk space will be required for the web server's content?
+                </td>
+                <td>
+                    10 GB
+                </td>
+                <td>
+                    The Web Server may not host most of the content instead rely on Distributed File Systems to Host the
+                    Content.&nbsp; In that case the majority of the hard disk space needed would be on the File Server
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Average number of Backend Transactions Per Page Request
+                </td>
+                <td>
+                    5 JDBC Calls
+                </td>
+                <td>
+                    &nbsp; &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    What is the percentage of logic between Web App Server and Legacy Applications?
+                </td>
+                <td>
+                    100% on web App Server
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Concurrent Users hitting the backend Systems at Peak Load
+                </td>
+                <td>
+                    20 Connections
+                </td>
+                <td>
+                    &nbsp; &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    What is the LAN bandwidth
+                </td>
+                <td>
+                    100 Mbits/sec
+                </td>
+                <td>
+                    Universal Server Farm (USF)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    What is the internet connection bandwidth (Kbits/sec) at Sellers desk top
+                </td>
+                <td>
+                    28.8 kbs
+                </td>
+                <td>
+                    Modems: 28.8 / 56 Kbits/sec, ISDN: 128 Kbits/sec, T1: 1,544 Kbits/sec, T3: 45000 Kbits/sec, ATM: 155000
+                    / 622000 Kbits/sec.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    The following is a simplified example created using the SA4TeamSD configuration of IBM's Rational System Architect. The
+    complete example from which this is derived is included in an attachment to this guidance.
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p>
+        <img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/nfr_example.gif" width="600" height="397" />
+    </p>
+</blockquote><br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Attached Files</th><td class="sectionTableCell">
+<UL>
+<li>
+<a href="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/nfr_example.xls" target="_blank">nfr_example.xls</a>
+</li>
+</UL>
+</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

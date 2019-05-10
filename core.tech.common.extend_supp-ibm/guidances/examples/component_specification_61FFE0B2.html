@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Component Specification </title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="component_specification">
+<meta name="uma.presentationName" content="Component Specification ">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_rM0xkDfWEdyIwaPzqVg2tg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_rM0xkDfWEdyIwaPzqVg2tg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Component Specification </td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Specifies the details for a particular component in a Home Banking Application.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/component_specification_E4F5FE35.html" guid="_kWT_QIfDEdyrHMpF6xBNiQ">Component Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">This example focuses on the description of an
+    individual specified logical component AccountMgr and its corresponding physical component AccountMgr.jar.</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">The following diagram gives an overview of the
+    interfaces offered and used by the AccountMgr component (component specification diagram).</span>
+</p>
+<p>
+    <img alt="" src="./../../../core.tech.common.extend_supp-ibm/guidances/examples/./resources/banking_component_spec_diagram.jpg" width="420" height="427" />
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">The following diagram shows the data managed via the
+    interface offered by the AccountMgr component (Interface Responsibility Diagram).</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt"><img alt=""     src="./../../../core.tech.common.extend_supp-ibm/guidances/examples/./resources/banking_interface_resp_diagram.jpg" width="568" height="408" /></span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt"><u><span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Component Interfaces</span></u></span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">[INTFC-ACCNT-01] IAccountMgt</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <b><span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">debitAccount(accountNumber: String, amount:
+    Decimal)</span></b>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt"><span     style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> Debits the amount
+    given by amount from the account given by accountNumber</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Pre: accountNumber exists and amount is a positive
+    value</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Post: account is debited by amount</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <b><span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">creditAccount(accountNumber: String, amount:
+    Decimal)</span></b>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt"><span     style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> Credits the amount
+    given by amount to the account given by accountNumber</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Pre: accountNumber exists and amount is a positive
+    value</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Post: account is credited by amount</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <b><span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">queryAccountBalance(accountNumber: String):
+    Decimal</span></b>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt"><span     style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> Returns the balance
+    of the account given by accountNumber</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Pre: accountNumber exists</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Post: account value is unchanged</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <b><span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">fundTransferAllowed(fromAccount: String, toAccount: String,
+    amount: Decimal): Boolean</span></b>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt"><span     style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-<span     style="mso-tab-count: 1">&nbsp;</span></span>&nbsp;Checks that the amount given by amount can be transferred between
+    accounts given by fromAccount and toAccount according to the rules specified by BR-ACCNT-02 Fund Transfer Rules.
+    BR-ACCNT-02 Fund Transfer Rules. Returns true if the transfer is allowed, false otherwise.</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Pre: fromAccount and toAccount exist and amount is a positive
+    value</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">-</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Post: account value is unchanged</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <u><span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Non-Functional Requirements</span></u>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">The following non-functional requirements are satisfied
+    by this component:</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">NFR-ITSTND-01: Reuse - this will be a J2EE&trade; business
+    component.</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">NFR-CONST-01: Run-time Platform - this component will run on
+    a J2EE&trade; platform.</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <u><span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Implementation Guidance</span></u>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">The AccountMgr component provides application
+    independent business behavior and rules for account processing. It is designed to be usable by clients who may be
+    remote or co-located on the same physical or logical server. It should contain no application dependent logic or user
+    interface logic.</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">AccountMgr is a server-side business component.&nbsp;
+    Its client can either be a server side business process component or a remote client. The AccountMgr component reads
+    and writes account data to the persistence store (the RelationalDBMS component).</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">The suggested implementation for this component is a
+    session EJB that encapsulates access to the customer account information. The entities the AccountMgr manages then
+    become entity EJBs. The client only accesses these entity EJBs through the manager EJB. If AccountMgr is implemented as
+    a session EJB, the interface and associated operations become methods on the AccountMgr enterprise bean class.</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">The implementation of the AccountMgr is further
+    detailed in the following work products:</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Class diagram [ACCMGR_CD] showing the static class diagram
+    relating the various EJB and session beans</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Interaction diagram [ACCMGR_ID] showing how the major
+    services offered by the AccountMgr are supported by the proposed design</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">The physical component built to the AccountMgr
+    specification is&nbsp;AccountMgr.jar.</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <b><u><span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Description of the Physical Component
+    AccountMgr.jar</span></u></b>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <u><span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Responsibilities</span></u>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Refer to the responsibilities of the specified logical
+    component AccountMgr.</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <u><span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Reference</span></u>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">The AccountMgr.jar groups all the classes used to
+    implement&nbsp;the AccountMgr specified component.</span>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <u><span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">Non-functional requirements</span></u>
+</p>
+<p style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">The following non-functional requirements are satisfied
+    by this component:</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">NFR-SZ-01: No individual jar files will exceed 250 Kb in
+    size</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">NFR-ITSTND-01: Reuse - this will be a J2EE&trade; business
+    component.</span>
+</p>
+<p style="MARGIN: 0in 0in 0pt; mso-layout-grid-align: none" class="MsoNormal">
+    <span style="FONT-FAMILY: Symbol; COLOR: black; FONT-SIZE: 10pt; mso-bidi-font-family: Symbol">·</span> <span     style="FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 10pt">NFR-CONST-01: Run-time Platform - this component will run on
+    a J2EE&trade; platform.</span>
+</p><br style="MARGIN: 0in 0in 0pt" class="MsoNormal" />
+<br />
+<br style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal" />
+<br />
+<br style="MARGIN: 6pt 0in; mso-layout-grid-align: none" class="MsoNormal" />
+<br /></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

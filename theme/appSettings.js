@@ -1,0 +1,12 @@
+theApp.settings.enableProfiling=false
+theApp.settings.enableBookmark=true
+theApp.settings.autoSyncContentWithView=false
+theApp.settings.enableSearch=true
+theApp.settings.searchServlet="SearchServlet"
+theApp.settings.showGlossary=true
+theApp.settings.showBanner=true
+theApp.feedbackURL="mailto:leo@ca.ibm.com"
+theApp.configurationTitle="Team Solution Design|$|Team Solution Design|$|"
+theApp.infoFileName="about.htm"
+theApp.bannerFileName="banner.jpg"
+theApp.bannerHeight="67px"

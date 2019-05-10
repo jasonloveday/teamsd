@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: The Role of Enterprise Architecture in Solution Design</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="role_of_ea_in_soln_design">
+<meta name="uma.presentationName" content="The Role of Enterprise Architecture in Solution Design">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_9B8jEFo2EeCeD8_Z8azGSQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_9B8jEFo2EeCeD8_Z8azGSQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: The Role of Enterprise Architecture in Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides direction in the use of enterprise architecture as a means of informing and constraining solution design.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/business_direction_CD735940.html" guid="mweb5E09C6D8970ACF5D85256BE9006ADCC1">Business Direction</a>
+</li>
+<li>
+<a href="./../../../core.tech.presales.common.base-ibm_int/workproducts/client_imperative_902E0FF7.html" guid="_Anae0ClsEeCCbsiPzsNZwg">Client Imperative</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/describe_system_context_8F80BBCA.html" guid="_9kUKUKc0EdyaUuyek1jM3w">Describe System Context</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/develop_high_level_component_model_5792C00C.html" guid="_IWRbkKc2EdyaUuyek1jM3w">Develop High Level Component Model</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/develop_high_level_operational_model_E84EA2C2.html" guid="_UpDb0Kc2EdyaUuyek1jM3w">Develop High Level Operational Model</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/identify_outline_rqmts_6AA01255.html" guid="_TIwFoO7SEdyAJNMldIXJlA">Identify and Outline Requirements</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/identify_high_level_data_sources_62EC7532.html" guid="_9C7KcPaGEdyQkoYzAyZ7Vg">Identify High Level Data Sources</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/identify_non_functional_requirements_F0B78C0C.html" guid="_JC8JwKc1EdyaUuyek1jM3w">Identify Non-Functional Requirements</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/nonfunctional_requirements_67C22734.html" guid="mwebA79F29E86DD9BD38852568850050F6EA">Non-Functional Requirements</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/operational_model_5CE9CFC9.html" guid="mwebD1869C2CAF6E9991852568A4004FA5D9">Operational Model</a>
+</li>
+<li>
+<a href="./../../../process.tech.teamsd.base-ibm_int/tasks/plan_for_client_value_871DC01F.html" guid="_GPSE4OGsEeSMKooZhntMAw">Plan for Client Value</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/strategic_roadmap_A3A95A85.html" guid="mwebD174D087B007D67785256885005C76B8">Strategic Roadmap</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/subject_area_model_D50FC851.html" guid="mweb09E31452D198AB048525685C00514C18">Subject Area Model</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/system_context_5222F1AD.html" guid="_htWFcEMFEdyP_Jn83ylwUQ">System Context</a>
+</li>
+<li>
+<a href="./../../../process.tech.teamsd.base-ibm_int/tasks/understand_business_environment_E3347268.html" guid="_0fwr8KRHEdyNvJmbhD7Ycw">Understand Business Environment and Objectives</a>
+</li>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/use_case_model_A80F05C7.html" guid="mwebED77EA705636E0878525688500610AD7">Use-Case Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p style="MARGIN-RIGHT: 0px" dir="ltr">
+    <strong><font size="4">Introduction<br />
+    </font></strong>There are numerous definitions of enterprise architecture and its practice and certainly little need to
+    create yet another. The following definition of the EA discipline was created by experts in the IBM EA community.
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p style="MARGIN-RIGHT: 0px" dir="ltr">
+        <em>“The EA discipline defines and maintains the architecture models, governance and transition initiatives needed
+        to effectively co-ordinate semi-autonomous groups towards common business and/or IT goals.”</em>
+    </p>
+</blockquote>
+<p style="MARGIN-RIGHT: 0px" dir="ltr">
+    This definition is useful in the sense that this&nbsp;guideline focuses on what is created in the practice of
+    enterprise architecture and how it should influence solution design. The following quote from IBM’s EA educational
+    material captures this idea succinctly.
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p style="MARGIN-RIGHT: 0px" dir="ltr">
+        <em>“Enterprise Architecture constrains the individual project, for the benefit of the Enterprise”</em>
+    </p>
+</blockquote>
+<p style="MARGIN-RIGHT: 0px" dir="ltr">
+    Although not a perfect analogy, enterprise architecture is often compared to the concepts embodied in city planning. A
+    city plan identifies the common infrastructure needed (streets, utilities, sports and cultural facilities, playgrounds,
+    shops, banks, municipal services, etc.) and ensures they are made available. City planning also typically involves
+    zoning restrictions that ensure that individual homes can be built in a compatible environment and have convenient
+    access to streets and utilities. Some communities have protective covenants that go even further by constraining
+    choices in size, building materials and even color. The quote above says it well. With Enterprise architecture, as with
+    city planning, the enterprise does benefit, but while the individual project or solution design may be constrained, it
+    also benefits by having access to the “utility aspects” and common infrastructure of the enterprise architecture that
+    simplify development and integration of a new solution.<br />
+</p>
+<p style="MARGIN-RIGHT: 0px" dir="ltr">
+    Although enterprise architecture should normally play a role in solution design, the following two cases depict
+    examples (hopefully rare) of a plausible reason not to focus on existing enterprise architecture in solution design.
+</p>
+<ul dir="ltr">
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            In the first example, the client has explicitly established that the solution will be a completely greenfield
+            effort. This means that for some business or technical reasons, the client believes there is value in creating
+            a solution that has no dependencies on any existing enterprise architecture. Potential reasons may include the
+            need for extremely fast development or an interest in using best of breed technology and design, not previously
+            used within the current enterprise architecture.<br />
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            In the second example, client requirements and specifications are very complete and explicit and constrain the
+            solution design in most important aspects. Although not necessarily true, this situation suggests that in
+            effect the requirements and specifications reflect the existing enterprise architecture. In essence, key
+            architectural decisions have been already made by the client and there is no need to consult their existing
+            enterprise architecture.
+        </div>
+    </li>
+</ul>
+<p style="MARGIN-RIGHT: 0px" dir="ltr">
+    In most other cases, enterprise architecture should ideally have a prominent role in solution design. This ensures that
+    both the enterprise and the solution share in benefits such as common infrastructure and that the individual solution
+    fits into the broader strategy in order to achieve common goals.<br />
+</p>
+<p style="MARGIN-RIGHT: 0px" dir="ltr">
+    <strong><font size="4">Using EA in Solution Design.</font></strong>
+</p>
+<p style="MARGIN-RIGHT: 0px" dir="ltr">
+    The remainder of this&nbsp;guideline focuses on how to take advantage of enterprise architecture in solution design.
+    The following illustration depicts the relationship between enterprise architecture and solution design.
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+        <p style="MARGIN-RIGHT: 0px" dir="ltr">
+            <img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/resources/ea_graphic.gif" width="390" height="500" /> ;
+        </p>
+    </blockquote>
+</blockquote>
+<p style="MARGIN-RIGHT: 0px" dir="ltr">
+    The ability to take advantage of enterprise architecture in solution design will vary according to the circumstances at
+    the client. The following are examples of what one might encounter.
+</p>
+<ul dir="ltr">
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            <strong>The client has in place a well documented enterprise architecture,</strong> complete with active
+            governance. This may be a rare occurrence, but In this case, the solution design process can derive full
+            benefit from being informed by existing EA work products. This is the ideal case. in which one can use examples
+            from the following section to identify the appropriate EA work product for guidance in solution design.<br />
+        </div>
+    </li>
+    <li>
+        <div style="MARGIN-RIGHT: 0px">
+            <strong>The client has some level of enterprise architecture, but it is not complete or well
+            documented.</strong> In this case, there are no documented EA work products to refer to, but it is still
+            important to understand whether there are deliberate aspects of an enterprise architecture that may exist.
+            There is always an enterprise architecture. Whether it is deliberate, elegant or effective is another matter.
+            The suggested approach in this case is to investigate what enterprise architecture may exist by using the
+            appropriate EA artifact to guide your research with the client. It may also be helpful in such cases to record
+            what exists, even though it may be a partial result. This documentation may be helpful in follow-on projects
+            and may even influence the client to more formally document their enterprise architecture.
+        </div>
+    </li>
+</ul>
+<p>
+    The following table illustrates how EA work products influence activities within TeamSD. The relationship to an
+    activity is indicated only for the activity where the influenced work product is first created. When an indication of
+    influence is indicated for more than one activity (ex: Business Drivers (BUS 314)), it is because the influence relates
+    to more than one TeamSD work product.
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p>
+        <img alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/resources/ea_table.gif" width="600" height="460" />&nbsp;
+    </p>
+</blockquote>
+<p dir="ltr">
+    The following table illustrates&nbsp;one example of an EA work product and how&nbsp;it might influence solution design
+    with respect to&nbsp;specific TeamSD work products. There is a more complete list of additional examples attached to
+    this guideline. The attached list contains the EA artifacts which most likely to have an influence on one or more
+    TeamSD artifacts.<br />
+</p><br />
+<br />
+<table title="" border="1" cellspacing="0" cellpadding="2" width="85%">
+    <tbody>
+        <tr>
+            <td>
+                <strong>EA Artifact Name and Description</strong>
+            </td>
+            <td>
+                <strong>Relationship to Team Solution Design Artifact</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>Business Event List (BUS 101)</strong> This work product is produced to identify the different
+                    business transactions that the business must be able to handle. It also identifies information flowing
+                    between the external involved parties and the business.
+                </p>
+            </td>
+            <td>
+                <p>
+                    <strong>Business Direction (BUS 411)</strong> Business events are a part of the Business Context
+                    Diagram which is an optional part of Business Direction.<br />
+                    <br />
+                    <strong>Non Functional Requirements (ART 0507)</strong> Business events may provide important metrics
+                    regarding transaction rates.<br />
+                    <br />
+                    <strong>System Context (ART 0651)</strong> External business events are a potential source of
+                    information about responsibilities of the target system and requirements involving external agents,
+                    access mechanisms and exchanges.<br />
+                    <br />
+                    <strong>Use Case Model (ART 0508)</strong> Business events are a potential source of information about
+                    the type and nature of use cases that should be modeled.<br />
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><a href="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/./resources/ea_teamsd.doc" target="_blank">ea_teamsd.doc</a><br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">tlseeve@us.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Fri Aug 17 22:17:53 IST 2012</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">May 2011 - baseline version|June 2011 - Updated EA table (artifacts/activity)</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

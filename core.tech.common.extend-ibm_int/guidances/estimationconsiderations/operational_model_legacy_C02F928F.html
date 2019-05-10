@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Estimation Considerations: Operational Model</title>
+<meta name="uma.type" content="EstimationConsiderations">
+<meta name="uma.name" content="operational_model_legacy">
+<meta name="uma.presentationName" content="Operational Model">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_UywSYCpZEeO73t_N_v4agg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Estimation Considerations: Operational Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/estimationconsiderations.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/operational_model_5CE9CFC9.html" guid="mwebD1869C2CAF6E9991852568A4004FA5D9">Operational Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Creating Operational Models is very time consuming depending on the size and complexity of the system. The minimal time
+    required to construct an Operational Model is normally 1 month. It is not unusual for the Operational Models to take 1
+    year on a large engagement.
+</p>
+<p>
+    Significant factors that influence the OM development effort include:
+</p>
+<ul>
+    <li>
+        Technical complexity,
+    </li>
+    <li>
+        Number of nodes and deployment units. A more complex solution will usually have a larger number, requiring a
+        greater effort to define and document.
+    </li>
+    <li>
+        Degree of distribution of execution and data DUs across the OM. A complex solution may require additional
+        architectural effort.
+    </li>
+    <li>
+        Demanding system management requirements. Issues such as high levels of availability, performance or security make
+        the definition of this work product more complex.
+    </li>
+</ul>
+<p>
+    <strong>Assumptions:</strong>
+</p>
+<ul>
+    <li>
+        A1: Work products, on which this work product has a dependency, have been produced to the appropriate standards. If
+        these are not fully covered, or at less than full depth, expect to require more effort in this work product.
+    </li>
+    <li>
+        A2: There is no existing systems management strategy to work from<br />
+        <br />
+        <table title="" border="1" cellspacing="0" cellpadding="2" width="85%">
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>Artifact</strong>
+                    </td>
+                    <td>
+                        <strong>Number of instances</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nodes
+                    </td>
+                    <td>
+                        Approximately F1squared/6
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Connections
+                    </td>
+                    <td>
+                        In range of 0.4*(2*(F1-1))-1 to 0.4*F1*(F1 – 1)/2. The latter is a measure of the number of
+                        connections in a polygon. The number of deployment units that communicate with each other drives
+                        the connection complexity. Logical connections then may be combined over a single node-to-node
+                        connection.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Walkthroughs
+                    </td>
+                    <td>
+                        Approximately F1
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </li>
+</ul>
+<p>
+    In general, the lower efforts for this WP are where F1 is low, F2 is low, and A1 is true.
+</p>
+<p>
+    When A1 is false, considerable additional effort is expended in obtaining the information that the WPs should provide.
+</p>
+<table title="" border="1" cellspacing="0" cellpadding="2" width="85%">
+    <tbody>
+        <tr>
+            <td>
+                <strong>Task</strong>
+            </td>
+            <td>
+                <strong>Effort</strong>
+            </td>
+            <td>
+                <strong>Least</strong>
+            </td>
+            <td>
+                <strong>Most</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Define and document one node (description, NFRs, contained components).&nbsp; Show in the topology (node)
+                diagram and in node/DU matrix.
+            </td>
+            <td>
+                16 hour
+            </td>
+            <td>
+                5 hour
+            </td>
+            <td>
+                40 hour
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                See the general comments, above
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Define and document one connection.
+            </td>
+            <td>
+                8 hour
+            </td>
+            <td>
+                1 hour
+            </td>
+            <td>
+                16 hour
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                See the general comments, above
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Document network description.
+            </td>
+            <td>
+                8 hour
+            </td>
+            <td>
+                4 hour
+            </td>
+            <td>
+                24 hour
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                See the general comments, above
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Develop and document systems management strategy.
+            </td>
+            <td>
+                80 hour
+            </td>
+            <td>
+                16 hour
+            </td>
+            <td>
+                160 hour
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                See the general comments, above.&nbsp; If A2 is false then the effort here is much lower
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Develop and document middleware choices.
+            </td>
+            <td>
+                40 hour
+            </td>
+            <td>
+                16 hour
+            </td>
+            <td>
+                160 hour
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                See the general comments, above
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Develop and document one walkthrough.&nbsp; Perform walkthrough and review.
+            </td>
+            <td>
+                8 hour
+            </td>
+            <td>
+                5 hour
+            </td>
+            <td>
+                24 hour
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                See the general comments, above
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                The greatest effort is where F1 is hight, making the material more complex and increasing the number of
+                significant issues to review
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    All effort is by architect(s). Substantial rework takes place as the OM is developed (such as conceptual -&gt;
+    specified-&gt;physical). This development is not performed at an even pace for all elements of the model, so different
+    elements will be at different stages of development at the same time.
+</p>
+<p>
+    <strong>Effort distribution (%) by Phase:<br />
+    </strong><br />
+</p>
+<table title="" border="1" cellspacing="0" cellpadding="2" width="85%">
+    <tbody>
+        <tr>
+            <td>
+            </td>
+            <td>
+                Outline
+            </td>
+            <td>
+                Macro
+            </td>
+            <td>
+                Micro
+            </td>
+            <td>
+                Build
+            </td>
+            <td>
+                Deploy
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Overall effort
+            </td>
+            <td>
+                40
+            </td>
+            <td>
+                40
+            </td>
+            <td>
+                20
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+These estimating considerations are based on the AD2.0 multi-release engagement model. You should make appropriate
+adjustments for the particular engagement family and model that you are using.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Tue Oct 01 10:22:26 IST 2013</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

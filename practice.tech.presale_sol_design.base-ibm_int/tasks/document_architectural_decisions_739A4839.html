@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Document Architectural Decisions</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="document_architectural_decisions">
+<meta name="uma.presentationName" content="Document Architectural Decisions">
+<meta name="uma.category" content="Discipline:tech_arch:Technical Architecture">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="Technical Solution Architect">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_4a4RkE_TEeCdjcIuSQPchg", "_VwvggGToEd6V3Lji0ZlmSA", "_mxcIUMdeEeawLoZMMX3puw", "_iGdRkKc1EdyaUuyek1jM3w"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_VwvggGToEd6V3Lji0ZlmSA", "_myml8MdeEeawLoZMMX3puw", "_iGdRkKc1EdyaUuyek1jM3w"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_kpou0CmJEd65FoKJYXtPqg", "_vLdhkLUuEdyZzqoEHUdEQA", "_dRLFwLjdEdyRlZ7knXIZ8w", "_mzwcgMdeEeawLoZMMX3puw", "_iGdRkKc1EdyaUuyek1jM3w"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_7cO4EMYlEd6U27gReX5GsQ", "_iGdRkKc1EdyaUuyek1jM3w"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_iGdRkKc1EdyaUuyek1jM3w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Document Architectural Decisions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The purpose of this task is to identify and document important architectural decisions where alternatives exist, choices are unclear and impact is likely significant.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../core.default.cat_def.base-ibm_lic/disciplines/tech_arch_AE23524A.html" guid="_dRLFwLjdEdyRlZ7knXIZ8w">Technical Architecture</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The purpose of this task is to identify and document important architectural decisions where alternatives exist, choices
+are unclear and impact is likely significant.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../core.default.role_def.base-ibm_lic/roles/technical_solution_architect_86C345D1.html" guid="mweb13E09E200176D42E052569F100647201">Technical Solution Architect</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.base-ibm_lic/workproducts/standards_115B354E.html" guid="mwebC7C232F275394E6685256885005BB813">Standards</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/viability_assessment_5EE7A3B5.html" guid="mweb25893FBE05A65D6E852568850063E2A4">Viability Assessment</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>
+<a href="./../../core.tech.soma.common.base-ibm_lic/workproducts/service_model_AA7DDA59.html" guid="_fxbwIBmHEdqx_IUyKxxtEg">Service Model</a>
+</li>
+<li>
+<a href="./../../core.legacy.common_wp.extend-ibm_int/workproducts/subject_area_model_D50FC851.html" guid="mweb09E31452D198AB048525685C00514C18">Subject Area Model</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Process Usage</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../practice.tech.presale_sol_design.base-ibm_int/capabilitypatterns/pre_sale_solution_design_5F4EC164.html" guid="_JCG3AbozEdyoutuWGu0opA">Pre-sale Solution Design</a>
+									&nbsp;&gt;&nbsp;
+								<a href="./../../practice.tech.presale_sol_design.base-ibm_int/capabilitypatterns/explore_options_and_approach_DB5B313F.html" guid="_MlRwob1FEdyrVscmNb_pGw">EXPLORE Options and Approach</a>
+									&nbsp;&gt;&nbsp;
+								<a href="./../../practice.tech.presale_sol_design.base-ibm_int/capabilitypatterns/document_architectural_decisions_BED1B420.html" guid="_-HgDBb1FEdyrVscmNb_pGw">Document Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../process.tech.teamsd.base-ibm_int/deliveryprocesses/teamsd_6B210FD9.html" guid="_r0U7sb1HEdyrVscmNb_pGw">Team Solution Design</a>
+									&nbsp;&gt;&nbsp;
+								<a href="./../../process.tech.teamsd.base-ibm_int/deliveryprocesses/team_soln_dsgn_pre_sale_solution_design_421A435F.html" guid="_VuARsI8lEd2tn4QxorRg1Q">Pre-sale Solution Design</a>
+									&nbsp;&gt;&nbsp;
+								<a href="./../../process.tech.teamsd.base-ibm_int/deliveryprocesses/explore_options_and_approach_FAAACAF1.html" guid="_e9hPkekLEd-IPpFA2ds-HA">EXPLORE Options and Approach</a>
+									&nbsp;&gt;&nbsp;
+								<a href="./../../practice.tech.presale_sol_design.base-ibm_int/capabilitypatterns/document_architectural_decisions_BED1B420.html" guid="_-HgDBb1FEdyrVscmNb_pGw">Document Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Various architectural decisions will be made regarding the proposed systems. These can be fairly general architectural
+    principles or policies. They can also be fairly specific decisions regarding elements of the architecture. These may
+    include prior decisions which will constrain this project in some way. The resulting work product will be updated
+    during development of the architecture overview.
+</p>
+<p>
+    Ensure the issue or problem is clearly stated, evaluate the options that are available, make the decision and provide
+    the rationale behind the decision, document the decision using the appropriate template.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading">State Issue or Problem</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Clearly state what the problem or issue is that has to be addressed.&nbsp; Obtain agreement from the appropriate
+stakeholders that this is the correct statement of the problem.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Consider Alternatives</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    &nbsp;Build a list of alternative solutions to the problem or issue.&nbsp; Review or consider one or more of the
+    following when drawing up a list of alternatives:
+</p>
+<ul>
+    <li>
+        Project objectives, goals, critical success factors, business drivers etc that may have been provided by the
+        stakeholders
+    </li>
+    <li>
+        The system requirements (business processes, use cases, qualities, constraints and change cases).
+    </li>
+    <li>
+        Architectural principles, policies and guidelines drawn up by the stakeholder.
+    </li>
+    <li>
+        Relevant reference architectures, architectural patterns or assets.
+    </li>
+    <li>
+        Product literature available from vendors or their web sites.
+    </li>
+    <li>
+        Technical information published in books, journals, web sites etc.
+    </li>
+    <li>
+        Project documentation such as plans, key milestones and dates etc.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Make Decisions and Provide Rationale</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td><p>
+    Several factors need to be considered when making an architectural decision.&nbsp; Consider the following questions as
+    part of the decision making process:
+</p>
+<ul>
+    <li>
+        Does the solution need to comply with a reference architecture or architectural pattern?
+    </li>
+    <li>
+        Are there any over arching principle, policies, guidelines or standards that need to be complied with or adhered
+        to?
+    </li>
+    <li>
+        What systems management and support implications does the decision have?
+    </li>
+    <li>
+        What are the security and privacy implications of the decision?
+    </li>
+    <li>
+        How does the decision affect the total cost of ownership?
+    </li>
+    <li>
+        If the decision requires the use of vendor products, packages, consulting or support what implications does this
+        have? For example what is the experience of the vendor?
+    </li>
+    <li>
+        Are there suitable service level agreements in place? Are there any liability or legal issues to address?
+    </li>
+    <li>
+        If the decision requires the use of a product or package what is the lead time on procuring these?&nbsp; Is that
+        consistent with project timescales?
+    </li>
+    <li>
+        Are there any change cases that have been identified that should be taken into account?
+    </li>
+</ul>
+<p>
+    Once the decision has been made ensure the rationale for making the decisions is properly and clearly stated.&nbsp;
+    Some decisions can have far reaching implications and must be reviewed with all the key stakeholders before being
+    finalized.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Document Decision</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Document the decision together with the options considered and rationale used in making the decision.&nbsp; Provide
+additional information (e.g. implications on other areas of the architecture, requirements impacted etc) as necessary.</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    In a pre-sale context, the Architectural Decisions (AD)&nbsp;work product&nbsp;should document key decisions that will
+    constrain the system design or selection of products and technology during implementation. There may be relatively few
+    decisions in a pre-sale environment, but there will likely be additional decisions&nbsp;added during implementation.
+    The&nbsp;AD work product&nbsp;is helpful in all but the simplest situations.&nbsp; For guidance and examples of this
+    work product, refer to the supporting materials section.
+</p>
+<p>
+    Ensure that that you fully document in the relevant <em>Architecture Decisions</em> the selection, constraints and
+    considerations when using Cloud-based infrastructure, platform or application services. Cloud-based procurement changes
+    the business model for IT solution components, removing the barrier for capital investment but not the requirement for
+    the Technical Solution Architect to capture the key decisions and understand where the solution can scale and
+    functionally evolve but also where the decisions will have future implications.
+</p>
+<p>
+    Although not officially part of this work product, architecture principles can be very helpful
+    in&nbsp;considering&nbsp;architectural decisions (see note below). The client should be able to tell you if there are
+    important IT or design principles that you should consider in developing a solution in the pre-sale environment. You
+    may choose to develop other principles in collaboration with the client. The following table gives an example of how to
+    record such principles.<br />
+    <br />
+</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <b>Architecture Principles</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Category / topic</b>
+            </td>
+            <td>
+                Complexity hiding
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Principle / policy</b>
+            </td>
+            <td>
+                The programming model for client developers will hide the complexity of interfacing to legacy systems
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Explanation</b>
+            </td>
+            <td>
+                In this context, client developers are responsible for developing applets, servlets and HTML. Legacy data
+                will be accessed from within servlets. The servlet developer must be presented a common interface that is
+                independent of the number and type of backend legacy systems.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Relevant requirements</b>
+            </td>
+            <td>
+                see non-functional requirement #xxx
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Motivation</b>
+            </td>
+            <td>
+                Over time, the legacy systems will change and new ones may be added. It is desirable to insulate client
+                programs from these changes. It is also desirable to simplify the client programming model by having a
+                single interface for programmers to learn that does not change as backend systems change.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Implications</b>
+            </td>
+            <td>
+                1. An integration server node will be required. 2. A client programming model must be selected. 3. An
+                additional layer will exist that must be accounted for in performance modeling. 4. A new common business
+                interface must be designed. 5. Consideration must be given in the operational model for global signon, and
+                flowing of security and transactional contexts.
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<p>
+    <strong>Enterprise Architecture Influence:</strong> Existing enterprise architecture is an important influence on
+    solution design. For additional guidance on this topic, see the associated&nbsp;<strong><em>Guideline: The&nbsp;Role of
+    Enterprise Architecture in Solution Design.</em></strong> The following EA&nbsp;artifacts (or their equivalents) should
+    be considered when performing this task.
+</p>
+<ul>
+    <li>
+        <strong>Principles – Policies and Guidelines (ARC 309)</strong> Previously documented principles may provide input
+        for architectural decisions. You may choose to develop other principles in collaboration with the client that may
+        have enterprise implications. &nbsp;
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend-ibm_int/guidances/guidelines/arch_component_eval_73BE5CC4.html" guid="_S4QKsKAuEeGdcfsf4UFMTw">Architectural Evaluation of Components</a>
+</li>
+<li>
+<a href="./../../practice.tech.presale_sol_design.base-ibm_int/guidances/guidelines/arch_strategy_cognitive_12B84DCC.html" guid="_Wq_nsNhaEeKYbcVxz4c8wg">Architecural Strategy: Cognitive Computing</a>
+</li>
+<li>
+<a href="./../../core.tech.presales.common.base-ibm_int/guidances/guidelines/role_patt_in_soln_design_4B09B7C.html" guid="_PIKFENdtEeKYbcVxz4c8wg">The Role of Patterns in Solution Design</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Whitepapers</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../practice.tech.presale_sol_design.base-ibm_int/guidances/whitepapers/teamsd_and_cloud_88D6A0B4.html" guid="_dnapgBAlEeSmo8o893fXYw">TeamSD and Cloud Solution Design</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">Tom Seevers</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Thu May 28 12:43:20 IST 2015</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">November 2008 - baseline version|May, 2011 -  added guidance on EA influence|June 2013 - added Patterns guidline|June 2012 - added component evaluation guideline|June 2013 - added guidelines on patterns and architectural strategy</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

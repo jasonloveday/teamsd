@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Writing Requirements Statements</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="writing_good_requirements_int">
+<meta name="uma.presentationName" content="Writing Requirements Statements">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_ryr4MIUPEeSg2JwLhKPXBg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_ryr4MIUPEeSg2JwLhKPXBg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Writing Requirements Statements</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline describes attributes that improve the quality and clarity of requirements and increase IBM's chances of a successful delivery project.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/identify_outline_rqmts_6AA01255.html" guid="_TIwFoO7SEdyAJNMldIXJlA">Identify and Outline Requirements</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/identify_non_functional_requirements_F0B78C0C.html" guid="_JC8JwKc1EdyaUuyek1jM3w">Identify Non-Functional Requirements</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong>General Approach to Requirements Development<br />
+    </strong>The following diagram provides a graphical depiction of the requirements creation process. Requirements are
+    created in the order depicted, from top to bottom. As you move into lower levels of requirements, specificity increases
+    as depicted by the widening triangle bases. The bullets that follow the graphic provide additional insights.
+</p>
+<p>
+    <img alt="Approach to Requirements Development" src="./../../../core.tech.common.extend-ibm_int/guidances/guidelines/./resources/req_dev.png" width="352" height="286" />
+</p>
+<ul>
+    <li>
+        Decide on and agree what levels of requirements are appropriate for your situation - for simple projects you may be
+        able to get by with just System Requirements - for large complex projects you&nbsp; are likely to need all levels
+    </li>
+    <li>
+        Start with the highest level 
+        <ul style="LIST-STYLE-TYPE: circle">
+            <li>
+                Understand your Client needs (see <a href="./../../../core.bus.common.extend-ibm_int/guidances/whitepapers/reqts_elicitation_technique_paper_845319C8.html" guid="_-CFW4C3mEeS_oL7VxYXtCw">White Paper: Eliciting Business Requirements</a>)
+            </li>
+        </ul>
+    </li>
+    <li>
+        Progress over time to the lowest level 
+        <ul style="LIST-STYLE-TYPE: circle">
+            <li>
+                One level at a time
+            </li>
+            <li>
+                Review frequently (informal and formal)
+            </li>
+        </ul>
+    </li>
+    <li>
+        Consider all disciplines at each level 
+        <ul style="LIST-STYLE-TYPE: circle">
+            <li>
+                Hardware, software, maintenance, etc.
+            </li>
+        </ul>
+    </li>
+    <li>
+        Define and document external interfaces at each level
+    </li>
+    <li>
+        Document rationale for decisions made at each level
+    </li>
+    <li>
+        Document trade studies executed at each level
+    </li>
+    <li>
+        Document results of each review and actions taken
+    </li>
+</ul>
+<p>
+    <strong>General rules for writing requirements</strong><br />
+    Requirements should make good use of the language: Use complete sentences, including both a subject and a verb. The
+    subject is an actor, a stakeholder, the system under development, or a design entity that is related to the
+    requirement. The verb specifies a condition, action, or intended result that is done for, by, with, or to the
+    subject.&nbsp;Consistent use of the phase shall be solidifies the link between the subject and the requirement,
+    condition, or state required.&nbsp;Additional general rules include:
+</p>
+<ul>
+    <li>
+        Define one requirement at a time.
+    </li>
+    <li>
+        Avoid conjunctions (and, or) that make multiple requirements.
+    </li>
+    <li>
+        Avoid let-out clauses or words that imply options or exceptions (unless, except, if necessary, but).
+    </li>
+    <li>
+        Use simple, direct sentences.
+    </li>
+    <li>
+        Use a limited vocabulary, especially if your audience is international.
+    </li>
+    <li>
+        Define verifiable criteria (e.g., "...within three hour of the event")
+    </li>
+</ul>
+<p>
+    <strong>Quality attributes of well written requirements</strong><br />
+    Individual requirements should exhibit the follow attributes that define well written requirements:
+</p>
+<ul style="LIST-STYLE-TYPE: none">
+    <li>
+        <strong>Achievable</strong> - the requirement reflects a need that is within the realm of the possible and
+        realistically within the time, cost, and technical constraints that the end client has laid upon the program.
+    </li>
+    <li>
+        <strong>Unambiguous</strong> - every requirement has only one interpretation
+    </li>
+    <li>
+        <strong>Understandable</strong> - the interpretation of each requirement is clear
+    </li>
+    <li>
+        <strong>Correct</strong> - a requirement the system is in fact required to do
+    </li>
+    <li>
+        <strong>Complete</strong> - all information necessary to define the requirement is included in the requirement.
+    </li>
+    <li>
+        <strong>Concise</strong> - no unnecessary information is included in the requirement
+    </li>
+    <li>
+        <strong>Current</strong> - the requirement reflects current needs rather than recalling a need or desire that
+        expired months or years prior to the current effort.
+    </li>
+    <li>
+        <strong>Singular</strong> - Each requirement specifies a single thought, not a collection of thoughts or
+        conditions.
+    </li>
+    <li>
+        <strong>Traced</strong> - each requirement is traced to some stakeholder document or statement
+    </li>
+    <li>
+        <strong>Traceable</strong> - each derived requirement must be traceable to an originating requirement via some
+        unique name or number
+    </li>
+    <li>
+        <strong>Design independent</strong> - each requirement specifies an end result, behavior, or other system
+        characteristic, and not a particular solution or a portion of a particular solution
+    </li>
+    <li>
+        <strong>Verifiable</strong> - a finite, cost-effective process can be defined to check that the requirement has
+        been achieved
+    </li>
+    <li>
+        <strong>Unbiased</strong> - not biased by any particular implementation
+    </li>
+</ul>
+<p>
+    <strong>Quality attributes of a well written set of requirements</strong><br />
+    Just as individual requirements have quality attributes, so too does a set of requirements. A set of requirements,
+    representing a business initiative, system, or subsystem grouping, should exhibit the follow attributes that define a
+    well written set of requirements:
+</p>
+<ul style="LIST-STYLE-TYPE: none">
+    <li>
+        <strong>Unique</strong> - requirement(s) is (are) not overlapping or redundant with other requirements
+    </li>
+    <li>
+        <strong>Complete</strong> - (a) everything the system is required to do throughout the system's life cycle is
+        included; (b) responses to all possible (realizable) inputs throughout the system's life cycle are defined; (c) the
+        document is defined clearly and self-contained; and (d) there are no to be defined (TBD) or to be reviewed (TBR)
+        statements. Completeness is a desired property but cannot be proven at the time of requirements development, or
+        perhaps ever
+    </li>
+    <li>
+        <strong>Consistent</strong> - (a) internally, no two subsets of requirements conflict; and (b) externally, no
+        subset of requirements conflicts with external documents from which the requirements are traced
+    </li>
+    <li>
+        <strong>Comparable</strong> - the relative priority of the requirements is included
+    </li>
+    <li>
+        <strong>Modifiable</strong> - changes to the requirements can be made easily, consistently (free of redundancy),
+        and completely
+    </li>
+    <li>
+        <strong>Attainable</strong> - solutions exist within performance, cost and schedule constraints
+    </li>
+</ul>
+<p>
+    <strong>Additional tips for writing good requirements</strong><br />
+    There are several additional steps that can be taken when developing requirements that will help ensure the writing
+    properly captures the attributes listed above. These additional steps include developing acceptance criteria for each
+    requirement as it is written. This helps with both clarity and understanding when review the requirements with
+    stakeholders. Additionally, developing a traceability matrix during the process helps ensure design consistency and
+    completeness while reducing the possibility of overlapping requirements.
+</p>
+<p>
+    There are also several words or phrases that should be avoided in requirements development due to their ability to
+    obscure the precise meaning of, the intended applicability of, and/or the correct scope of the requirement. While these
+    words or phrases change with time, the Risk Management organization keeps an updated set that can be provided. A
+    current list of words or phrases to avoid at the time of this writing includes the following:
+</p>
+<ul>
+    <li>
+        <em>Acceptable, adequate</em>
+    </li>
+    <li>
+        <em>As much as practical</em>
+    </li>
+    <li>
+        <em>At least, at a minimum, not more than, not to exceed</em>
+    </li>
+    <li>
+        <em>Between</em>
+    </li>
+    <li>
+        <em>Depends on</em>
+    </li>
+    <li>
+        <em>Efficient</em>
+    </li>
+    <li>
+        <em>Fast, rapid</em>
+    </li>
+    <li>
+        <em>Flexible</em>
+    </li>
+    <li>
+        <em>Improved, better, faster, superior</em>
+    </li>
+    <li>
+        <em>Including, including but not limited to, and so on, etc., such as</em>
+    </li>
+    <li>
+        <em>Maximize, minimize, optimize</em>
+    </li>
+    <li>
+        <em>Normally, ideally</em>
+    </li>
+    <li>
+        <em>Optionally</em>
+    </li>
+    <li>
+        <em>Reasonable, when necessary, where appropriate</em>
+    </li>
+    <li>
+        <em>State-of-the-art</em>
+    </li>
+    <li>
+        <em>Sufficient</em>
+    </li>
+    <li>
+        <em>Support, enable</em>
+    </li>
+    <li>
+        <em>User-friendly, simple, easy</em><br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Checklists</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.legacy.common_wp.extend-ibm_int/guidances/checklists/requirements_taxonomy_checklist_FBA71771.html" guid="_EN8D4C3hEeS_oL7VxYXtCw">Requirements Taxonomy Checklist</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Wed Dec 17 11:35:28 IST 2014</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

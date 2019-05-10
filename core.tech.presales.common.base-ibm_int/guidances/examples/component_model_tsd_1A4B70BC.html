@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Component Model for Team Solution Design</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="component_model_tsd">
+<meta name="uma.presentationName" content="Component Model for Team Solution Design">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_lf-AcKzaEdyaUuyek1jM3w"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_lf-AcKzaEdyaUuyek1jM3w"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Component Model for Team Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This element provides a pre-sale component model example.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The example at the end of this guidance&nbsp;is a traditional example&nbsp;of a component model. Depending on level of
+    complexity and required elaboration, the component model may also be rendered in a more rigorous fashion by using
+    multiple views. These views include the following:
+</p>
+<ul>
+    <li>
+        Logical Component Relationship View - Similar to the Component&nbsp;Relationship Diagram in the traditional example
+        below
+    </li>
+    <li>
+        Logical Component Sequence View - Similar to the Component Interaction Diagram in the traditional example
+        below&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </li>
+    <li>
+        Logical Component Collaboration View - An alternate rendering of the Logical Sequence View
+    </li>
+    <li>
+        Logical Component Structure View - An alternative to the Logical Component Relationship View (see explanation
+        following figure 2 below)
+    </li>
+    <li>
+        Physical Component Relationship View - A physical version of the Component Relationship View
+    </li>
+    <li>
+        Physical Component Structure View - A physical version of the Component Structure View
+    </li>
+</ul>
+<p>
+    Users of the SA4TeamSD configuration of IBM's Rational System Architect&nbsp;must choose one of these when creating a
+    new diagram. The following illustrations will highlight simplified examples of some of these views. For more
+    information, refer to the System Architect tool mentor associated with the Component Model artifact.
+</p>
+<p>
+    &nbsp;<img height="321" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/component_logical_relationship_view.gif" width="600" />
+</p>
+<p>
+    <strong>Figure 1:</strong> Logical Component Relationship View
+</p>
+<p>
+    &nbsp;<img height="563" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/component_logical_structure_view.gif" width="600" />
+</p>
+<p>
+    <strong>Figure 2:</strong> Logical Component Structure View
+</p>
+<p>
+    The example in figure&nbsp;2 was created using System Architect. The relationship illustrated is similar to figure 1,
+    in that it illustrates the same&nbsp;using dependency except that&nbsp;it does not indicate direction of the
+    dependency. The more significant difference is that the line between components represents a logical connector. A
+    connector is an actual model element within System Architect and exists because messages have been defined that flow
+    between the two components. Unlike the Logical Component Relationship View, this view cannot be used to depict general
+    dependencies. The component information in the illustration is entered and stored within System Architect.
+</p>
+<p>
+    &nbsp;<img height="600" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/logical_component_collaboration_view.gif" width="587" />
+</p>
+<p>
+    <strong>Figure 3:</strong> Logical Component Collaboration View.&nbsp;&nbsp;<br />
+</p>
+<p>
+    <strong>Traditional example component description for Integration Hub (labeled as integration in diagrams)<br />
+    </strong><strong><br />
+    </strong>The Integration provides a 'front end' or single access point to systems running on the back-end application
+    nodes. This component often plays the role of a proxy for individual transactions within applications that exist within
+    the enterprise or in partner organizations. The Adapter also shields other components from the proprietary technologies
+    used by back-end products. It could, for example, convert between text formats like Extended Binary Coded Decimal
+    Interchange Code (EBCDIC) and American Standard Code for Information Interchange (ASCII), hide the details of stored
+    procedure calls, or perform protocol conversion from one business level protocol to another.&nbsp;&nbsp;
+</p>
+<ol>
+    <li>
+        <strong>Responsibilities:</strong> The&nbsp; integration hub accepts simple requests and routes them to the
+        appropriate enterprise system. It returns results to the requesting client. In the case of compound requests, the
+        hub must submit multiple requests to the enterprise system and return responses to the correct system. It is
+        currently an open design issue as to whether the integration hub must recompose enterprise system responses into a
+        single response for the requesting client.
+    </li>
+    <li>
+        <strong>Required service levels:</strong><br />
+        &nbsp;<strong>Users and Presentation:</strong> The integration hub must accommodate up to 300 concurrent
+        requests.<br />
+        <br />
+        <table cellspacing="2" cellpadding="2" width="100%" border="1">
+            <tbody>
+                <tr>
+                    <th scope="col">
+                        User / group name
+                    </th>
+                    <th scope="col">
+                        Number in group
+                    </th>
+                    <th scope="col">
+                        Type of use
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Application Service
+                    </td>
+                    <td>
+                        Up to 6 logical application service logical nodes
+                    </td>
+                    <td>
+                        Application services are making simple and compound requests for enterprise information
+                    </td>
+                </tr>
+            </tbody>
+        </table><br />
+        <strong>Performance and Capacity:</strong> Integration hub<br />
+        <br />
+        <table cellspacing="2" cellpadding="2" width="100%" border="1">
+            <tbody>
+                <tr>
+                    <th scope="col">
+                        Component name
+                    </th>
+                    <th scope="col">
+                        Component response requirement (for 95% of requests)
+                    </th>
+                    <th scope="col">
+                        Capacity requirements
+                    </th>
+                    <th scope="col">
+                        Response requirement during recovery
+                    </th>
+                    <th scope="col">
+                        Impact if not met
+                    </th>
+                    <th scope="col">
+                        Minimum response before considered unavailable
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Integration hub
+                    </td>
+                    <td>
+                        100ms for simple requests.&nbsp; Note that this does not include response of any other components.
+                    </td>
+                    <td>
+                        Integration hub must accommodate 300 concurrent simple requests.&nbsp; Average expected arrival
+                        rate of requests is 50 per second with peaks of about 125 per second.
+                    </td>
+                    <td>
+                        NA (Note: this field is more meaningful when describing and end to end response)
+                    </td>
+                    <td>
+                        End to end response time of 1.2 seconds cannot be met.&nbsp; Other errors such as exhausting
+                        threads may occur as internal queues lengthen.
+                    </td>
+                    <td>
+                        NA (Note: this field is more meaningful when describing and end to end response)
+                    </td>
+                </tr>
+            </tbody>
+        </table><br />
+        <strong>Availability:</strong> Define availability requirements as required by the users of the component per the
+        following example:<br />
+        <br />
+        <table cellspacing="2" cellpadding="2" width="100%" border="1">
+            <tbody>
+                <tr>
+                    <td>
+                        Service hours required
+                    </td>
+                    <td>
+                        0500-2400 PST Mon-Sat
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Special characteristics
+                    </td>
+                    <td>
+                        Peak rate is about 2.25 time average.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Impact of loss for this component
+                    </td>
+                    <td>
+                        Loss of integration hub causes loss of all system function for the registered user.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fallback plan
+                    </td>
+                    <td>
+                        There is no fallback plan currently
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Availability requirement
+                    </td>
+                    <td>
+                        Very high availability is required.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Number of outages acceptable
+                    </td>
+                    <td>
+                        Any outage causes significant loss of revenue
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Recovery requirement
+                    </td>
+                    <td>
+                        Recovery time has not been estimated.
+                    </td>
+                </tr>
+            </tbody>
+        </table><br />
+        <strong>Reasonableness and Risk:</strong> This approach poses substantial risk unless mitigated by hardware
+        reliability features and possible parallel hubs. Design <strong>Rationale:</strong> The integration hub will be
+        implemented with adapters, MQ and MQI because of the need for transformation of requests to enterprise systems.
+        Recomposition of compound requests must be understood before final design choices are made.<br />
+        <strong>Implementation Approach:</strong> The integration hub will be based on WebSphere.
+    </li>
+</ol>
+<ul>
+    <li>
+        <strong>Component Relationship Diagram</strong><br />
+        &nbsp;<img height="187" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/component_relationship_diagram.JPG" width="600" />
+    </li>
+    <li>
+        <strong>Component Interaction Diagram<br />
+        </strong>&nbsp;<img height="456" alt="" src="./../../../core.tech.presales.common.base-ibm_int/guidances/examples/resources/component_interaction_diagram.JPG" width="600" />
+    </li>
+</ul><br /></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

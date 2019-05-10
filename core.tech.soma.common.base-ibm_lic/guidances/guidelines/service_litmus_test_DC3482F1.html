@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Service Litmus Test</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="service_litmus_test">
+<meta name="uma.presentationName" content="Service Litmus Test">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_OXTesJJJEduJxeKdzdDhng"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_OXTesJJJEduJxeKdzdDhng"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Service Litmus Test</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The service litmus test is used to determine which services should be exposed within the service hierarchy. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/guidances/supportingmaterials/service_model_ref_30550A5.html" guid="_IuAXEBpTEdqEAocK20V_ew">References: Service Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">The service litmus test must be applied in different phases within the software development lifecycle because the
+understanding of the business after the priorities of the services and the need for the services within different scopes
+tends to change.<br />
+<p>
+    Ensure that you do a weighted average of the different service litmus tests. For example for each service, or service
+    operation as a row you should have a column for each service litmus test and a column right next to it for the weights
+    or priority that you ascribe to that particular test each role would then have awaited some of the tests and the final
+    result would be a weighted average for each service or service operation to decide to expose within a particular scope.
+</p>
+<p>
+    Once candidate services have been selected and documented in the (categorized) Service Portfolio near the end of
+    service identification, we then need to determine which ones should be exposed as services. Although, in theory, any
+    candidate service could be exposed by exporting its interface as a service description, not every candidate service
+    should be. It may not be economically and practically (non-functional requirements may be compromised) feasible to do
+    so. In particular, the naïve decision to expose "all methods from all classes" will result in an overwhelming and often
+    unmanageable number of services leading to the "Service Proliferation Syndrome". This creates huge performance and
+    service management problems, not to mention the fact that we may be giving away the company’s intellectual capital.
+    Moreover, we must remember that there is a cost associated with every service we choose to expose: the funding,
+    governance and the underlying infrastructure (its security, performance, management) of the service and the components
+    that will implement them must be taken into account.
+</p>
+<p>
+    Therefore, some criteria are needed to help decide whether to expose a service and most importantly, whether to fund
+    the creation of the service component that will provide the functionality of the service as well as the maintenance,
+    monitoring, security, performance and other service level agreements of the service. This decision making process is
+    referred to as the "Service Exposure Decisions".
+</p>
+<p>
+    Initial project experiences indicate a set of criteria in the form of the Service Litmus Test can and should be used to
+    filter the collections of candidate services. This metaphor is used to denote a set of tests, that when applied, will
+    determine if a given service should be eligible for exposure using a service description. These tests are employed
+    together and help answer questions such as – "From the list of candidate services, which ones should be exposed? And
+    thus, which ones should we fund? Which ones have business value?"
+</p>
+<p>
+    On the one extreme, every business use case might be considered to be a candidate service. On the other, only a few
+    services are selected for exposure. Applying the SLT usually gives something in the middle: a manageable set of
+    services that the business wants to expose and that can later be used within compositions.
+</p>
+<p>
+    Table 4-1 contains the descriptions of the key categories of the Service Litmus Test that collectively form the
+    "gating" criteria for service exposure.
+</p>
+<p>
+    Candidate services that pass all four parts of the Service Litmus Test should then be exposed as services in the SOA.
+    There may be candidate services that did not pass the SLT but which are still implemented as services. SLT is an aid to
+    determine which services to expose; if a business chooses to expose candidate services that did not pass the SLT, the
+    implication is that benefits associated with a SOA will not be realized.
+</p>
+<p>
+    Candidate services that do not meet the SLT will have to be implemented in some fashion as they are required to fulfill
+    business needs. They may be implemented as methods on service components and will not require the generation of WSDL or
+    other forms of service definitions; or they may be used as non-exposable entities.
+</p>
+<p>
+    A negative response to any of the following questions results in a candidate service failing the Service Litmus Test.
+</p><br />
+<br />
+<table cellspacing="1" cellpadding="0" width="661" border="1">
+    <tbody>
+        <tr>
+            <td width="20%">
+                <p>
+                    Service "Litmus" Test
+                </p>
+            </td>
+            <td width="80%">
+                <p>
+                    Description
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <p>
+                    SLT1: Business Alignment
+                </p>
+            </td>
+            <td width="80%">
+                <p>
+                    The first test of a service is about its Business Alignment. If the service is not traceable back to a
+                    business task or goal, it may not yield benefits required for SOA implementation.
+                </p>
+                <p>
+                    The following questions, if all are answered positively, mean the service is aligned with the business.
+                </p>
+                <p>
+                    SLT1-1. Does the service provide a required business functionality that supports business processes and
+                    goals? Is there a business goal that this service directly (versus "inherits" from its children)
+                    supports?
+                </p>
+                <p>
+                    SLT1-2. Is the business willing to fund the service through its lifecycle: provisioning, management,
+                    governance and maintenance?
+                </p>
+                <p>
+                    SLT1-3. Is the business willing to share the service internally or externally with clients or business
+                    partners? For example, implications may be additional costs, business secrets, security, etc.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <p>
+                    SLT2: Composability
+                </p>
+            </td>
+            <td width="80%">
+                <p>
+                    Composability is defined as an attribute that enables the service to participate in a service
+                    composition.
+                </p>
+                <p>
+                    Applications can be created using both types of composition – hardwired and loosely wired.
+                </p>
+                <p>
+                    SLT2-1. Does the service meet the required QoS attributes as defined in the composition’s NFRs?
+                </p>
+                <p>
+                    SLT2-2. Is the service stateless?
+                </p>
+                <p>
+                    SLT2-3. Is the service self-contained? Can the service be deployed independently to meet a business
+                    goal although it may cooperate with other services at run-time to perform business processes? There are
+                    no implicit dependencies of the service on other embedded functionality. All dependent services are
+                    either replaceable or self-contained.
+                </p>
+                <p>
+                    SLT2-4. Is the service’s implementation technology neutral?<br />
+                    Technology neutral means that the service does not impose support of non-standard (and unknown to the
+                    consumer) protocols or devices, for example, the constituent component requires intervention through a
+                    non-standard application interface.<br />
+                    This test applies only when the service is deployed in the consumer’s environment. For example: A
+                    business provides an image retrieval service to its customers. It can provide this capability to its
+                    subscribed customers via a web service. Alternatively, the business can hand over to its customer the
+                    image retrieval capability exposed as a web service, and a collection of images. Here, the customer
+                    will be burdened by the implementation of the technology search.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <p>
+                    SLT3: Externalized Service Description
+                </p>
+            </td>
+            <td width="80%">
+                <p>
+                    The most basic property of a service is that it has an externalized service description.
+                </p>
+                <p>
+                    SLT3-1. Does the service have an externalized service description that is distinct and separate from
+                    the underlying physical implementation? A current example of this is WSDL.
+                </p>
+                <p>
+                    SLT3-2. Can the service be discovered and bound using the service description?
+                </p>
+                <p>
+                    SLT3-3. Does the service description contain meta-data about itself? That is, the service description
+                    must be self-sufficient, containing or referencing all of the information necessary to understand the
+                    message exchange between consumer and provider of a service.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">
+                <p>
+                    SLT4: Redundancy Elimination
+                </p>
+            </td>
+            <td width="80%">
+                <p>
+                    SLT4-1. Can this service be used by the business stakeholder within all processes where its function is
+                    required?
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<br />
+<p>
+    Table 4-1: Service Litmus Test
+</p>
+<p>
+    Note: There are two types of service compositions:
+</p>
+<p>
+    1. Hardwired composite services. They are characterized by low flexibility, owing to pre-defined flow and control of
+    services where the flow and control is not externalized. These types of services have attractive Qualities of Service
+    attributes such as performance.
+</p>
+<p>
+    2. Loosely wired composite services. They are characterized by high flexibility where composing services into business
+    processes is accomplished by externalizing flow and control. The flow description of the composition is externalized.
+    This type of composition exploits modeling tools, dynamic variability through rules, and static variability through
+    modeling. Composition using BPEL is an example.
+</p>
+<p>
+    It is important to recognize that a variety of factors can affect service exposure decisions, such as the level of
+    capability and maturity that an organization has reached with respect to SOA. The SLT is the key criteria recommended
+    for most situations. Nevertheless, an organization that is early in the adoption cycle may want to expose a few
+    services as a way to experiment with a technology like Web Services. The business and technology drivers (e.g.,
+    maturity, requirements for exposure of specific services) can override the litmus test.
+</p>
+<p>
+    We recommend creating a spreadsheet with priorities weighted and a weighted product be used to measure the SLT results
+    ofr each operation on a service.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">arsanjan@us.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Thu Mar 17 19:36:55 IST 2011</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

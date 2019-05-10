@@ -1,0 +1,122 @@
+/*----------------------------------------------------- 
+w3 placement styles for internal site pages 
+Used by: w3 internal site web pages 
+$Id: interior.css,v 1.14 2004/02/05 18:01:32 bob_easton Exp $
+-----------------------------------------------------*/ 
+/* ------- navigation styles ------- */ 
+#left-nav	{color:#000; text-decoration:none; border-bottom:1px solid #ccc;} 
+#left-nav a	{color:#000; text-decoration:none;} 
+#left-nav a:hover	{text-decoration:underline; color:#000; background:#eee;} 
+#left-nav a.active:hover	{text-decoration:none; color:#000; background:#fff;} 
+
+.top-level a, 
+.second-level a, 
+.third-level a	{display:block; margin:0; padding:5px 0 5px 0; border-top:1px solid #fff;} 
+
+.top-level a	{padding-left:12px;} 
+.second-level a	{padding-left:24px;} 
+.third-level a	{padding-left:36px;} 
+
+.top-level a	{color:#000; background:#9cf;} 
+
+.top-level a#site-home	{font-size:1.1em;} 
+
+.second-level a, 
+.third-level a, a.open	{color:#000; background:#cce5ff;} 
+
+a.active	{color:#000; background:#fff;} 
+
+#fourth-level	{margin:.5em 0; padding:0; background-color:#fff;} 
+#fourth-level table	{width:100%;} 
+#fourth-level p	{color:#666; width:80%;} 
+
+#fourth-level .page-tabs .empty	{width:30%;} 
+#fourth-level .page-tabs 	{margin-top:.5em;} 
+
+#fourth-level .lists	{background:#fff url(/ui/v8/images/rule-h-gray-dots.gif) left bottom repeat-x;} 
+#fourth-level td.col01	{width:22%; vertical-align:top; padding-left:1em;} 
+#fourth-level td.col02	{width:78%; vertical-align:top;} 
+
+#fourth-level .text-tabs	{margin:1em 0 0 0; padding:0 0 1em .5em; background:url(/ui/v8/images/rule-h-gray-dots.gif) left bottom repeat-x;} 
+#fourth-level .text-tabs li	{display:inline; padding-left:.5em; color:#666;}
+#fourth-level .text-tabs li a {padding-right:.5em;} 
+
+#fourth-level .lists li a,
+#fourth-level .text-tabs a {text-decoration:none; color:blue;}
+
+#fourth-level .lists a.active,
+#fourth-level .text-tabs a.active	{color:#000; font-weight:bold; text-decoration:none; cursor:text;}
+
+#fourth-level .lists li a:hover,
+#fourth-level .text-tabs li a:hover {text-decoration:underline; color:#69c;} 
+
+#related-links	{color:#000; background:#fff; margin:16px 0 5px 0;} 
+#related-links .title	{padding:0 0 0 12px;} 
+#related-links ul, #related-links ol	{margin:.3em 0 1em 1.5em;} 
+
+#popup-masthead {display:none;}
+#popup-footer {display:none;}
+
+/* ------- page structure ------- */ 
+#navigation	{ 
+	position:absolute; 
+	top:70px; 
+	left:0; 
+	color:#000; 
+	background:#fff; 
+	padding:5px; 
+	margin:0; 
+	width:150px; 
+}
+
+#content	{ 
+	margin:75px 0 0 170px; 
+	color:#000; 
+	background:#fff; 
+}
+
+* html #content {
+	\margin:0;
+	mar\gin:75px 0 0 170px;
+	\padding:75px 0 0 170px;
+	paddi\ng:0;
+}
+
+#content-head	{ 
+	color:#000; 
+	background:transparent; 
+	margin-bottom:1em; 
+	margin-top:0;
+	height:1%; /*guarantee visibility in IE*/
+}
+
+* html #content-head {
+	margin-bottom:0; 
+}
+
+#content-main	{ 
+	float:left; 
+	width:80%; 
+	border-right:1px solid #ccc; 
+	background:#fff; 
+}
+
+* html #content-main	{ 
+	\width:56%; 
+	\margin-top:10px; 
+	wid\th:65%; 
+}
+
+#content-sidebar	{ 
+	color:#000; 
+	background:#fff; 
+	margin-left:68%; 
+	padding-right:10px; 
+}
+
+* html #content-sidebar	{ 
+	\margin-left:57%;
+	ma\rgin-left:55%;
+	\margin-top:10px; 
+} 
+

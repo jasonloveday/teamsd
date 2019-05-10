@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Practice: Pre-sale Solution Design</title>
+<meta name="uma.type" content="Practice">
+<meta name="uma.name" content="pre_sale_solution_design">
+<meta name="uma.presentationName" content="Pre-sale Solution Design">
+<meta name="element_type" content="Practice">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<meta name="tags" content="nav_technical">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_4a4RkE_TEeCdjcIuSQPchg", "_VwvggGToEd6V3Lji0ZlmSA"]}, {view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_RJ__ECLJEd2ct852UDqXGQ", "_WCIHY8RdEdyD76CYS6Ta7A", "_VwvggGToEd6V3Lji0ZlmSA"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_VwvggGToEd6V3Lji0ZlmSA"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Practice: Pre-sale Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/practice.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This practice provides guidance in a pre-sale context to gather the requirements, qualify the opportunity, architect, design and validate the solution, and close the sale.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content References</th><td class="sectionTableCell">
+<ul>
+<li>
+<img src="./../../../images/roadmap.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/guidances/roadmaps/how_to_adopt_8AC4FBD6.html" guid="_0CU0IGWiEd6VCKfE4oQeSw">How to Adopt the Pre_sale Solution Design Practice</a>
+</li>
+</ul>
+<ul>
+<li>
+<img src="./../../../images/whitepaper.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/guidances/whitepapers/team_solution_design_pemm_A1AB579D.html" guid="_hiowEMtWEdymU76Uju4_AA">Team Solution Design and Performance Engineering and Management</a>
+</li>
+</ul>
+<ul>
+<li>Work Products</li>
+<ul>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architecture_overview_7BDD690F.html" guid="mweb3072ED040425425485256882005791A4">Architecture Overview</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/business_direction_CD735940.html" guid="mweb5E09C6D8970ACF5D85256BE9006ADCC1">Business Direction</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/candidate_asset_list_7C5C60C0.html" guid="mweb3E0FDFC6B1A9A0F885256882005AF563">Candidate Asset List</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/component_model_333A932.html" guid="mweb0BBA8C7269610775852568B3006C3ACF">Component Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/current_org_description_CBB1ED77.html" guid="mwebED33B506309AD0CB852568820060BFF4">Current Organization Description</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.mgmt.common.extend-ibm_lic/workproducts/est_report_8EA8C174.html" guid="mweb7E6EF6E8A37FF9E785257053005698D4">Estimation Report</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/nonfunctional_requirements_67C22734.html" guid="mwebA79F29E86DD9BD38852568850050F6EA">Non-Functional Requirements</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/operational_model_5CE9CFC9.html" guid="mwebD1869C2CAF6E9991852568A4004FA5D9">Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.mgmt.wwpmm.common.base-ibm_lic/workproducts/proj_definition_4B3100FE.html" guid="mweb160626331DE06601852568A900804F05">Project Definition</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/rqmts_matrix_C1104253.html" guid="mweb84BD804CC8ECF0ED85256885005A2D8F">Requirements Matrix</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_model_AA7DDA59.html" guid="_fxbwIBmHEdqx_IUyKxxtEg">Service Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/standards_115B354E.html" guid="mwebC7C232F275394E6685256885005BB813">Standards</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.legacy.common_wp.extend-ibm_int/workproducts/subject_area_model_D50FC851.html" guid="mweb09E31452D198AB048525685C00514C18">Subject Area Model</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/system_context_5222F1AD.html" guid="_htWFcEMFEdyP_Jn83ylwUQ">System Context</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/technical_environment_D0E8F7C5.html" guid="mweb7BEEAAEC8091A5F08525688200609192">Technical Environment</a>
+</li>
+<li>
+<img src="./../../../images/artifact.gif" height="16" width="16"><a href="./../../../core.tech.common.extend-ibm_lic/workproducts/viability_assessment_5EE7A3B5.html" guid="mweb25893FBE05A65D6E852568850063E2A4">Viability Assessment</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Tasks</li>
+<ul>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/conduct_viability_assessment_7F796D85.html" guid="_typL4Kc1EdyaUuyek1jM3w">Conduct Viability Assessment</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/define_key_services_5576D29A.html" guid="_PvTKIPdwEdyd_7bCW3QEvg">Define Key Services</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/define_project_526233CE.html" guid="_MCKXkKROEdyNvJmbhD7Ycw">Define Project</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/describe_system_context_8F80BBCA.html" guid="_9kUKUKc0EdyaUuyek1jM3w">Describe System Context</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/develop_architecture_overview_FE6ACDFE.html" guid="_lRGV8JMbEdyld-yWhq9_Lg">Develop Architecture Overview</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/develop_high_level_component_model_5792C00C.html" guid="_IWRbkKc2EdyaUuyek1jM3w">Develop High Level Component Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/develop_high_level_operational_model_E84EA2C2.html" guid="_UpDb0Kc2EdyaUuyek1jM3w">Develop High Level Operational Model</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/develop_solution_estimates_229C91B5.html" guid="_Z-shQPBoEdyQkoYzAyZ7Vg">Develop Solution Estimates </a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/document_architectural_decisions_739A4839.html" guid="_iGdRkKc1EdyaUuyek1jM3w">Document Architectural Decisions</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/evaluate_integrated_solution_F80EE0CC.html" guid="_nmJ_AKc2EdyaUuyek1jM3w">Evaluate Integrated Solution</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/identify_delivery_approach_EF9CC4B0.html" guid="_oQEgYF_3Ed6qEfhQ_fSeXg">Identify Delivery Approach</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/identify_high_level_data_sources_62EC7532.html" guid="_9C7KcPaGEdyQkoYzAyZ7Vg">Identify High Level Data Sources</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/identify_non_functional_requirements_F0B78C0C.html" guid="_JC8JwKc1EdyaUuyek1jM3w">Identify Non-Functional Requirements</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/identify_outline_rqmts_6AA01255.html" guid="_TIwFoO7SEdyAJNMldIXJlA">Identify and Outline Requirements</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/propose_solution_resolve_concerns_20CFF7BB.html" guid="_zEfDgKc2EdyaUuyek1jM3w">Propose Solution, Resolve Concerns</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/refine_viability_assessment_26BD1DA1.html" guid="_eRD34Kc2EdyaUuyek1jM3w">Refine Viability Assessment</a>
+</li>
+<li>
+<img src="./../../../images/task.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/survey_candidate_assets_A8496777.html" guid="_89mTIKc1EdyaUuyek1jM3w">Survey Candidate Assets and Optimize Solution Approach</a>
+</li>
+</ul>
+</ul>
+<ul>
+<li>Guidance</li>
+<ul>
+<li>Supporting Materials</li>
+<ul>
+<li>
+<img src="./../../../images/supportingmaterial.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/guidances/supportingmaterials/approach_to_designing_ebusiness_solutions_315CF04B.html" guid="_8RXucMtUEdymU76Uju4_AA">Redbook: Approach to Designing eBusiness Solutions</a>
+</li>
+<li>
+<img src="./../../../images/supportingmaterial.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/guidances/supportingmaterials/architecting_portal_solutions_C43F7807.html" guid="_yRQAcMj7EdyvjMl0-V7cgw">Redbook: Architecting Portal Solutions</a>
+</li>
+<li>
+<img src="./../../../images/supportingmaterial.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/guidances/supportingmaterials/customer_challenge_brief_3134D7EF.html" guid="_Qbf0oAHrEd202uSyZxxSgA">Customer Challenge Brief</a>
+</li>
+</ul>
+<li>
+<img src="./../../../images/toolmentor.gif" height="16" width="16"><a href="./../../../core.tech.presales.common.base-ibm_int/guidances/toolmentors/uml_tooling_tsd_staruml_474079EB.html" guid="_yZHvQIsoEd20I-5ejvuVFQ">UML Tooling for Team Solution Design (StarUML)</a>
+</li>
+<li>Guidelines</li>
+<ul>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/estimating_18010DD2.html" guid="_p7akINjkEdyOoaw0lxxEnQ">Estimating for Team Solution Design</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/itr_overview_86665209.html" guid="_7g9QcMucEdymU76Uju4_AA">IBM Quality Practices ITR Overview</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/guidances/guidelines/opportunity_identification_tools_C117556D.html" guid="_AlE9IM23EdymU76Uju4_AA">Opportunity Identification Tools and Approaches</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/pain_chain_666DF053.html" guid="_q1AGAM1IEdymU76Uju4_AA">Pain Chain for Team Solution Design</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/project_definition_23972AA2.html" guid="_1LM1IN2sEdy-jeg0wYuB9Q">Project Definition for Team Solution Design</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/quality_practices_and_governance_A6D957A5.html" guid="__vCaEMtSEdymU76Uju4_AA">Quality Practices and Governance</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../core.tech.presales.common.base-ibm_int/guidances/guidelines/source_for_candidate_assets_DEA5CB9F.html" guid="_s5wqcMuEEdymU76Uju4_AA">Source of Candidate Assets for Team Solution Design Users</a>
+</li>
+<li>
+<img src="./../../../images/guidance.gif" height="16" width="16"><a href="./../../../practice.tech.presale_sol_design.base-ibm_int/guidances/guidelines/tailoring_teamsd_large_engagements_F059CC4B.html" guid="_AUeCoF_6Ed6qEfhQ_fSeXg">Tailoring Team Solution Design Process for Large, Complex Engagements</a>
+</li>
+</ul>
+</ul>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    This&nbsp;practice provides a method for solution design in a&nbsp;pre-sale context. The solution in this context is
+    intended to be the basis for a client proposal. Use of this practice can aid in the following:
+</p>
+<ul>
+    <li>
+        Enable seamless collaboration between IBM Sales, Technical Solution Architects and delivery ITAs (from IGS and/or
+        client).
+    </li>
+    <li>
+        Provide guidance for activities unique to the pre-sale solution design process, in the context of IBM's Client
+        Value Method (CVM).
+    </li>
+    <li>
+        Guide involvement by the pre-sale Technical Solution Architect in planning and delivery.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    This practice&nbsp;uses tasks and activities that are tailored to the pre-sale context and which correspond to the
+    <strong>EXPLORE</strong> and <strong>DEVELOP</strong> phases of the Client Value&nbsp;Method (CVM). The purpose of the
+    first activity&nbsp;is to identify the key client requirements, develop a vision of the solution and assess the
+    probability of a successful project from a client and IBM point of view.&nbsp;The purpose of the second activity is to
+    jointly develop and propose a solution that provides value to both the client and IBM. The following illustrates the
+    relationship of CVM and this practice.
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        <img height="156" alt="" src="./../../../practice.tech.presale_sol_design.base-ibm_int/guidances/practices/resources/cvm_pssd_relationship.jpg" width="600" /><br />
+        &nbsp;
+    </p>
+</blockquote>
+<p>
+    This practice is intended to support varied levels of elaboration necessary in a pre-sale context. It may also be
+    necessary to augment the practice for large, complex solutions. The following describes additional characteristics of
+    the practice.
+</p>
+<ul>
+    <li>
+        Each work product goes through multiple elaborations -- by you or others before and after the solution is "sold".
+    </li>
+    <li>
+        Earlier versions of work products are useful in their own right. For example:<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First use cases can be used to drive custom demo.<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Services View of Architecture Overview Diagram used to confirm key functions
+        needed.&nbsp;
+    </li>
+    <li>
+        Includes multiple views (Architecture Overview Diagram), or for a specific audience (Component Model).&nbsp;
+    </li>
+    <li>
+        Allows for the “uneven” level of elaboration likely in pre-sale. What you need to know varies for different parts
+        of the solution.
+    </li>
+    <li>
+        Focuses on the level of design needed to ensure the solution will work, even if we are responsible for only a part.
+    </li>
+    <li>
+        Provides just enough detail to assure the client that requirements are understood, the solution will address them
+        and we can deliver.<br />
+    </li>
+</ul>
+<p>
+    Work products used are standard UMF work products, but contain additional guidance on how to reduce the level of
+    elaboration when appropriate in a pre-sale context. This practice&nbsp;may be incorporated in any pre-sale delivery
+    process where high level solution design for pre-sale is required.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Additional Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableCell"><p>
+    For more information on pre-sale solution design, refer to the Team Solution Design website (<a href="http://w3.ibm.com/support/tsdesign/" target="_blank">http://w3.ibm.com/support/tsdesign/</a>). This site provides
+    additional information&nbsp;Team Solution Design including "What's New?" links to education, where to get assistance on
+    Solution Design questions, and much more. This site also includes a link to more information on CVM.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">tlseeve@us.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Tue May 03 00:05:19 IST 2011</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">July 2009 - baseline version</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

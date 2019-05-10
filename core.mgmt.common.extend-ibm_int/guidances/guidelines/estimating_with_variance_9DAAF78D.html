@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Estimating with Variance</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="estimating_with_variance">
+<meta name="uma.presentationName" content="Estimating with Variance">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "mweb702E187BFBFEF8698525727400050E28"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="mweb702E187BFBFEF8698525727400050E28"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Estimating with Variance</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">The purpose of this paper is to enable estimation practitioners to assess confidence levels in the estimates that they create. This is often expressed as variance. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.mgmt.common.extend-ibm_lic/workproducts/est_report_8EA8C174.html" guid="mweb7E6EF6E8A37FF9E785257053005698D4">Estimation Report</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><h3>
+    1&nbsp;Description
+</h3>
+<p>
+    When an estimate is created it will, by default, be an approximation. In order to understand this and communicate it to
+    others it is necessary to assess the variance inherent in the quoted nominal figure(s). This paper contains techniques
+    available for assessing the estimate variance, and hence quoting confidence levels.
+</p>
+<p>
+    When reporting the results of any estimation process you should aim for a statement of this nature.
+</p>
+<p>
+    The nominal (expected) value of the effort estimate is 4,000 person hours. There is a 90% chance of the actual effort
+    being between 3,600 pers hours and 5,000 pers hours, with a 50% likely-hood of achieving the nominal figure.
+</p>
+<p>
+    Such a statement provides additional information from which contingency levels can be assessed.
+</p>
+<h3>
+    2&nbsp;Usage Context
+</h3>
+<p>
+    The approaches you take to creating an estimate will determine which techniques are available for assessing variance.
+    There are four major techniques discussed in this document that will enable variance to be assessed. These are:
+</p>
+<ol>
+    <li>
+        Use of Wide Band Delphi Techniques and Pert Techniques which enable confidence levels for estimates to be assessed
+        ‘manually’ via High, Low and Nominal input values.
+    </li>
+    <li>
+        Use of Monte Carlo techniques on estimate input data, usually via add-ins to Excel (or other Spreadsheets) or
+        Scheduling tools such as MS Project.
+    </li>
+    <li>
+        Choice of an estimating tool that automatically generates variance (eg SLIM).
+    </li>
+    <li>
+        Analysis of historical data to provide a historical level of variance against an initial estimate.
+    </li>
+</ol>
+<p>
+    Each of these will be considered in Section 3.
+</p>
+<p>
+    Note: Gut feel in itself is not a true method for assessing variance, but experience and expertise (the usual basis for
+    gut feel) might be used to provide inputs to some of the techniques above.
+</p>
+<p>
+    Other techniques may be used at the descretion of the Estimating Practitioner / Project Manager.
+</p>
+<h3>
+    3&nbsp;Content
+</h3>
+<h4>
+    3.1&nbsp;Use of Monte Carlo Technique
+</h4>
+<h5>
+    3.1.1&nbsp;What is the Monte Carlo Technique?&nbsp;
+</h5>
+<p>
+    The Monte Carlo (MC) technique uses simulation to assess the outcome of an estimation model. The simulation is usually
+    carried out using add-ins to your usual estimating and/or scheduling tools such as Excel and Microsoft Project.
+</p>
+<p>
+    When using the technique with a spreadsheet to create an estimate, the add-in requires you to enter data (such as the
+    counts of each estimating factor, or effort conversion figures) as variables rather than the normal single figure. E.g.
+    A function Point count might be entered as a range, with a high, expected and low count, rather than just single
+    figure. In principle you select the key cost drivers as such variables.
+</p>
+<p>
+    The add-in then chooses various values of these variables from within your chosen range to ‘run’ simulations of your
+    project. Up to 10,000 simulations can be run, with the add-in choosing different variable values at random from the
+    range. The add-in then reports on the output of these ‘runs’, and is able to assess likely variation on the overall
+    estimate, usually quoting the chance of attaining a particular value for your estimate (see section below on what Monty
+    Carlo can tell you)
+</p>
+<p>
+    Thus the result provides an assessment of the confidence you can place in particular estimate and enables you to
+    provide statements such as the italicized example in section 1.
+</p>
+<p>
+    Unfortunately most spreadsheets and scheduling tools do not contain Monte Carlo functionality as standard, hence the
+    need for add-ins as described above.
+</p>
+<p>
+    An inexpensive add-in for excel comes along with the book entitled ‘Decision Making with Insight’ by Sam L. Savage
+    which has been used successfully used by Project Enablement Services Europe and others within IBM. Others come as
+    straightforward software add-ins, e.g. Risk – Plus, @Risk, and many others.
+</p>
+<p>
+    Monte Carlo add-ins are also available for Microsoft Project.
+</p>
+<p>
+    It is beyond the scope of this paper to undertake a formal description of the technique, or to tell you which add-in to
+    procure; instead we commend you to the huge variety of sources of information on this topic.
+</p>
+<p>
+    ‘Google’ Monte Carlo for a variety of sources from, easy to impossible<br />
+    AND/OR<br />
+    See Monte Carlo in wikipedia<br />
+    and <a href="http://www.brighton-webs.co.uk/montecarlo/concept.asp">http://www.brighton-webs.co.uk/montecarlo/concept.asp</a>
+    is educational and fun.
+</p>
+<h5>
+    3.1.2&nbsp;What Monte Carlo Output can tell you?
+</h5>
+<p>
+    This section is a taster for what MC simulation can provide. If you have got access to add-ins or other software that
+    enable you to undertake a MC simulation then you should be able to re-create output of a similar nature to that
+    illustrated below.
+</p>
+<p>
+    <img height="376" alt="" src="./../../../core.mgmt.common.extend-ibm_int/guidances/guidelines/resources/estimatingwithvariance_montecarlo.JPG" width="600" />&nbsp;
+</p>
+<p>
+    Figure 1. Monte Carlo Output: Cumulative Frequency of Achieving a given Cost.
+</p>
+<p>
+    By reading the numbers off the graph, outputs of this nature enable you to provide statements such as:
+</p>
+<p>
+    The nominal (expected) cost is $413,261 (mean of total). There is a 90% chance of the cost being
+    below&nbsp;$461,422.<br />
+    OR<br />
+    Given a budget of $400,000 there is a 39% chance of achievement
+</p>
+<h4>
+    3.2&nbsp;Use of Wide Band Delphi and Pert Techniques
+</h4>
+<h5>
+    3.2.1&nbsp;What is Wide Band Delphi?
+</h5>
+<p>
+    The Wideband Delphi Technique uses the experience and expertise of project team members to produce an estimate.&nbsp;
+    The participants follow a formal procedure, which encourages them to discuss the problem with one another before
+    arriving at the final estimate.
+</p>
+<p>
+    The technique is summarized below. It is best undertaken by a group of experts with appropriately related
+    experience.&nbsp; The objective is for the group of experts to arrive at consensus on a highest, nominal (expected) and
+    lowest value for a variable (e.g. a size in Function Points or the effort to create a specific work product).
+</p>
+<p>
+    The basics steps are:
+</p>
+<ol>
+    <li>
+        The Estimate Coordinator decides whether a high-level (rough, or less accurate) or low-level (more precise)
+        estimate is required.
+    </li>
+    <li>
+        The Coordinator presents each expert with the variable’s specification and an estimation form.&nbsp;<br />
+        <ul>
+            <li>
+                The specification will include specific range certainties, assumptions, whether to include contingency etc,
+            </li>
+        </ul>
+    </li>
+    <li>
+        The Coordinator holds a meeting at which the experts discuss issues related to the size of the variable.&nbsp;
+    </li>
+    <li>
+        Each expert writes down and gives the Coordinator his/her estimate for Low, Nominal and High values anonymously,
+        expressed in agreed-to units.&nbsp;
+    </li>
+    <li>
+        The Coordinator summarizes the estimates and returns the results to the experts.&nbsp;
+    </li>
+    <li>
+        The coordinator holds another meeting to discuss the various estimates.&nbsp;
+    </li>
+    <li>
+        The experts review the summary and submit another anonymous estimate.&nbsp;
+    </li>
+    <li>
+        Steps 4 through 6 are repeated, under the co-ordination of the Estimate Coordinator until a consensus of the lowest
+        and highest and nominal values for the variable are reached.&nbsp;
+    </li>
+    <li>
+        All assumptions that affected the estimation of the variable are recorded.
+    </li>
+</ol>
+<p>
+    At the end of the process there is a high, nominal and low value estimate for the given variable. Any skew away from a
+    normal distribution should be noted (eg if the nominal is closer to the lower end than the higher you have a skewed
+    distribution).
+</p>
+<p>
+    This technique can also be combined with the PERT technique below.&nbsp;
+</p>
+<p>
+    <strong>EXAMPLE of Wideband Delphi.</strong>
+</p>
+<p>
+    You ask the question:
+</p>
+<p>
+    “With 99% certainty&nbsp; what are the low, nominal (expected) and high values for the effort to build this application
+    in Person Months” .<br />
+    Results, after the above wideband delphi, might be :
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        Low = 10 Person Months,&nbsp; Nominal = 12 Person Months, High = 15 Person Months
+    </p>
+</blockquote>
+<p dir="ltr">
+    So you can state that
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p dir="ltr">
+        “There is a 99% chance that the value will lie between 10 and 15 Person Months with an expeced value of 12 Person
+        Months.”.
+    </p>
+</blockquote>
+<p dir="ltr">
+    The technique can be used to estimate the size of any variable which is used as an input to the estimation
+    process.&nbsp; Examples include size in LoC, FPs, Use Cases etc. Often the technique is used to develop estimates for
+    individual work products or tasks using the work breakdown structure as the basis.&nbsp;
+</p>
+<p dir="ltr">
+    There are many internet web sites which provide details of how to undertake the Wide Band Delphi technique.
+</p>
+<p dir="ltr">
+    See particularly the entry in wikipedia.
+</p>
+<p dir="ltr">
+    <a href="http://en.wikipedia.org/wiki/Wideband_delphi">http://en.wikipedia.org/wiki/Wideband_delphi</a>
+</p>
+<p dir="ltr">
+    and
+</p>
+<p dir="ltr">
+    <a href="http://www.stellman-greene.com/aspm/content/view/23/38/">http://www.stellman-greene.com/aspm/content/view/23/38/</a>
+</p>
+<p dir="ltr">
+    A Wide Band Delphi/PERT worksheet can be used to record and automatically calculate the estimates.
+</p>
+<p dir="ltr">
+    The output from this technique may be used as the range input to the Monte Carlo technique discussed in Section 3.1 or
+    the PERT technique in 3.2.
+</p>
+<h5 dir="ltr">
+    3.2.2&nbsp;Using the PERT technique on High, Low and Nominal values.
+</h5>
+<p dir="ltr">
+    The Program Evaluation and Review Technique (PERT) is a technique that uses an assessment of low, expected (most
+    likely) and high values to arrive at a most likely estimate for the variable in question along with a confidence level.
+</p>
+<p dir="ltr">
+    These values might come from the Wide Band Delphi technique (see above) OR alternative approaches.
+</p>
+<p dir="ltr">
+    A PERT estimate for the expected size of any variable, and a standard deviation is illustrated in the example below.
+</p>
+<p dir="ltr">
+    First the following values must be estimated (see Wideband Delphi).
+</p>
+<ul dir="ltr">
+    <li>
+        <div>
+            A = the smallest (most optimistic) probable size, for example, 10 Person Months
+        </div>
+    </li>
+    <li>
+        <div>
+            B = the expected (most likely) size, for example, 12 Person Months
+        </div>
+    </li>
+    <li>
+        <div>
+            C = the largest (most pessimistic) probable size, for example, 15 Person Months
+        </div>
+    </li>
+</ul>
+<p dir="ltr">
+    Next the PERT value for the nominal figure is calculated.
+</p>
+<p dir="ltr">
+    The formula for the ‘new’ nominal value is (A + (4*B) + C)/6,&nbsp;&nbsp;&nbsp; for the example above:
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p dir="ltr">
+        (10+(48)+15)/6 = 12.167 Person Months
+    </p>
+</blockquote>
+<p dir="ltr">
+    Next, a confidence level or variance, is calculated for the variable.
+</p>
+<p dir="ltr">
+    The PERT formula for the variance (strictly mathematically, an estimate of the standard deviation SD) is (C-A)/6, for
+    this example
+</p>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p dir="ltr">
+        SD = (15-10)/6 = 0.833
+    </p>
+</blockquote>
+<p dir="ltr">
+    This means the following :
+</p>
+<p dir="ltr">
+    There is a 68% chance of the true value lying between 11.3 and 13.0 [12.167 +- 1 SD]<br />
+    There is a 90% chance of the true value lying between 10.6 and 13.4 [12.167 +- 1.65 SD]<br />
+    There is a 95% chance of the true value lying between 10.5 and 13.8 [12.167 +- 2 SD]<br />
+    There is a 99% chance of the true value lying between&nbsp; 9.7 and 14.7 [12.167 +- 3 SD]
+</p>
+<p>
+    So the statement could then be:
+</p>
+<p>
+    “There is an approximate 90% chance that the size lies between 10.6 Person Months and 13.4 Person Months with an
+    expected value of 12.2&nbsp; Person Months”.
+</p>
+<p>
+    This assumes an approximately normal distribution.
+</p>
+<p>
+    Refer to IBM ICM asset web (Project Estimating Excel workbook) for additional information on project estimating using
+    PERT techniques.
+</p>
+<h4>
+    3.3&nbsp;Choice of an Estimating Tool which Automates Variance Assessment
+</h4>
+<p>
+    Built in Variance.
+</p>
+<p>
+    Some 3rd party estimating tools provide an assessment of the chance of hitting a given estimate in a similar manner to
+    the estimating models discussed under 3.1 which use a Monte Carlo technique. Indeed most such tools often make use of
+    MC techniques to do this.
+</p>
+<p>
+    If you are considering procurement of a 3rd party estimating tool then one criteria must be to ensure that it provides
+    a variance around any estimate that it provides as output.
+</p>
+<p>
+    What-iffing with your tool.
+</p>
+<p>
+    A poor alternative to built in variance assessment within a tool or model is to undertake multiple runs, using your
+    tool of choice, against some worst case, nominal and best case values for your major cost drivers. This is often called
+    what-ifing. I.e. what if my size input was 10 % lower or 25% higher.
+</p>
+<p>
+    What-iffing will at least enable you to provide low, expected and high values as tools output, enabling some confidence
+    level on the quoted estimate. Combining this with the PERT techniques of section 3.2 can give a little more rigor to
+    the resulting accuracy statement of the estimate.
+</p>
+<h4>
+    3.4&nbsp;Analysis of Historical Project Data
+</h4>
+<p>
+    Given that you have access to repositories which hold the results (actuals) for project effort, cost, schedule etc you
+    can use them to assess typical variation in a given estimate or estimate cost driver.
+</p>
+<p>
+    Example of using such a repository.
+</p>
+<p>
+    Your project is a New Development of a Web business application with a Client Server architected solution built using
+    rapid application development techniques. Analysis of project data from multiple projects, against such criteria, might
+    provide you with useful information on variance.
+</p>
+<p>
+    EG Typical costs of such developments range from $2,000,000 to $3,000,000 with an median (or average) of $2,700,000
+    OR<br />
+    Typical productivities for such developments range from 10 hours per Function Point to 5 hours per FP with an average
+    of 7.
+</p>
+<p>
+    etc.
+</p>
+<p>
+    You can use this data directly or as input to estimating models for what iffing or via PERT techniques as described
+    above.
+</p>
+<p>
+    Historical data is often used to generate Rules of Thumb. See the estimating wiki for examples of such data.
+</p>
+<p>
+    Access to such data is by no means a given but there are currently (Sep 06) a number of such repositories within IBM.
+    You will need to request access to most of them. Examples as of this date will be added to the list below as they
+    become available:
+</p>
+<ol>
+    <li>
+        BCA Benchmarking System [you will need to obtain access privileges – see web page for contact].
+    </li>
+</ol>
+<ul>
+    <li>
+        <a href="http://w3.ams1.ibm.com/igsdf/igsdf.nsf/Content/Metrics_Management.htm" target="_blank">http://w3.ams1.ibm.com/igsdf/igsdf.nsf/Content/Metrics_Management.htm</a>
+    </li>
+</ul>
+<h3>
+    4&nbsp;References
+</h3>
+<p>
+    Estimating Wiki contains access to estimating related documents, hints, tips and further reading<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Tue Nov 08 15:32:27 IST 2016</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">Jan 2007 Initial Draft 1.0</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

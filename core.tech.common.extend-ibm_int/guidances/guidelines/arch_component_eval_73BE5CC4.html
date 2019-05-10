@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Architectural Evaluation of Components</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="arch_component_eval">
+<meta name="uma.presentationName" content="Architectural Evaluation of Components">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_S4QKsKAuEeGdcfsf4UFMTw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_S4QKsKAuEeGdcfsf4UFMTw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Architectural Evaluation of Components</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline offers guidance on an architectural evaluation of candidate components.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../../practice.tech.presale_sol_design.base-ibm_int/tasks/document_architectural_decisions_739A4839.html" guid="_iGdRkKc1EdyaUuyek1jM3w">Document Architectural Decisions</a>
+</li>
+<li>
+<a href="./../../../core.legacy.common_wp.base-ibm_lic/workproducts/rqmts_matrix_C1104253.html" guid="mweb84BD804CC8ECF0ED85256885005A2D8F">Requirements Matrix</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    In the course of making architectural decisions, it is often necessary to compare two candidate components or to
+    evaluate a component with regard to non-functional requirements that have been established for the solution. This
+    guidance supports such a comparison or evaluation by providing a comprehensive set of architectural aspects of a
+    component and guidance on evaluation of each aspect.
+</p>
+<p>
+    Within this guidance, the term component generally refers to any software product, component or other executable asset.
+    While the term component typically is used in the context of application or infrastructure software, this guidance may
+    be at least partially helpful when evaluating certain hardware components such as appliances.
+</p>
+<p>
+    This guidance is intended to support the IT architect in evaluating a candidate component. When completed, the
+    evaluation should result in a compilation of concise architectural information about the component. This information
+    can provide standard input necessary to evaluate, compare and select components for inclusion in a solution design. It
+    can be particularly useful in making architectural decisions and development of the component and operational models.
+    For components under consideration, the evaluation can be used to:
+</p>
+<ul>
+    <li>
+        Understand the primary capabilities, structure and how the component is typically applied.
+    </li>
+    <li>
+        Determine suitability for non-functional and operational requirements including such factors as capacity,
+        performance, standards, target platforms, constraints and component interfaces.
+    </li>
+    <li>
+        Identify similar components from IBM and other vendors and establish a basis for comparison.
+    </li>
+    <li>
+        Identify component issues that affect risk
+    </li>
+</ul>
+<p>
+    Although this guidance provides a comprehensive basis for evaluation, any aspect of the evaluation may indicate an
+    inability of the component to meet important requirements. Consequently it may be helpful to prioritize the aspects of
+    evaluation to consider the most important requirements first. If all of the most important requirements are met,
+    subsequent aspects of the evaluation may be used in a comparison of alternatives.
+</p>
+<p>
+    The information in this guideline is closely associated with the IBM Architecture Brief. The Architecture Brief is
+    published for selected IBM software products and may be found&nbsp;at the&nbsp; <a href="http://w3.blueprint.sby.ibm.com/b_dir/blueprint.nsf/multiview-informationtype-all?OpenView&CollapseView&title=Documents by information type" target="_blank">SWG Blueprint</a>&nbsp;
+</p>
+<p>
+    Detailed guidance is available in the attachment below.
+</p>
+<p>
+    <a href="./../../../core.tech.common.extend-ibm_int/guidances/guidelines/./resources/component_evaluation.doc" target="_blank">component_evaluation.doc</a>
+</p><a href="./../../../core.tech.common.extend-ibm_int/guidances/guidelines/./resources/component_evaluation.odt" target="_blank">component_evaluation.odt</a><br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">tlseeve@us.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Mon Feb 02 09:41:25 IST 2015</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">August 2012 - initial version</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

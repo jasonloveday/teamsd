@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guideline: Use Case Model for Team Solution Design</title>
+<meta name="uma.type" content="Guideline">
+<meta name="uma.name" content="use_case_model_tsd">
+<meta name="uma.presentationName" content="Use Case Model for Team Solution Design">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZcRdEdyD76CYS6Ta7A", "_Q4BjkK5wEdy0gJzUzYV8rw"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Q4BjkK5wEdy0gJzUzYV8rw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Guideline: Use Case Model for Team Solution Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/guidance.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This guideline provides direction in a pre-sale context regarding the type of information needed in a use case model. </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/use_case_model_A80F05C7.html" guid="mwebED77EA705636E0878525688500610AD7">Use-Case Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This guideline addresses the use of a use case model artifact in a pre-sale context.&nbsp;In general, the level of
+    detail in a pre-sale environment will be considerably less than needed during implementation. The primary objectives of
+    use case modeling in a pre-sale context are:
+</p>
+<ul>
+    <li>
+        Provide a basis for identifying functional and non-functional requirements.
+    </li>
+    <li>
+        Use as a tool to achieve understanding with the client how the proposed solution will work using walk throughs or
+        similar approaches
+    </li>
+    <li>
+        Provide&nbsp;a basis for developing demonstrations or proofs of concept.
+    </li>
+</ul>
+<p>
+    In general, the pre-sale context will be limited to a few of the most important use cases and will typically focus on
+    the primary scenarios as opposed to error or unusual scenarios.
+</p>
+<ul>
+    <li>
+        <strong>Identify actors:</strong> Actors represent roles performed by users&nbsp;in a business scenario. In the
+        pre-sale context, there might be only 1 or 2 actors. These are typically human actors, but could also represent IT
+        systems (external to the target system). Primary candidates are the roles performed by the proposed system's key
+        users. These might include agents, tellers, supervisors etc. Include actor name and a brief description of the
+        actor's role. Role names separate the job description of the user from the way they are using the system.&nbsp; It
+        allows the roles to be attached to more than one group of users. Actors can be defined in tables as illustrated
+        here:
+    </li>
+</ul>
+<blockquote dir="ltr" style="MARGIN-RIGHT: 0px">
+    <p>
+        Provide information as indicated in table 1. Note that a full use case model will require additional fields in this
+        table. For a complete description, refer to the full guidance associated with this artifact.<br />
+        <br />
+    </p>
+    <table style="WIDTH: 696px; HEIGHT: 89px" cellspacing="2" cellpadding="2" width="696" border="1">
+        <tbody>
+            <tr>
+                <td>
+                    <strong>Actor Name&nbsp;</strong>
+                </td>
+                <td>
+                    The name of the actor, such as order manager, customer manager, etc.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Brief Description&nbsp;</strong>
+                </td>
+                <td>
+                    A description of the actor and the role that they play. State whether the actor is human or an IT
+                    system. Example description: "Establishes, changes and manages all information associated with customer
+                    details. This is a human actor." Also indicate what users are expected to assume this role.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Associations to Use Cases</strong>
+                </td>
+                <td>
+                    A list of the use cases that this actor will normally initiate or support in performing their role. A
+                    specific use case may only be initiated by one actor.
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+    <br />
+    <p dir="ltr" style="MARGIN-RIGHT: 0px">
+        &nbsp;<strong>Table 1.</strong>
+    </p>
+</blockquote>
+<ul>
+    <li>
+        <strong>Identify Use Cases:</strong> These can be found by identifying a small number of business functions that
+        the&nbsp;user would perform using the proposed system. Examples would included such things a "Create New Order" or
+        "Register New Customer".<br />
+    </li>
+    <li>
+        <strong>Identify associations</strong> between actors and use cases. Associations may indicate that the actor
+        initiates or supports the use case. Document these in table 1 above.<br />
+    </li>
+    <li>
+        <strong>For each use case:<br />
+        </strong>Provide information as indicated in table 2. Note that a full use case model will require additional
+        fields in this table. For a complete description, refer to the full guidance associated with this work product. 
+        <table style="WIDTH: 811px; HEIGHT: 230px" cellspacing="2" cellpadding="2" width="811" border="1">
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>Use case name/no.</strong>
+                    </td>
+                    <td>
+                        Provide name for use case such as "Create New Order".
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Business event&nbsp;&nbsp;&nbsp;</strong>
+                    </td>
+                    <td>
+                        Identify the business event external to the proposed system that will trigger the execution of this
+                        use case.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Actor(s)</strong>
+                    </td>
+                    <td>
+                        Identify actor(s) that are associated with this use case. Only one actor can be responsible for
+                        initiating a use case. Additional supporting actors may be identified.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Description (Use case overview)</strong>
+                    </td>
+                    <td>
+                        Provide a text description of the use case
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Preconditions</strong>
+                    </td>
+                    <td>
+                        Define those conditions that are assumed true if this use case is to execute properly
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Successful&nbsp;outcomes</strong>&nbsp;
+                    </td>
+                    <td>
+                        List successful outcomes. Identify any significant post conditions.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Failure outcomes</strong>&nbsp;
+                    </td>
+                    <td>
+                        List potential failure&nbsp;outcomes. Identify any significant post conditions.<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Main Scenario (flow of events)</strong>
+                    </td>
+                    <td>
+                        Provide a step by step description of the actor's interaction with the system (see note below). A
+                        single flow of events may also be referred to as a scenario.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p dir="ltr" style="MARGIN-RIGHT: 0px">
+            <br />
+            &nbsp;<strong>Table 2.</strong>
+        </p>
+    </li>
+</ul>
+<p>
+    <strong>Note:</strong> In the pre-sale environment, it may be sufficient to document only primary scenarios. A primary
+    scenario depicts a scenario in which everything works. As detail is added, the use case may need to accommodate
+    variations that could occur in the flow of events that comprise the user / system interaction. For minor variations,
+    the description may be augmented with basic pseudo logic (If/Then etc.). For more complex variations, each variation
+    could be documented in a separate alternate scenario. Typical prototypes will involve only primary scenarios or very
+    limited&nbsp;alternate scenarios. For additional detail, refer to the complete guidance associated with this work
+    product.
+</p>
+<ul>
+    <li>
+        <strong>Create any additional information</strong> required for the Use Case Model. The following information
+        describes two of several optional parts of the Use Case Model. If any of these are required, refer to the complete
+        guidance associated with this work product.
+    </li>
+</ul>
+<p>
+    <strong>Problem Domain Concepts Catalog<br />
+    </strong>A concept catalog consists of a list of terms and concepts that provide a concise, common vocabulary and
+    consensus definition of domain terminology. The Use Case Model must make comprehensive use of either an internal
+    problem domain concepts catalog or other external work product. Examples of external work products that may be used for
+    this purpose include classified business terms, object type descriptions and business object model. The catalog is used
+    for maintaining consistency across concepts and use cases, including details of naming and semantics.<br />
+    <br />
+    <strong>System Sequence Diagram<br />
+    </strong>The system sequence diagram is a type of interaction diagram that graphically describes the step-by-step
+    actor-system interactions for all termination outcomes. Like the flow of events, the system sequence diagram also can
+    include conditionals and looping constructs.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Wed Jul 28 02:58:58 IST 2010</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Revisions</th><td class="sectionTableCell">November 2008 - baseline version|July 2010 - updated to reflect System Architect considerations|</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

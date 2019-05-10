@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Team Solution Design</title>
+<script type="text/javascript">
+					var WWPMMBanner;
+					var WWPMMBannerTitle;
+					var WWPMMTitle;
+					var w3Feedback;
+					var dbugxsl = '';
+					WWPMMTitle = 'Team Solution Design';
+					WWPMMBannerTitle = 'Team Solution Design';
+					w3Feedback = 'mailto:leo@ca.ibm.com';
+					if (WWPMMBannerTitle == "") {
+						WWPMMBanner="No";
+					} else {
+						WWPMMBanner="Yes";
+					}											
+					
+					
+					function bindPageViewWithAnalytics(){console.info("called");}
+				</script>
+
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="pragma" content="no-cache">
+<meta name="meta_tagged" content="true">
+<meta name="rmc" content="7.0.1">
+<meta name="Feedback" content="toddfr@us.ibm.com">
+<meta name="IBM.Country" content="en-US">
+<meta name="DC.Date" scheme="iso8601" content="2004-02-05">
+<meta name="DC.Language" scheme="rfc1766" content="en-US">
+<meta name="DC.Rights" content="Copyright (c) 2001,2004 by IBM Corporation">
+<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="ZZ999">
+<meta name="Robots" content="index,follow">
+<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="taxonomy">
+<meta name="DC.Publisher" content="IBM Corporation">
+<meta name="IBM.Effective" scheme="W3CDTF" content="2004-03-06">
+<meta name="IBM.Industry" scheme="IBM_IndustryTaxonomy" content="ZZ">
+<meta name="IBM.WTMSite" content="METHODWEB">
+<meta name="IBM.WTMCategory" scheme="IBM_WTMCategory" content="METHODWEB-RMC">
+<link type="text/css" href="skin/main.css" rel="StyleSheet">
+<link type="text/css" href="skin/treeNodesIcons.css" rel="StyleSheet">
+<link href="skin/w3.css" rel="stylesheet" title="w3" type="text/css">
+<script type="text/javascript">
+	var djConfig = {
+		//preventBackButtonFix: false,
+     	isDebug: false,
+     	debugAtAllCosts: false
+	};
+</script><script src="//www.ibm.com/common/stats/w3_nondojo_eluminate.js" type="text/javascript">//</script><script type="text/javascript" src="dojo/dojo.js"></script><script language="JavaScript" type="text/javascript">
+	dojo.require("dojo.event.*");
+	dojo.require("dojo.io.*");
+	//dojo.require("dojo.undo.browser");
+	dojo.require("dojo.widget.Button");
+	dojo.require("dojo.widget.FloatingPane");
+	dojo.require("dojo.widget.LayoutContainer");
+	dojo.require("dojo.widget.ContentPane");
+	dojo.require("dojo.widget.LinkPane");
+	dojo.require("dojo.widget.AccordionContainer");
+	dojo.require("dojo.widget.ColorPalette");
+	dojo.require("dojo.widget.TabContainer");
+	dojo.require("dojo.widget.TreeV3");
+	dojo.require("dojo.widget.TreeNodeV3");
+	dojo.require("dojo.widget.TreeBasicControllerV3");
+	dojo.require("dojo.widget.TreeDocIconExtension");
+	dojo.require("dojo.widget.TreeSelectorV3");
+	dojo.require("dojo.widget.TreeEmphasizeOnSelect");
+	dojo.require("dojo.widget.TreeDeselectOnDblselect");
+	dojo.require("dojo.widget.TreeExpandToNodeOnSelect");
+	dojo.require("dojo.html.*");
+	dojo.hostenv.writeIncludes();
+</script><script type="text/javascript" src="theme/appResource.js"></script><script type="text/javascript" src="theme/appBrowser.js"></script><script type="text/javascript" src="theme/appNav.js"></script><script type="text/javascript" src="theme/app.js"></script><script type="text/javascript" src="theme/appSettings.js"></script><script type="text/javascript" src="theme/treeNodes.js"></script><script language="javascript1.1" type="text/javascript" src="http://w3.ibm.com/w3webmetrics/js/ntpagetag.js"></script><script src="http://www.ibm.com/common/stats/IDA_element_collection.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/ui/v8/css/v4-screen.css">
+<style type="text/css" media="all">
+<!--
+	@import url("css/ui/v8/css/screen.css");
+	@import url("css/ui/v8/css/interior.css");
+	@import url("css/ui/v8/css/interior-1-col.css");
+	@import url("css/ui/v8/css/icons.css");
+	-->
+</style>
+<link rel="stylesheet" type="text/css" media="print" href="css/ui/v8/css/print.css">
+</head>
+<body>
+<div dojoType="LayoutContainer" id="mainWindow" layoutChildPriority="top-bottom">
+<div dojoType="rmc:BannerWidget" id="BannerWidget" layoutAlign="top"></div>
+<div dojoAttachPoint="imagesContainer" class="bannerDiv">
+<img dojoAttachPoint="img1" height="88" class="bannerImg"><div id="ibm-masthead">
+<div id="ibm-mast-options">
+<ul>
+<li class="ibm-sm-logo" role="presentation" id="ibm-home">
+<a href="http://w3.ibm.com/">w3</a>
+</li>
+</ul>
+</div>
+<div id="ibm-universal-nav">
+<p id="ibm-site-title">
+<em>Team Solution Design</em>
+</p>
+<ul id="ibm-menu-links" aria-label="Site map" role="toolbar">
+<li role="presentation">
+<a href="" role="button" tabindex="-1">My Links</a>
+</li>
+<li role="presentation">
+<a href="http://w3.ibm.com/hr/global/" role="button" target="_blank" tabindex="-1">You &amp; IBM</a>
+</li>
+<li role="presentation">
+<a href="https://w3-connections.ibm.com/" role="button" target="_blank" tabindex="-1">Collaboration</a>
+</li>
+<li role="presentation">
+<a href="http://w3.ibm.com/ibm/" role="button" target="_blank" tabindex="-1">About IBM</a>
+</li>
+<li role="presentation">
+<a href="http://w3.ibm.com/help/" role="button" target="_blank" tabindex="-1">Support</a>
+</li>
+</ul>
+<div id="ibm-search-module">
+<form method="get" action="http://w3.ibm.com/search/do/search" id="ibm-search-form">
+<p>
+<label for="q"><span class="ibm-access">Search</span></label><a id="ibm-scope-button" href="javascript:void(0)" role="button" aria-haspopup="true" aria-labelledby="searchbar-optionlabel" title="Choose Search Scope" class="scopeButton"><span class="w3-icon icon"></span><span id="searchbar-scopelabel" style="display: none;"></span><span id="searchbar-optionlabel" style="display: none;">Pages(w3) selected</span><span class="arrow"></span><span class="ibm-access">▼</span></a><input type="text" id="q" name="qt" value="" maxlength="100" autocomplete="off" aria-describedby="searchbar-optionlabel" placeholder="Search Pages(w3)" aria-label="Search Pages(w3)" role="combobox" aria-autocomplete="list" aria-owns="typeahead-results" data-dojo-dataid="pid0" class="" aria-activedescendant="faces-result-10"><input type="hidden" name="v" value="17"><input type="hidden" name="langopt" value="en"><input type="hidden" name="la" value="all"><input type="submit" value="Submit" class="ibm-btn-search" id="ibm-search">
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div dojoType="LayoutContainer" id="contentTopPane" layoutAlign="top" layoutChildPriority="left-right" class="contentTopPane">
+<div dojoType="rmc:ToolbarWidget" id="appToolbar" layoutAlign="left"></div>
+<div dojoType="rmc:SearchWidget" id="SearchWidget" layoutAlign="right"></div>
+</div>
+<div id="splitContainer" dojoType="rmc:SplitContainerEx" orientation="horizontal" layoutAlign="client">
+<div id="navigationContainer" dojoType="rmc:AccordionContainerEx" sizeShare="10"></div>
+<div dojoType="rmc:IFrameContentPane" id="contentContainer" sizeShare="30" class="dojoContentPane" layoutAlign="client"></div>
+</div>
+</div>
+<div dojoType="rmc:ModalFloatingPaneEx" id="ModalFloatingPane" title="" class="floatingPane" bgColor="white" bgOpacity="0"></div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Concept: SOMA Conceptual Meta-Model</title>
+<meta name="uma.type" content="Concept">
+<meta name="uma.name" content="soma_conceptual_model">
+<meta name="uma.presentationName" content="SOMA Conceptual Meta-Model">
+<meta name="element_type" content="concept">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4Y8RdEdyD76CYS6Ta7A", "_Lzha0KRGEduVMevVDqV1xQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_Lzha0KRGEduVMevVDqV1xQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Concept: SOMA Conceptual Meta-Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/concept.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">SOMA conceptual model describes how business concerns are aligned with IT concerns via the notion of Service. It also describes the meta model and basic constructs in SOMA.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.soma.common.base-ibm_lic/workproducts/service_model_AA7DDA59.html" guid="_fxbwIBmHEdqx_IUyKxxtEg">Service Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    SOMA conceptual model describes a business partitioned in number of domains which are decomposed into multiple
+    functional areas. Functional areas are consisted of subsystems signifying IT boundaries for business capabilities.
+    Subsystems are realized by service components which&nbsp; in turn realized by multiple functional and technical
+    components. A service realized by a service component but a service component may realize multiple services.
+</p>
+<p>
+    A business is partitioned into a number of domains, whcih themsleves are broken into functional areas that consist of
+    subsystems. A business is supported by a set of subsystems and is defined by its goals. A business will depend on its
+    business processes and sub-processes that are governed by business service level agreements in each domain. Domains
+    also have corresponding goals they need to achieve or support. Goals can form a hierarchy and have subgoals associuated
+    with key performance indicators and in some cases can be related to events, which also relate to measurable KPIs. A
+    subsystem consists of one or more service components that may be composite. These are associated with policies and
+    rules. Service components consist of a number of technical and functional components that are dependent on the rules
+    and policies of the service component and indirectly those of the business process. Processes tend to depend on service
+    level agreements (SLA) and SLA's are associated with contracts.<br />
+</p>
+<p>
+    Services are also associate with and depend on contracts and are the contract between a provider and consumer. Services
+    fulfill goals of the business. Service Components realize and expose services. A services has a number fo operations
+    that have messages associated with them.<br />
+    &nbsp;
+</p>
+<p>
+    The conceptual metal model for SOMA is shown below.
+</p>
+<p>
+    &nbsp;<img height="253" alt="SOMA Conceptual Meta-model" src="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/resources/soma_conceptual_meta_model.jpg" width="600" />
+</p><br />
+<p>
+    The relationships between high level elements in SOMA are shown in following figure.
+</p><br />
+<img height="506" alt="" src="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/resources/soma_high_level_concepts.jpg" width="499" /><br />
+<br />
+<p>
+    The metal model as implemented in SOMA-ME tool which is a plugin for Rational Software Architect (RSA) and Rational
+    Software Modeler (RSM) is shown below.
+</p><br />
+<p>
+    &nbsp;<img height="464" alt="SOMA-ME Meta-model" src="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/resources/soma_me_meta_model.jpg" width="600" />
+</p>
+<p>
+    The following figure illustrates the conceptual mapping among multiple namespaces:
+</p>
+<p>
+    <img height="500" alt="Conceptual Namespace Map" src="./../../../core.tech.soma.common.base-ibm_lic/guidances/concepts/resources/conceptual_mapping_cbm_soma_namespaces.jpg"     width="600" /><br />
+    &nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Method Management</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Content Lead</th><td class="sectionTableCell">arsanjan@us.ibm.com</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Change Date</th><td class="sectionTableCell">Thu Mar 17 19:36:02 IST 2011</td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

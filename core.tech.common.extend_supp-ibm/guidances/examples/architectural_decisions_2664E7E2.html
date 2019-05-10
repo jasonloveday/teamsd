@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en" xml:lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example: Architectural Decisions</title>
+<meta name="uma.type" content="Example">
+<meta name="uma.name" content="architectural_decisions">
+<meta name="uma.presentationName" content="Architectural Decisions">
+<meta name="element_type" content="example">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../../css/default.css" type="text/css">
+<script src="./../../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../../';
+					var imgPath = './../../../images/';
+					var nodeInfo=[{view: "view:_NEaN8M6vEdy9E5kgF3Gy4g", path: ["_NEaN8M6vEdy9E5kgF3Gy4g", "_3yOygs7qEdyK2sqmpZ13Zg", "_WCR4ZMRdEdyD76CYS6Ta7A", "_5pNfQDetEdyrF6K2SkiByg"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo,  '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_5pNfQDetEdyrF6K2SkiByg"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Example: Architectural Decisions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../../images/example.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This example shows the kind of information that might be included in the Architectural Decisions artifact.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Related Elements</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../../core.tech.common.extend-ibm_lic/workproducts/architectural_decisions_3059F4D3.html" guid="mweb4BA812D47EEFD0A3852568820057215A">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    <strong>1. Summary and Status</strong>
+</p>
+<p>
+    This section provides a summary of all the decisions made and their status.
+</p>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr bgcolor="#CCCCCC">
+            <td valign="top" width="65">
+                <p>
+                    <strong>ID</strong>
+                </p>
+            </td>
+            <td valign="top" width="377">
+                <p>
+                    <strong>Decision</strong>
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p>
+                    <strong>Status</strong>
+                </p>
+            </td>
+            <td valign="top" width="102">
+                <p>
+                    <strong>Last Update</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="65">
+                <p>
+                    AD-001
+                </p>
+            </td>
+            <td valign="top" width="377">
+                <p>
+                    Offload Web content and applications to Edge Servers to improve response time and maximize scalability.
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p>
+                    DM
+                </p>
+            </td>
+            <td valign="top" width="102">
+                <p>
+                    11May07
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="65">
+                <p>
+                    AD-002
+                </p>
+            </td>
+            <td valign="top" width="377">
+                <p>
+                    The LiUS application architecture will be based on the "Enterprise-Out" architectural variation of the
+                    Online Buying Reference Architecture.
+                </p>
+            </td>
+            <td valign="top" width="94">
+                <p>
+                    DM
+                </p>
+            </td>
+            <td valign="top" width="102">
+                <p>
+                    17May07
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    The following codes indicate the status of decisions:
+</p>
+<ul>
+    <li>
+        DM – decision made. The decision or recommendation has been made having weighed up the alternatives and stated the
+        justification.
+    </li>
+    <li>
+        AD – awaiting decision. All information has been gathered to make the decision but no final decision has yet been
+        made.
+    </li>
+    <li>
+        AI – awaiting information. More information is needed before a decision can be made.
+    </li>
+</ul>
+<p>
+    <strong>2. Architectural Decisions</strong>
+</p><br />
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr bgcolor="#CCCCCC">
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Subject Area</strong>
+                </p>
+            </td>
+            <td valign="top" width="49%">
+                <p>
+                    Content Management
+                </p>
+            </td>
+            <td valign="top" width="12%">
+                <p>
+                    <strong>Topic</strong>
+                </p>
+            </td>
+            <td valign="top" width="20%">
+                <p>
+                    Caching
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Architectural Decision</strong>
+                </p>
+            </td>
+            <td valign="top" width="49%">
+                <p>
+                    Offload Web content and applications to Edge Servers to improve response time and maximize scalability.
+                </p>
+            </td>
+            <td width="12%">
+                <p>
+                    <strong>ID</strong>
+                </p>
+            </td>
+            <td width="20%">
+                <p>
+                    AD-001
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Issue or Problem Statement</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    Both static and dynamic content needs to be delivered to multiple, geographically dispersed locations
+                    without unreasonable delays in users receiving that content. At the same time content must be managed
+                    centrally (or at least in as few different locations as possible).
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Assumptions</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    • Access is required to both static and dynamic content 24 hours a day, 7 days a week with minimal
+                    disruption caused by any down-time of "legacy" systems.
+                </p>
+                <p>
+                    • Response times need to be reasonable (that is, less than 8 seconds) for all users wherever
+                    they are placed.
+                </p>
+                <p>
+                    • Content to be managed in as few locations as possible.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Motivation</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    Delivery of content to end users in as short a time as possible is considered to be key to the success
+                    of the LiUS commerce system.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Alternatives</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    • Option 1 - Offload Web content and applications to Edge Servers distributed throughout the
+                    network to help improve response time and maximize scalability, without sacrificing centralized control
+                    and management. Content distribution can make fresh content available at all servers and caches in the
+                    network, and IT staff can pre-position content after publication, or based on anticipated demand.
+                </p>
+                <p>
+                    • Option 2 - Perform caching using the application server only. This would mean using the
+                    application servers own caching mechanism for caching dynamic pages centrally but still delivering them
+                    out through the web servers on request.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Decision</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    Use option 1.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Justification</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    The only viable option given the highly distributed nature of this site.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Implications</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    Requires Edge Server technology to be identified and procured.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Derived requirements</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Related Decisions</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+<p>
+    <strong>AD-002: "Web-Up" vs. "Enterprise-Out" Application Architecture</strong>
+</p><br />
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" border="1">
+    <tbody>
+        <tr bgcolor="#CCCCCC">
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Subject Area</strong>
+                </p>
+            </td>
+            <td valign="top" width="49%">
+                <p>
+                    Application Architecture
+                </p>
+            </td>
+            <td valign="top" width="12%">
+                <p>
+                    <strong>Topic</strong>
+                </p>
+            </td>
+            <td valign="top" width="20%">
+                <p>
+                    Patterns
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Architectural Decision</strong>
+                </p>
+            </td>
+            <td valign="top" width="49%">
+                <p>
+                    The LiUS application architecture will be based on the "Enterprise-Out" architectural variation of the
+                    Online Buying Reference Architecture.
+                </p>
+            </td>
+            <td width="12%">
+                <p>
+                    <strong>ID</strong>
+                </p>
+            </td>
+            <td width="20%">
+                <p>
+                    AD-002
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Issue or Problem Statement</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    Fundamentally, there is an option to either use the "Web-up" or "Enterprise-Out" architectural
+                    variation of the Online Buying Reference Architecture. Web-Up, is used to very quickly enable a
+                    Web-based buying site without any close integration with back-end systems. Enterprise-Out, emphasizes
+                    extending an existing order processing system to a new Web-based delivery channel. In this case, there
+                    will be very close integration with, and re-use of, existing back-end systems.
+                </p>
+                <p>
+                    Which of the approaches (Web-up or Enterprise-out) would be best suited to the business needs of the
+                    client?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Assumptions</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    • LiUS has existing legacy systems including an existing order processing subsystem, inventory
+                    subsystem and catalogue subsystem that support the online buying business process.
+                </p>
+                <p>
+                    • The user experience requires immediate feedback from back-end system to successfully conduct
+                    online buying.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Motivation</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    Fundamental to the architectural approach.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Alternatives</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    •  Option 1 - "Web-Up" allows for one or more point-to-point connections to back-end heritage
+                    applications or databases so that the e-commerce applications can be integrated with existing back-end
+                    applications (for example, inventory management). This application topology typically involves some
+                    form of deferred interaction with the back-end processing of the orders.
+                </p>
+                <p>
+                    • Option 2 - "Enterprise-Out". This is the target topology for those organizations wanting to use
+                    their existing enterprise systems to allow their customers purchasing through the Web. The shopping
+                    experience is achieved through middle-tier application logic. The topology also addresses maintenance
+                    of data on that tier. The application topology supports access to back-end fulfillment systems that
+                    perform functions such as inventory, order management, pricing, shipping, tax calculation, and credit
+                    processing.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Decision</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    Use option 2.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Justification</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    This is the preferred User-to-Online Buying runtime topology as it allows for immediate confirmation of
+                    order completion combined with other information such as shipping details and volume discount pricing.
+                    This runtime topology involves either a synchronous or asynchronous connection to the back-end, with
+                    synchronous being the preferred choice. This runtime provides on-line access to the back-end systems
+                    during checkout and order completion. The creation and management of the data on the second tier, and
+                    any required synchronization with the back-end systems, is often a major effort. The security of any
+                    customer data residing on the second tier is also a critical factor. Adopting the "Enterprise-Out" over
+                    the "Web-up" approach provides the client with an excellent foundation to extend upon maximizing re-use
+                    and enabling a 'grow-fast' strategy.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Implications</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    Integration to existing back-end systems may required extensions to the clients integration
+                    infrastructure including an upgrade to existing versions of the messaging software.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Derived requirements</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="18%">
+                <p>
+                    <strong>Related Decisions</strong>
+                </p>
+            </td>
+            <td valign="top" width="81%" colspan="3">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+</tr>
+</table>
+</div>
+<div id="discussionForum"></div>
+<script src="./../../../scripts/ContentDiscussionForum.js" type="text/javascript" language="JavaScript"></script><script src="./../../../scripts/SocialIntegration.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../../css/methodweb/css/discussionforum.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentDiscussionForum.init()',500);
+			setTimeout('contentSBTForum.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2016&nbsp;All Rights Reserved<br />
+    Property of IBM<br />
+    These&nbsp;materials are intended&nbsp;only for use as part of an IBM engagement
+</p>
+<p>
+    <a class="elementLink" href="./../../../core.default.release_copyright.extend-ibm_int/guidances/supportingmaterials/ibm_terms_of_use_C4C1314D.html" guid="_hkZYEJ6uEeCDKsV-LdsJXQ">IBM Terms of Use</a>
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>
